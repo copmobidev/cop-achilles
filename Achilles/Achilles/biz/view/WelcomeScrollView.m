@@ -5,7 +5,7 @@
 //  Created by weiyanen on 13-5-11.
 //  Copyright (c) 2013年 weiyanen. All rights reserved.
 //
-//hello
+
 #import "WelcomeScrollView.h"
 
 @interface WelcomeScrollView()
