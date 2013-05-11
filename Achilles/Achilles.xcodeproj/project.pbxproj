@@ -51,6 +51,19 @@
 		9B1C4BB5173E7BD10085CA3C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1C4BAA173E5B060085CA3C /* libxml2.dylib */; };
 		9B1C4BC4173E80AD0085CA3C /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4BC1173E80AD0085CA3C /* ECSlidingViewController.m */; };
 		9B1C4BC5173E80AD0085CA3C /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4BC3173E80AD0085CA3C /* UIImage+ImageWithUIView.m */; };
+		C910513E173E8EFC006DB5A1 /* InitialSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C910513D173E8EFC006DB5A1 /* InitialSlidingViewController.m */; };
+		C9105141173E8F1A006DB5A1 /* FirstTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105140173E8F1A006DB5A1 /* FirstTopViewController.m */; };
+		C9105144173E8F2D006DB5A1 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105143173E8F2D006DB5A1 /* MenuViewController.m */; };
+		C9105147173E8F3B006DB5A1 /* SecondTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105146173E8F3B006DB5A1 /* SecondTopViewController.m */; };
+		C910514A173E8F4A006DB5A1 /* ThirdTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105149173E8F4A006DB5A1 /* ThirdTopViewController.m */; };
+		C910514D173E8F58006DB5A1 /* NavigationTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C910514C173E8F58006DB5A1 /* NavigationTopViewController.m */; };
+		C9105150173E8F67006DB5A1 /* SampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C910514F173E8F67006DB5A1 /* SampleTableViewController.m */; };
+		C9105153173E8F75006DB5A1 /* UnderRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105152173E8F75006DB5A1 /* UnderRightViewController.m */; };
+		C9105155173E8FB5006DB5A1 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9105154173E8FB5006DB5A1 /* iPhone.storyboard */; };
+		C9105158173E8FE2006DB5A1 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105157173E8FE2006DB5A1 /* RegisterController.m */; };
+		C910515D173E8FFE006DB5A1 /* RegisterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C910515A173E8FFE006DB5A1 /* RegisterInfo.m */; };
+		C910515E173E8FFE006DB5A1 /* RegisterStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = C910515C173E8FFE006DB5A1 /* RegisterStatus.m */; };
+		C9105161173E9019006DB5A1 /* WelcomeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105160173E9019006DB5A1 /* WelcomeScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +151,31 @@
 		9B1C4BC1173E80AD0085CA3C /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
 		9B1C4BC2173E80AD0085CA3C /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
 		9B1C4BC3173E80AD0085CA3C /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
+		C910513C173E8EFC006DB5A1 /* InitialSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialSlidingViewController.h; sourceTree = "<group>"; };
+		C910513D173E8EFC006DB5A1 /* InitialSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialSlidingViewController.m; sourceTree = "<group>"; };
+		C910513F173E8F1A006DB5A1 /* FirstTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTopViewController.h; sourceTree = "<group>"; };
+		C9105140173E8F1A006DB5A1 /* FirstTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTopViewController.m; sourceTree = "<group>"; };
+		C9105142173E8F2D006DB5A1 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		C9105143173E8F2D006DB5A1 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		C9105145173E8F3B006DB5A1 /* SecondTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTopViewController.h; sourceTree = "<group>"; };
+		C9105146173E8F3B006DB5A1 /* SecondTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTopViewController.m; sourceTree = "<group>"; };
+		C9105148173E8F4A006DB5A1 /* ThirdTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdTopViewController.h; sourceTree = "<group>"; };
+		C9105149173E8F4A006DB5A1 /* ThirdTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdTopViewController.m; sourceTree = "<group>"; };
+		C910514B173E8F58006DB5A1 /* NavigationTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationTopViewController.h; sourceTree = "<group>"; };
+		C910514C173E8F58006DB5A1 /* NavigationTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTopViewController.m; sourceTree = "<group>"; };
+		C910514E173E8F67006DB5A1 /* SampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewController.h; sourceTree = "<group>"; };
+		C910514F173E8F67006DB5A1 /* SampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewController.m; sourceTree = "<group>"; };
+		C9105151173E8F75006DB5A1 /* UnderRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnderRightViewController.h; sourceTree = "<group>"; };
+		C9105152173E8F75006DB5A1 /* UnderRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderRightViewController.m; sourceTree = "<group>"; };
+		C9105154173E8FB5006DB5A1 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		C9105156173E8FE2006DB5A1 /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterController.h; sourceTree = "<group>"; };
+		C9105157173E8FE2006DB5A1 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterController.m; sourceTree = "<group>"; };
+		C9105159173E8FFE006DB5A1 /* RegisterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterInfo.h; sourceTree = "<group>"; };
+		C910515A173E8FFE006DB5A1 /* RegisterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterInfo.m; sourceTree = "<group>"; };
+		C910515B173E8FFE006DB5A1 /* RegisterStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterStatus.h; sourceTree = "<group>"; };
+		C910515C173E8FFE006DB5A1 /* RegisterStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterStatus.m; sourceTree = "<group>"; };
+		C910515F173E9019006DB5A1 /* WelcomeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeScrollView.h; sourceTree = "<group>"; };
+		C9105160173E9019006DB5A1 /* WelcomeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,12 +232,14 @@
 		9B1C4B2D173E58140085CA3C /* Achilles */ = {
 			isa = PBXGroup;
 			children = (
-				9B1C4BA9173E5A9C0085CA3C /* LTConfig.h */,
-				9B1C4B36173E58140085CA3C /* LTAppDelegate.h */,
-				9B1C4B37173E58140085CA3C /* LTAppDelegate.m */,
+				C9105135173E8DC5006DB5A1 /* biz */,
 				9B1C4B44173E58EB0085CA3C /* core */,
 				9B1C4B53173E58EB0085CA3C /* lib */,
 				9B1C4B2E173E58140085CA3C /* Supporting Files */,
+				9B1C4BA9173E5A9C0085CA3C /* LTConfig.h */,
+				9B1C4B36173E58140085CA3C /* LTAppDelegate.h */,
+				9B1C4B37173E58140085CA3C /* LTAppDelegate.m */,
+				C9105154173E8FB5006DB5A1 /* iPhone.storyboard */,
 			);
 			path = Achilles;
 			sourceTree = "<group>";
@@ -361,6 +401,69 @@
 			path = ECSlidingViewController;
 			sourceTree = "<group>";
 		};
+		C9105135173E8DC5006DB5A1 /* biz */ = {
+			isa = PBXGroup;
+			children = (
+				C9105139173E8E39006DB5A1 /* logic */,
+				C9105138173E8E31006DB5A1 /* view */,
+				C9105137173E8E2B006DB5A1 /* model */,
+				C9105136173E8DF8006DB5A1 /* controller */,
+			);
+			name = biz;
+			sourceTree = "<group>";
+		};
+		C9105136173E8DF8006DB5A1 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9105156173E8FE2006DB5A1 /* RegisterController.h */,
+				C9105157173E8FE2006DB5A1 /* RegisterController.m */,
+				C910513C173E8EFC006DB5A1 /* InitialSlidingViewController.h */,
+				C910513D173E8EFC006DB5A1 /* InitialSlidingViewController.m */,
+				C910513F173E8F1A006DB5A1 /* FirstTopViewController.h */,
+				C9105140173E8F1A006DB5A1 /* FirstTopViewController.m */,
+				C9105142173E8F2D006DB5A1 /* MenuViewController.h */,
+				C9105143173E8F2D006DB5A1 /* MenuViewController.m */,
+				C9105145173E8F3B006DB5A1 /* SecondTopViewController.h */,
+				C9105146173E8F3B006DB5A1 /* SecondTopViewController.m */,
+				C9105148173E8F4A006DB5A1 /* ThirdTopViewController.h */,
+				C9105149173E8F4A006DB5A1 /* ThirdTopViewController.m */,
+				C910514B173E8F58006DB5A1 /* NavigationTopViewController.h */,
+				C910514C173E8F58006DB5A1 /* NavigationTopViewController.m */,
+				C910514E173E8F67006DB5A1 /* SampleTableViewController.h */,
+				C910514F173E8F67006DB5A1 /* SampleTableViewController.m */,
+				C9105151173E8F75006DB5A1 /* UnderRightViewController.h */,
+				C9105152173E8F75006DB5A1 /* UnderRightViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		C9105137173E8E2B006DB5A1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C9105159173E8FFE006DB5A1 /* RegisterInfo.h */,
+				C910515A173E8FFE006DB5A1 /* RegisterInfo.m */,
+				C910515B173E8FFE006DB5A1 /* RegisterStatus.h */,
+				C910515C173E8FFE006DB5A1 /* RegisterStatus.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		C9105138173E8E31006DB5A1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C910515F173E9019006DB5A1 /* WelcomeScrollView.h */,
+				C9105160173E9019006DB5A1 /* WelcomeScrollView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		C9105139173E8E39006DB5A1 /* logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = logic;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -417,6 +520,7 @@
 				9B1C4B3A173E58140085CA3C /* Default.png in Resources */,
 				9B1C4B3C173E58140085CA3C /* Default@2x.png in Resources */,
 				9B1C4B3E173E58140085CA3C /* Default-568h@2x.png in Resources */,
+				C9105155173E8FB5006DB5A1 /* iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +563,18 @@
 				9B1C4BA8173E58EC0085CA3C /* Reachability.m in Sources */,
 				9B1C4BC4173E80AD0085CA3C /* ECSlidingViewController.m in Sources */,
 				9B1C4BC5173E80AD0085CA3C /* UIImage+ImageWithUIView.m in Sources */,
+				C910513E173E8EFC006DB5A1 /* InitialSlidingViewController.m in Sources */,
+				C9105141173E8F1A006DB5A1 /* FirstTopViewController.m in Sources */,
+				C9105144173E8F2D006DB5A1 /* MenuViewController.m in Sources */,
+				C9105147173E8F3B006DB5A1 /* SecondTopViewController.m in Sources */,
+				C910514A173E8F4A006DB5A1 /* ThirdTopViewController.m in Sources */,
+				C910514D173E8F58006DB5A1 /* NavigationTopViewController.m in Sources */,
+				C9105150173E8F67006DB5A1 /* SampleTableViewController.m in Sources */,
+				C9105153173E8F75006DB5A1 /* UnderRightViewController.m in Sources */,
+				C9105158173E8FE2006DB5A1 /* RegisterController.m in Sources */,
+				C910515D173E8FFE006DB5A1 /* RegisterInfo.m in Sources */,
+				C910515E173E8FFE006DB5A1 /* RegisterStatus.m in Sources */,
+				C9105161173E9019006DB5A1 /* WelcomeScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,7 +617,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -525,7 +641,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -540,6 +656,7 @@
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				"HEADER_SEARCH_PATHS[arch=*]" = /usr/include/libxml2;
 				INFOPLIST_FILE = "Achilles/Achilles-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -552,6 +669,7 @@
 				GCC_PREFIX_HEADER = "Achilles/Achilles-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "Achilles/Achilles-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -576,6 +694,7 @@
 				9B1C4B43173E58140085CA3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
