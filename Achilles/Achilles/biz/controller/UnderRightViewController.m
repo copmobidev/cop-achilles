@@ -9,15 +9,18 @@
 #import "UnderRightViewController.h"
 
 @interface UnderRightViewController()
+
 @property (nonatomic, assign) CGFloat peekLeftAmount;
+
 @end
 
 @implementation UnderRightViewController
 
-- (id)init {
-	self = [super init];
-	self.spanArray = @[@{@"name": @"year", @"display":@"年"}, @{@"name": @"month", @"display":@"月"}, @{@"name": @"week", @"display":@"周"}, @{@"name": @"shift", @"display":@"次"}];
-	return self;
+- (NSArray *)spanArray {
+	if (!_spanArray) {
+		self.spanArray = @[@{@"name": @"year", @"display":@"年"}, @{@"name": @"month", @"display":@"月"}, @{@"name": @"week", @"display":@"周"}, @{@"name": @"shift", @"display":@"次"}];
+	}
+	return _spanArray;
 }
 
 - (void)viewDidLoad
@@ -51,4 +54,7 @@
 	return [[self.spanArray objectAtIndex:row] objectForKey:@"name"];
 }
 
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+	
+}
 @end
