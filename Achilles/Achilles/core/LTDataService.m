@@ -22,7 +22,8 @@ static LTDataService *sharedLTDataService = nil;
 }
 
 - (void)getConfigWithSuccessBlock:(void (^)(NSDictionary *))success withFailBlock:(void (^)())fail {
-	fail();
+//	fail();
+	success(@{@"obd":@"xxxx", @"sid":@"xx11", @"indicator":@0});
 }
 
 // 获取一年数据统计时，按月划分数据，展现数据包括
