@@ -34,6 +34,7 @@
 - (void)viewDidUnload {
 	[self setSpanPicker:nil];
 	[super viewDidUnload];
+	
 }
 
 #pragma UIPickerViewDataSource
