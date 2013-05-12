@@ -64,6 +64,7 @@
 		C910515D173E8FFE006DB5A1 /* RegisterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C910515A173E8FFE006DB5A1 /* RegisterInfo.m */; };
 		C910515E173E8FFE006DB5A1 /* RegisterStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = C910515C173E8FFE006DB5A1 /* RegisterStatus.m */; };
 		C9105161173E9019006DB5A1 /* WelcomeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105160173E9019006DB5A1 /* WelcomeScrollView.m */; };
+		C9697108173F538F00D0BEB5 /* LTGlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C9697107173F538F00D0BEB5 /* LTGlobalConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +177,8 @@
 		C910515C173E8FFE006DB5A1 /* RegisterStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterStatus.m; path = biz/model/RegisterStatus.m; sourceTree = "<group>"; };
 		C910515F173E9019006DB5A1 /* WelcomeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeScrollView.h; path = biz/view/WelcomeScrollView.h; sourceTree = "<group>"; };
 		C9105160173E9019006DB5A1 /* WelcomeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeScrollView.m; path = biz/view/WelcomeScrollView.m; sourceTree = "<group>"; };
+		C9697106173F538F00D0BEB5 /* LTGlobalConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTGlobalConfig.h; sourceTree = "<group>"; };
+		C9697107173F538F00D0BEB5 /* LTGlobalConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTGlobalConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -444,6 +447,8 @@
 				C910515A173E8FFE006DB5A1 /* RegisterInfo.m */,
 				C910515B173E8FFE006DB5A1 /* RegisterStatus.h */,
 				C910515C173E8FFE006DB5A1 /* RegisterStatus.m */,
+				C9697106173F538F00D0BEB5 /* LTGlobalConfig.h */,
+				C9697107173F538F00D0BEB5 /* LTGlobalConfig.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -575,6 +580,7 @@
 				C910515D173E8FFE006DB5A1 /* RegisterInfo.m in Sources */,
 				C910515E173E8FFE006DB5A1 /* RegisterStatus.m in Sources */,
 				C9105161173E9019006DB5A1 /* WelcomeScrollView.m in Sources */,
+				C9697108173F538F00D0BEB5 /* LTGlobalConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

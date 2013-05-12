@@ -21,7 +21,7 @@ typedef enum {
 
 
 @interface LTDataService : NSObject
-
++ (LTDataService *)sharedLTDataService;
 
 - (NSDictionary* )getActionsBy:(Span)span from:(long)beginTime to:(long)endTime;
 
@@ -31,4 +31,5 @@ typedef enum {
 
 - (NSDictionary* )getTempBy:(Span)span from:(long)beginTime to:(long)endTime;
 
+- (NSDictionary *)getConfigWithSuccessBlock:(void (^)(NSDictionary *))success withFailBlock:(void (^)())fail;
 @end

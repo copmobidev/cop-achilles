@@ -10,6 +10,21 @@
 
 @implementation LTDataService
 
+static LTDataService *sharedLTDataService = nil;
+
++ (LTDataService *)sharedLTDataService {
+	@synchronized(self) {
+		if (sharedLTDataService == nil) {
+			sharedLTDataService = [[LTDataService alloc] init];
+		}
+	}
+	return sharedLTDataService;
+}
+
+- (NSDictionary *)getConfigWithSuccessBlock:(void (^)(NSDictionary *))success withFailBlock:(void (^)())fail {
+	
+}
+
 // 获取一年数据统计时，按月划分数据，展现数据包括
 // 1.每月、日刹车、加速等驾驶行为统计
 // 2.每月、日平均/最佳油耗统计

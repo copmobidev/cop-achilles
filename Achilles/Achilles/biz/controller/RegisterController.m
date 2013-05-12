@@ -8,12 +8,14 @@
 
 #import "RegisterController.h"
 #import "WelcomeScrollView.h"
+#import "LTDataService.h"
+#import "LTGlobalConfig.h"
 
 @interface RegisterController()
 
 - (UILabel *)simepleLableWithFrame: (CGRect)frame andText:(NSString *)text;
 - (UIButton *)simepleButtonWithFrame:(CGRect)frame andText:(NSString *)text;
-
+- (void)getConfig;
 @end
 
 @implementation RegisterController
@@ -51,9 +53,26 @@
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	button.frame = frame;
 	[button  setTitle:text forState:UIControlStateNormal];
-	[button addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
+	[button addTarget:self action:@selector(getConfig) forControlEvents:UIControlEventTouchUpInside];
 	return button;
 }
+
+- (void)getConfig {
+	
+	[[LTDataService sharedLTDataService] getConfigWithSuccessBlock:^(NSDictionary *configDictionary){
+		[[LTGlobalConfig sharedGlobalConfig] setConfigDictionary:configDictionary];
+		[self dismiss];
+	} withFailBlock:^(){
+		//alert
+		UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"初始化失败"
+													   message:@"请确认已连接车载OBD Wifi"
+													  delegate:nil
+											 cancelButtonTitle:@"ok"
+											 otherButtonTitles:nil];
+		[alert show];
+	}];
+}
+
 
 - (void)dismiss {
 	[self dismissModalViewControllerAnimated:YES];
