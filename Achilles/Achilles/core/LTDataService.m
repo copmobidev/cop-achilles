@@ -21,8 +21,9 @@ static LTDataService *sharedLTDataService = nil;
 	return sharedLTDataService;
 }
 
-- (NSDictionary *)getConfigWithSuccessBlock:(void (^)(NSDictionary *))success withFailBlock:(void (^)())fail {
-	
+- (void)getConfigWithSuccessBlock:(void (^)(NSDictionary *))success withFailBlock:(void (^)())fail {
+	fail();
+	return nil;
 }
 
 // 获取一年数据统计时，按月划分数据，展现数据包括

@@ -31,5 +31,5 @@ typedef enum {
 
 - (NSDictionary* )getTempBy:(Span)span from:(long)beginTime to:(long)endTime;
 
-- (NSDictionary *)getConfigWithSuccessBlock:(void (^)(NSDictionary *))success withFailBlock:(void (^)())fail;
+- (void)getConfigWithSuccessBlock:(void (^)(NSDictionary *))success withFailBlock:(void (^)())fail;
 @end
