@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "ECSlidingViewController.h"
-#import "MenuViewController.h"
+#import "LCMenuViewController.h"
 #import "UnderRightViewController.h"
 
-@interface FirstTopViewController : UIViewController
+@interface LCHomeViewController : UIViewController
 
 - (IBAction)revealMenu:(id)sender;
 - (IBAction)revealUnderRight:(id)sender;

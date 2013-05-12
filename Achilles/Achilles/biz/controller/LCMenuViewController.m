@@ -6,18 +6,18 @@
 //  Copyright (c) 2012 EdgeCase. All rights reserved.
 //
 
-#import "MenuViewController.h"
+#import "LCMenuViewController.h"
 
-@interface MenuViewController()
+@interface LCMenuViewController()
 @property (nonatomic, strong) NSArray *menuItems;
 @property (nonatomic, assign) CGFloat revealRightAmount;
 @end
 
-@implementation MenuViewController
+@implementation LCMenuViewController
 
 - (void)awakeFromNib
 {
-  self.menuItems = [NSArray arrayWithObjects:@"First", @"Second", @"Third", @"Navigation", nil];
+  self.menuItems = [NSArray arrayWithObjects:@"Home", @"Route", @"Driving", @"Navigation", nil];
 }
 
 - (void)viewDidLoad
@@ -48,7 +48,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  NSString *identifier = [NSString stringWithFormat:@"%@Top", [self.menuItems objectAtIndex:indexPath.row]];
+  NSString *identifier = [NSString stringWithFormat:@"LC%@", [self.menuItems objectAtIndex:indexPath.row]];
 
   UIViewController *newTopViewController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
   

@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "ECSlidingViewController.h"
-#import "MenuViewController.h"
+#import "LCMenuViewController.h"
 
-@interface SecondTopViewController : UIViewController
+@interface LCRouteViewController : UIViewController
 - (IBAction)revealMenu:(id)sender;
 @end

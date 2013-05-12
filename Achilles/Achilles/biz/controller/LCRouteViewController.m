@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 EdgeCase. All rights reserved.
 //
 
-#import "SecondTopViewController.h"
+#import "LCRouteViewController.h"
 
-@implementation SecondTopViewController
+@implementation LCRouteViewController
 
 - (void)viewWillAppear:(BOOL)animated
 {
   [super viewWillAppear:animated];
   
-  if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
+  if (![self.slidingViewController.underLeftViewController isKindOfClass:[LCMenuViewController class]]) {
     self.slidingViewController.underLeftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
   }
   self.slidingViewController.underRightViewController = nil;

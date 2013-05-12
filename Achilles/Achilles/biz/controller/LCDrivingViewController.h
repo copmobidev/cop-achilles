@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ECSlidingViewController.h"
-#import "MenuViewController.h"
+#import "LCMenuViewController.h"
 #import "UnderRightViewController.h"
 
-@interface ThirdTopViewController : UIViewController
+@interface LCDrivingViewController : UIViewController
 - (IBAction)revealMenu:(id)sender;
 @end

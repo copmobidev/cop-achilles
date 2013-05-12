@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ECSlidingViewController.h"
-#import "MenuViewController.h"
+#import "LCMenuViewController.h"
 #import "UnderRightViewController.h"
 
-@interface NavigationTopViewController : UINavigationController
+@interface LCNavigationViewController : UINavigationController
 
 @end

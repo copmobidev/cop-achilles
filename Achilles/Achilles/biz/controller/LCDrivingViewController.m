@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 EdgeCase. All rights reserved.
 //
 
-#import "ThirdTopViewController.h"
+#import "LCDrivingViewController.h"
 
-@implementation ThirdTopViewController
+@implementation LCDrivingViewController
 
 - (void)awakeFromNib
 {
@@ -40,7 +40,7 @@
 {
   [super viewWillAppear:animated];
   
-  if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
+  if (![self.slidingViewController.underLeftViewController isKindOfClass:[LCMenuViewController class]]) {
     self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
   }
   

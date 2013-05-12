@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 EdgeCase. All rights reserved.
 //
 
-#import "NavigationTopViewController.h"
+#import "LCNavigationViewController.h"
 
-@implementation NavigationTopViewController
+@implementation LCNavigationViewController
 
 - (void)viewWillAppear:(BOOL)animated
 {
   [super viewWillAppear:animated];
   
-  if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
+  if (![self.slidingViewController.underLeftViewController isKindOfClass:[LCMenuViewController class]]) {
     self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
   }
   

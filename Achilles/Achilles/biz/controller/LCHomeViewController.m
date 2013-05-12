@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 EdgeCase. All rights reserved.
 //
 
-#import "FirstTopViewController.h"
+#import "LCHomeViewController.h"
 #import "RegisterController.h"
 #import "RegisterStatus.h"
 
-@implementation FirstTopViewController
+@implementation LCHomeViewController
 - (void)viewDidAppear:(BOOL)animated {
 //	if (![LoginStatus getInstance].isLogin) {
 //		QRootElement *root = [[QRootElement alloc] initWithJSONFile:@"loginform"];
@@ -36,7 +36,7 @@
   self.view.layer.shadowRadius = 10.0f;
   self.view.layer.shadowColor = [UIColor blackColor].CGColor;
 
-  if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {
+  if (![self.slidingViewController.underLeftViewController isKindOfClass:[LCMenuViewController class]]) {
     self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"MenuLeft"];
   }
   

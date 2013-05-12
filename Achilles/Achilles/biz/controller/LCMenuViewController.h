@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "ECSlidingViewController.h"
 
-@interface MenuViewController : UIViewController <UITableViewDataSource, UITabBarControllerDelegate>
+@interface LCMenuViewController : UIViewController <UITableViewDataSource, UITabBarControllerDelegate>
 
 @end

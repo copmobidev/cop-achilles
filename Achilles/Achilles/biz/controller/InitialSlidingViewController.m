@@ -17,7 +17,7 @@
   
   storyboard = [UIStoryboard storyboardWithName:@"iPhone" bundle:nil];
   
-  self.topViewController = [storyboard instantiateViewControllerWithIdentifier:@"FirstTop"];
+  self.topViewController = [storyboard instantiateViewControllerWithIdentifier:@"LCHome"];
 
 
 }
