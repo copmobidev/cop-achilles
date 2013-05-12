@@ -65,7 +65,26 @@
 		C910515E173E8FFE006DB5A1 /* RegisterStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = C910515C173E8FFE006DB5A1 /* RegisterStatus.m */; };
 		C9105161173E9019006DB5A1 /* WelcomeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105160173E9019006DB5A1 /* WelcomeScrollView.m */; };
 		C9697108173F538F00D0BEB5 /* LTGlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C9697107173F538F00D0BEB5 /* LTGlobalConfig.m */; };
+		C969717B173F851700D0BEB5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C969717A173F851700D0BEB5 /* QuartzCore.framework */; };
+		C9697186173F87E100D0BEB5 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9697183173F879D00D0BEB5 /* libCorePlot-CocoaTouch.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9697182173F879D00D0BEB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C969717C173F879C00D0BEB5 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9B83470FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		C9697184173F87DE00D0BEB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C969717C173F879C00D0BEB5 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9B83460FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9B1C4B24173E58140085CA3C /* Achilles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Achilles.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +198,8 @@
 		C9105160173E9019006DB5A1 /* WelcomeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeScrollView.m; path = biz/view/WelcomeScrollView.m; sourceTree = "<group>"; };
 		C9697106173F538F00D0BEB5 /* LTGlobalConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTGlobalConfig.h; sourceTree = "<group>"; };
 		C9697107173F538F00D0BEB5 /* LTGlobalConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTGlobalConfig.m; sourceTree = "<group>"; };
+		C969717A173F851700D0BEB5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C969717C173F879C00D0BEB5 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "../../../../usr/include/CorePlot_1.2/Source/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +207,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9697186173F87E100D0BEB5 /* libCorePlot-CocoaTouch.a in Frameworks */,
+				C969717B173F851700D0BEB5 /* QuartzCore.framework in Frameworks */,
 				9B1C4BB5173E7BD10085CA3C /* libxml2.dylib in Frameworks */,
 				9B1C4BB4173E7B4A0085CA3C /* libz.dylib in Frameworks */,
 				9B1C4BB2173E7B3A0085CA3C /* MobileCoreServices.framework in Frameworks */,
@@ -203,6 +226,8 @@
 		9B1C4B1B173E58140085CA3C = {
 			isa = PBXGroup;
 			children = (
+				C969717C173F879C00D0BEB5 /* CorePlot-CocoaTouch.xcodeproj */,
+				C969717A173F851700D0BEB5 /* QuartzCore.framework */,
 				9B1C4B2D173E58140085CA3C /* Achilles */,
 				9B1C4B26173E58140085CA3C /* Frameworks */,
 				9B1C4B25173E58140085CA3C /* Products */,
@@ -469,6 +494,14 @@
 			name = logic;
 			sourceTree = "<group>";
 		};
+		C969717D173F879C00D0BEB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9697183173F879D00D0BEB5 /* libCorePlot-CocoaTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -483,6 +516,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C9697185173F87DE00D0BEB5 /* PBXTargetDependency */,
 			);
 			name = Achilles;
 			productName = Achilles;
@@ -509,12 +543,28 @@
 			mainGroup = 9B1C4B1B173E58140085CA3C;
 			productRefGroup = 9B1C4B25173E58140085CA3C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C969717D173F879C00D0BEB5 /* Products */;
+					ProjectRef = C969717C173F879C00D0BEB5 /* CorePlot-CocoaTouch.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9B1C4B23173E58140085CA3C /* Achilles */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C9697183173F879D00D0BEB5 /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = C9697182173F879D00D0BEB5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9B1C4B22173E58140085CA3C /* Resources */ = {
@@ -585,6 +635,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9697185173F87DE00D0BEB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CorePlot-CocoaTouch";
+			targetProxy = C9697184173F87DE00D0BEB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9B1C4B30173E58140085CA3C /* InfoPlist.strings */ = {
@@ -659,10 +717,16 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Achilles/Achilles-Prefix.pch";
-				HEADER_SEARCH_PATHS = /usr/include/libxml2;
-				"HEADER_SEARCH_PATHS[arch=*]" = /usr/include/libxml2;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"/usr/include/CorePlot_1.2/Source/framework/**",
+				);
 				INFOPLIST_FILE = "Achilles/Achilles-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -673,9 +737,16 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Achilles/Achilles-Prefix.pch";
-				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"/usr/include/CorePlot_1.2/Source/framework/**",
+				);
 				INFOPLIST_FILE = "Achilles/Achilles-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
