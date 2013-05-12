@@ -13,7 +13,12 @@
 @end
 
 @implementation UnderRightViewController
-@synthesize peekLeftAmount;
+
+- (id)init {
+	self = [super init];
+	self.spanArray = @[@{@"name": @"year", @"display":@"年"}, @{@"name": @"month", @"display":@"月"}, @{@"name": @"week", @"display":@"周"}, @{@"name": @"shift", @"display":@"次"}];
+	return self;
+}
 
 - (void)viewDidLoad
 {
@@ -23,32 +28,27 @@
   self.slidingViewController.underRightWidthLayout = ECVariableRevealWidth;
 }
 
-- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
-{
-  [self.slidingViewController anchorTopViewOffScreenTo:ECLeft animations:^{
-    CGRect frame = self.view.frame;
-    frame.origin.x = 0.0f;
-    if (UIInterfaceOrientationIsLandscape(self.interfaceOrientation)) {
-      frame.size.width = [UIScreen mainScreen].bounds.size.height;
-    } else if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation)) {
-      frame.size.width = [UIScreen mainScreen].bounds.size.width;
-    }
-    self.view.frame = frame;
-  } onComplete:nil];
+- (void)viewDidUnload {
+	[self setSpanPicker:nil];
+	[super viewDidUnload];
 }
 
-- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
-{
-  [self.slidingViewController anchorTopViewTo:ECLeft animations:^{
-    CGRect frame = self.view.frame;
-    frame.origin.x = self.peekLeftAmount;
-    if (UIInterfaceOrientationIsLandscape(self.interfaceOrientation)) {
-      frame.size.width = [UIScreen mainScreen].bounds.size.height - self.peekLeftAmount;
-    } else if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation)) {
-      frame.size.width = [UIScreen mainScreen].bounds.size.width - self.peekLeftAmount;
-    }
-    self.view.frame = frame;
-  } onComplete:nil];
+#pragma UIPickerViewDataSource
+
+// returns the number of 'columns' to display.
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+	return 1;
+}
+
+// returns the # of rows in each component..
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+	return self.spanArray.count;
+}
+
+#pragma UIPickerViewDelegate
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+	return [[self.spanArray objectAtIndex:row] objectForKey:@"name"];
 }
 
 @end
