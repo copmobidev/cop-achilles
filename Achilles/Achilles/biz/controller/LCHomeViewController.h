@@ -12,9 +12,21 @@
 #import "LCMenuViewController.h"
 #import "UnderRightViewController.h"
 
-@interface LCHomeViewController : UIViewController
+@interface LCHomeViewController : UIViewController<CPTPieChartDataSource>
 
+@property (nonatomic, strong) NSMutableArray *pieData;
+
+@property (nonatomic, strong) CPTXYGraph *graph;
+
+@property (nonatomic, strong) CPTGraphHostingView *hostingView;
+
+@property (nonatomic, strong) UIView *bowView;
+
+@property (weak, nonatomic) IBOutlet UIView *spanView;
+
+@property (weak, nonatomic) IBOutlet UIView *buttonView;
 - (IBAction)revealMenu:(id)sender;
+
 - (IBAction)revealUnderRight:(id)sender;
 
 @end

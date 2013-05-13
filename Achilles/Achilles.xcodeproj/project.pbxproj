@@ -67,6 +67,8 @@
 		C9697108173F538F00D0BEB5 /* LTGlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C9697107173F538F00D0BEB5 /* LTGlobalConfig.m */; };
 		C969717B173F851700D0BEB5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C969717A173F851700D0BEB5 /* QuartzCore.framework */; };
 		C96971DE173FD6BD00D0BEB5 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C96971DD173FD6BD00D0BEB5 /* libCorePlot-CocoaTouch.a */; };
+		C9AC6908174132BE00F283D0 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = C9AC6906174132BE00F283D0 /* left.png */; };
+		C9AC6909174132BE00F283D0 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = C9AC6907174132BE00F283D0 /* right.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -260,6 +262,8 @@
 		C969722A173FD71000D0BEB5 /* NSCoderExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCoderExtensions.h; sourceTree = "<group>"; };
 		C969722B173FD71000D0BEB5 /* NSDecimalNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDecimalNumberExtensions.h; sourceTree = "<group>"; };
 		C969722C173FD71000D0BEB5 /* NSNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberExtensions.h; sourceTree = "<group>"; };
+		C9AC6906174132BE00F283D0 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left.png; path = resource/left.png; sourceTree = "<group>"; };
+		C9AC6907174132BE00F283D0 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = right.png; path = resource/right.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +323,7 @@
 		9B1C4B2D173E58140085CA3C /* Achilles */ = {
 			isa = PBXGroup;
 			children = (
+				C9AC6905174132AB00F283D0 /* resource */,
 				C9105135173E8DC5006DB5A1 /* biz */,
 				9B1C4B44173E58EB0085CA3C /* core */,
 				9B1C4B53173E58EB0085CA3C /* lib */,
@@ -639,6 +644,15 @@
 			path = CorePlotHeaders;
 			sourceTree = "<group>";
 		};
+		C9AC6905174132AB00F283D0 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				C9AC6906174132BE00F283D0 /* left.png */,
+				C9AC6907174132BE00F283D0 /* right.png */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -696,6 +710,8 @@
 				9B1C4B3C173E58140085CA3C /* Default@2x.png in Resources */,
 				9B1C4B3E173E58140085CA3C /* Default-568h@2x.png in Resources */,
 				C9105155173E8FB5006DB5A1 /* iPhone.storyboard in Resources */,
+				C9AC6908174132BE00F283D0 /* left.png in Resources */,
+				C9AC6909174132BE00F283D0 /* right.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
