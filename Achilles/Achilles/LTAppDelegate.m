@@ -1,14 +1,14 @@
 //
-//  LTAppDelegate.m
+//  LCAppDelegate.m
 //  Achilles
 //
 //  Created by ChrisLiu  on 5/11/13.
 //  Copyright (c) 2013 cop-studio. All rights reserved.
 //
 
-#import "LTAppDelegate.h"
+#import "LCAppDelegate.h"
 
-@implementation LTAppDelegate
+@implementation LCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

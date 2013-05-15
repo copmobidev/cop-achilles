@@ -1,24 +1,24 @@
 //
-//  LTDataService.m
+//  LCDataService.m
 //  Peleus
 //
 //  Created by ChrisLiu  on 5/2/13.
 //  Copyright (c) 2013 cop-studio. All rights reserved.
 //
 
-#import "LTDataService.h"
+#import "LCDataService.h"
 
-@implementation LTDataService
+@implementation LCDataService
 
-static LTDataService *sharedLTDataService = nil;
+static LCDataService *sharedDataService = nil;
 
-+ (LTDataService *)sharedLTDataService {
++ (LCDataService *)sharedDataService {
 	@synchronized(self) {
-		if (sharedLTDataService == nil) {
-			sharedLTDataService = [[LTDataService alloc] init];
+		if (sharedDataService == nil) {
+			sharedDataService = [[LCDataService alloc] init];
 		}
 	}
-	return sharedLTDataService;
+	return sharedDataService;
 }
 
 - (void)getConfigWithSuccessBlock:(void (^)(NSDictionary *))success withFailBlock:(void (^)())fail {

@@ -16,11 +16,11 @@
 		9B1C4B3A173E58140085CA3C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C4B39173E58140085CA3C /* Default.png */; };
 		9B1C4B3C173E58140085CA3C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C4B3B173E58140085CA3C /* Default@2x.png */; };
 		9B1C4B3E173E58140085CA3C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C4B3D173E58140085CA3C /* Default-568h@2x.png */; };
-		9B1C4B8C173E58EC0085CA3C /* LTDataPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B47173E58EB0085CA3C /* LTDataPiece.m */; };
-		9B1C4B8D173E58EC0085CA3C /* LTDataSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B49173E58EB0085CA3C /* LTDataSummary.m */; };
-		9B1C4B8E173E58EC0085CA3C /* LTDataSpan.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B4B173E58EB0085CA3C /* LTDataSpan.m */; };
-		9B1C4B8F173E58EC0085CA3C /* LTDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B4D173E58EB0085CA3C /* LTDataService.m */; };
-		9B1C4B91173E58EC0085CA3C /* LTNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B52173E58EB0085CA3C /* LTNetworkUtil.m */; };
+		9B1C4B8C173E58EC0085CA3C /* LCDataPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B47173E58EB0085CA3C /* LCDataPiece.m */; };
+		9B1C4B8D173E58EC0085CA3C /* LCDataSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B49173E58EB0085CA3C /* LCDataSummary.m */; };
+		9B1C4B8E173E58EC0085CA3C /* LCDataSpan.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B4B173E58EB0085CA3C /* LCDataSpan.m */; };
+		9B1C4B8F173E58EC0085CA3C /* LCDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B4D173E58EB0085CA3C /* LCDataService.m */; };
+		9B1C4B91173E58EC0085CA3C /* LCNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B52173E58EB0085CA3C /* LCNetworkUtil.m */; };
 		9B1C4B92173E58EC0085CA3C /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B56173E58EB0085CA3C /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9B1C4B93173E58EC0085CA3C /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B59173E58EB0085CA3C /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9B1C4B94173E58EC0085CA3C /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B5B173E58EB0085CA3C /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -80,21 +80,21 @@
 		9B1C4B31173E58140085CA3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B1C4B33173E58140085CA3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B1C4B35173E58140085CA3C /* Achilles-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Achilles-Prefix.pch"; sourceTree = "<group>"; };
-		9B1C4B36173E58140085CA3C /* LTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTAppDelegate.h; sourceTree = "<group>"; };
+		9B1C4B36173E58140085CA3C /* LCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAppDelegate.h; sourceTree = "<group>"; };
 		9B1C4B37173E58140085CA3C /* LTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTAppDelegate.m; sourceTree = "<group>"; };
 		9B1C4B39173E58140085CA3C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		9B1C4B3B173E58140085CA3C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9B1C4B3D173E58140085CA3C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		9B1C4B46173E58EB0085CA3C /* LTDataPiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTDataPiece.h; sourceTree = "<group>"; };
-		9B1C4B47173E58EB0085CA3C /* LTDataPiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTDataPiece.m; sourceTree = "<group>"; };
-		9B1C4B48173E58EB0085CA3C /* LTDataSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTDataSummary.h; sourceTree = "<group>"; };
-		9B1C4B49173E58EB0085CA3C /* LTDataSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTDataSummary.m; sourceTree = "<group>"; };
-		9B1C4B4A173E58EB0085CA3C /* LTDataSpan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTDataSpan.h; sourceTree = "<group>"; };
-		9B1C4B4B173E58EB0085CA3C /* LTDataSpan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTDataSpan.m; sourceTree = "<group>"; };
-		9B1C4B4C173E58EB0085CA3C /* LTDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTDataService.h; sourceTree = "<group>"; };
-		9B1C4B4D173E58EB0085CA3C /* LTDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTDataService.m; sourceTree = "<group>"; };
-		9B1C4B51173E58EB0085CA3C /* LTNetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTNetworkUtil.h; sourceTree = "<group>"; };
-		9B1C4B52173E58EB0085CA3C /* LTNetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTNetworkUtil.m; sourceTree = "<group>"; };
+		9B1C4B46173E58EB0085CA3C /* LCDataPiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDataPiece.h; sourceTree = "<group>"; };
+		9B1C4B47173E58EB0085CA3C /* LCDataPiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDataPiece.m; sourceTree = "<group>"; };
+		9B1C4B48173E58EB0085CA3C /* LCDataSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDataSummary.h; sourceTree = "<group>"; };
+		9B1C4B49173E58EB0085CA3C /* LCDataSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDataSummary.m; sourceTree = "<group>"; };
+		9B1C4B4A173E58EB0085CA3C /* LCDataSpan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDataSpan.h; sourceTree = "<group>"; };
+		9B1C4B4B173E58EB0085CA3C /* LCDataSpan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDataSpan.m; sourceTree = "<group>"; };
+		9B1C4B4C173E58EB0085CA3C /* LCDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDataService.h; sourceTree = "<group>"; };
+		9B1C4B4D173E58EB0085CA3C /* LCDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDataService.m; sourceTree = "<group>"; };
+		9B1C4B51173E58EB0085CA3C /* LCNetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNetworkUtil.h; sourceTree = "<group>"; };
+		9B1C4B52173E58EB0085CA3C /* LCNetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNetworkUtil.m; sourceTree = "<group>"; };
 		9B1C4B55173E58EB0085CA3C /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		9B1C4B56173E58EB0085CA3C /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		9B1C4B57173E58EB0085CA3C /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		9B1C4B88173E58EC0085CA3C /* ASIS3ServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3ServiceRequest.m; sourceTree = "<group>"; };
 		9B1C4B8A173E58EC0085CA3C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		9B1C4B8B173E58EC0085CA3C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		9B1C4BA9173E5A9C0085CA3C /* LTConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTConfig.h; sourceTree = "<group>"; };
+		9B1C4BA9173E5A9C0085CA3C /* LCConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCConfig.h; sourceTree = "<group>"; };
 		9B1C4BAA173E5B060085CA3C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		9B1C4BAD173E7B1A0085CA3C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9B1C4BAF173E7B2E0085CA3C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -290,7 +290,6 @@
 		9B1C4B1B173E58140085CA3C = {
 			isa = PBXGroup;
 			children = (
-				C969717A173F851700D0BEB5 /* QuartzCore.framework */,
 				9B1C4B2D173E58140085CA3C /* Achilles */,
 				9B1C4B26173E58140085CA3C /* Frameworks */,
 				9B1C4B25173E58140085CA3C /* Products */,
@@ -310,6 +309,7 @@
 			children = (
 				9B1C4BB3173E7B4A0085CA3C /* libz.dylib */,
 				9B1C4BAA173E5B060085CA3C /* libxml2.dylib */,
+				C969717A173F851700D0BEB5 /* QuartzCore.framework */,
 				9B1C4BB1173E7B3A0085CA3C /* MobileCoreServices.framework */,
 				9B1C4BAF173E7B2E0085CA3C /* SystemConfiguration.framework */,
 				9B1C4BAD173E7B1A0085CA3C /* CFNetwork.framework */,
@@ -323,13 +323,13 @@
 		9B1C4B2D173E58140085CA3C /* Achilles */ = {
 			isa = PBXGroup;
 			children = (
-				C9AC6905174132AB00F283D0 /* resource */,
 				C9105135173E8DC5006DB5A1 /* biz */,
 				9B1C4B44173E58EB0085CA3C /* core */,
+				C9AC6905174132AB00F283D0 /* resource */,
 				9B1C4B53173E58EB0085CA3C /* lib */,
 				9B1C4B2E173E58140085CA3C /* Supporting Files */,
-				9B1C4BA9173E5A9C0085CA3C /* LTConfig.h */,
-				9B1C4B36173E58140085CA3C /* LTAppDelegate.h */,
+				9B1C4BA9173E5A9C0085CA3C /* LCConfig.h */,
+				9B1C4B36173E58140085CA3C /* LCAppDelegate.h */,
 				9B1C4B37173E58140085CA3C /* LTAppDelegate.m */,
 				C9105154173E8FB5006DB5A1 /* iPhone.storyboard */,
 			);
@@ -353,8 +353,8 @@
 		9B1C4B44173E58EB0085CA3C /* core */ = {
 			isa = PBXGroup;
 			children = (
-				9B1C4B4C173E58EB0085CA3C /* LTDataService.h */,
-				9B1C4B4D173E58EB0085CA3C /* LTDataService.m */,
+				9B1C4B4C173E58EB0085CA3C /* LCDataService.h */,
+				9B1C4B4D173E58EB0085CA3C /* LCDataService.m */,
 				9B1C4B45173E58EB0085CA3C /* entity */,
 				9B1C4B50173E58EB0085CA3C /* util */,
 			);
@@ -364,12 +364,12 @@
 		9B1C4B45173E58EB0085CA3C /* entity */ = {
 			isa = PBXGroup;
 			children = (
-				9B1C4B46173E58EB0085CA3C /* LTDataPiece.h */,
-				9B1C4B47173E58EB0085CA3C /* LTDataPiece.m */,
-				9B1C4B48173E58EB0085CA3C /* LTDataSummary.h */,
-				9B1C4B49173E58EB0085CA3C /* LTDataSummary.m */,
-				9B1C4B4A173E58EB0085CA3C /* LTDataSpan.h */,
-				9B1C4B4B173E58EB0085CA3C /* LTDataSpan.m */,
+				9B1C4B46173E58EB0085CA3C /* LCDataPiece.h */,
+				9B1C4B47173E58EB0085CA3C /* LCDataPiece.m */,
+				9B1C4B48173E58EB0085CA3C /* LCDataSummary.h */,
+				9B1C4B49173E58EB0085CA3C /* LCDataSummary.m */,
+				9B1C4B4A173E58EB0085CA3C /* LCDataSpan.h */,
+				9B1C4B4B173E58EB0085CA3C /* LCDataSpan.m */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -377,8 +377,8 @@
 		9B1C4B50173E58EB0085CA3C /* util */ = {
 			isa = PBXGroup;
 			children = (
-				9B1C4B51173E58EB0085CA3C /* LTNetworkUtil.h */,
-				9B1C4B52173E58EB0085CA3C /* LTNetworkUtil.m */,
+				9B1C4B51173E58EB0085CA3C /* LCNetworkUtil.h */,
+				9B1C4B52173E58EB0085CA3C /* LCNetworkUtil.m */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -386,8 +386,8 @@
 		9B1C4B53173E58EB0085CA3C /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				C96971DF173FD71000D0BEB5 /* CorePlotHeaders */,
 				C96971DD173FD6BD00D0BEB5 /* libCorePlot-CocoaTouch.a */,
+				C96971DF173FD71000D0BEB5 /* CorePlotHeaders */,
 				9B1C4BBF173E80AC0085CA3C /* ECSlidingViewController */,
 				9B1C4B54173E58EB0085CA3C /* ASIHttpRequest */,
 				9B1C4B89173E58EC0085CA3C /* Reachability */,
@@ -724,11 +724,11 @@
 			files = (
 				9B1C4B34173E58140085CA3C /* main.m in Sources */,
 				9B1C4B38173E58140085CA3C /* LTAppDelegate.m in Sources */,
-				9B1C4B8C173E58EC0085CA3C /* LTDataPiece.m in Sources */,
-				9B1C4B8D173E58EC0085CA3C /* LTDataSummary.m in Sources */,
-				9B1C4B8E173E58EC0085CA3C /* LTDataSpan.m in Sources */,
-				9B1C4B8F173E58EC0085CA3C /* LTDataService.m in Sources */,
-				9B1C4B91173E58EC0085CA3C /* LTNetworkUtil.m in Sources */,
+				9B1C4B8C173E58EC0085CA3C /* LCDataPiece.m in Sources */,
+				9B1C4B8D173E58EC0085CA3C /* LCDataSummary.m in Sources */,
+				9B1C4B8E173E58EC0085CA3C /* LCDataSpan.m in Sources */,
+				9B1C4B8F173E58EC0085CA3C /* LCDataService.m in Sources */,
+				9B1C4B91173E58EC0085CA3C /* LCNetworkUtil.m in Sources */,
 				9B1C4B92173E58EC0085CA3C /* ASIAuthenticationDialog.m in Sources */,
 				9B1C4B93173E58EC0085CA3C /* ASIDataCompressor.m in Sources */,
 				9B1C4B94173E58EC0085CA3C /* ASIDataDecompressor.m in Sources */,

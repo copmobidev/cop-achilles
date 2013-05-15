@@ -1,5 +1,5 @@
 //
-//  LTDataService.h
+//  LCDataService.h
 //  Peleus
 //
 //  Created by ChrisLiu  on 5/2/13.
@@ -20,8 +20,9 @@ typedef enum {
 } Span; // 统计跨度
 
 
-@interface LTDataService : NSObject
-+ (LTDataService *)sharedLTDataService;
+@interface LCDataService : NSObject
+
++ (LCDataService *)sharedDataService;
 
 - (NSDictionary* )getActionsBy:(Span)span from:(long)beginTime to:(long)endTime;
 

@@ -8,13 +8,13 @@
 
 #import "LTGlobalConfig.h"
 
-@implementation LTGlobalConfig
-static LTGlobalConfig *sharedGlobalConfig = nil;
+@implementation LCGlobalConfig
+static LCGlobalConfig *sharedGlobalConfig = nil;
 
-+ (LTGlobalConfig *)sharedGlobalConfig {
++ (LCGlobalConfig *)sharedGlobalConfig {
 	@synchronized(self) {
 		if (sharedGlobalConfig == nil) {
-			sharedGlobalConfig = [[LTGlobalConfig alloc] init];
+			sharedGlobalConfig = [[LCGlobalConfig alloc] init];
 		}
 	}
 	return sharedGlobalConfig;
