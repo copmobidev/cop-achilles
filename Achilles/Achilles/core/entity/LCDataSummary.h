@@ -1,5 +1,5 @@
 //
-//  LTDataSummary.h
+//  LCDataSummary.h
 //  Peleus
 //
 //  Created by ChrisLiu  on 5/2/13.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LTDataSummary : NSObject
+@interface LCDataSummary : NSObject
 
 @end

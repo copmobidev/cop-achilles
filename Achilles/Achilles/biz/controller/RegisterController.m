@@ -8,7 +8,7 @@
 
 #import "RegisterController.h"
 #import "WelcomeScrollView.h"
-#import "LTDataService.h"
+#import "LCDataService.h"
 #import "LTGlobalConfig.h"
 
 @interface RegisterController()
@@ -60,8 +60,8 @@
 
 - (void)getConfig {
 	
-	[[LTDataService sharedLTDataService] getConfigWithSuccessBlock:^(NSDictionary *configDictionary){
-		[[LTGlobalConfig sharedGlobalConfig] setConfigDictionary:configDictionary];
+	[[LCDataService sharedDataService] getConfigWithSuccessBlock:^(NSDictionary *configDictionary){
+		[[LCGlobalConfig sharedGlobalConfig] setConfigDictionary:configDictionary];
 		[self dismiss];
 	} withFailBlock:^(){
 		//alert

@@ -1,5 +1,5 @@
 //
-//  LTConfig.h
+//  LCConfig.h
 //  Achilles
 //
 //  Created by ChrisLiu  on 5/11/13.

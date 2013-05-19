@@ -1,15 +1,15 @@
 //
-//  LTDataPiece.m
+//  LCDataPiece.m
 //  Peleus
 //
 //  Created by ChrisLiu  on 5/2/13.
 //  Copyright (c) 2013 cop-studio. All rights reserved.
 //
 
-#import "LTDataPiece.h"
+#import "LCDataPiece.h"
 
 
-@implementation LTDataPiece
+@implementation LCDataPiece
 
 
 - (id) initWith:(double) oilCost avgSpeed:(double)avgSpeed wTemp:(double)wTemp

@@ -1,22 +1,22 @@
 //
-//  LTNetworkUtil.m
+//  LCNetworkUtil.m
 //  Peleus
 //
 //  Created by ChrisLiu  on 5/11/13.
 //  Copyright (c) 2013 cop-studio. All rights reserved.
 //
 
-#import "LTNetworkUtil.h"
-#import "LTConfig.h"
+#import "LCNetworkUtil.h"
+#import "LCConfig.h"
 #import "Reachability.h"
 
-@implementation LTNetworkUtil
+@implementation LCNetworkUtil
 
 /**
  * 判断当前网络连接状况
  *
  */
-+ (LTNetworkState)networkState
++ (LCNetworkState)networkState
 {
     Reachability *bizReach = [Reachability reachabilityWithHostName:COP_BIZ_SERVER];
     Reachability *obdReach = [Reachability reachabilityWithHostName:COP_OBD_SERVER];

@@ -1,5 +1,5 @@
 //
-//  LTDataPiece.h
+//  LCDataPiece.h
 //  Peleus
 //
 //  Created by ChrisLiu  on 5/2/13.
@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LTDataService.h"
+#import "LCDataService.h"
 
-@interface LTDataPiece : NSObject
+@interface LCDataPiece : NSObject
 {
     Span span;
     int zeroTime;

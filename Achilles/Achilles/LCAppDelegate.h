@@ -1,5 +1,5 @@
 //
-//  LTAppDelegate.h
+//  LCAppDelegate.h
 //  Achilles
 //
 //  Created by ChrisLiu  on 5/11/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LTAppDelegate : UIResponder <UIApplicationDelegate>
+@interface LCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

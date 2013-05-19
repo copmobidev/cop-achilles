@@ -1,5 +1,5 @@
 //
-//  LTDataSpan.h
+//  LCDataSpan.h
 //  Peleus
 //
 //  Created by ChrisLiu  on 5/11/13.
@@ -17,6 +17,6 @@ typedef enum
     YEAR
 } Span;
 
-@interface LTDataSpan : NSObject
+@interface LCDataSpan : NSObject
 
 @end

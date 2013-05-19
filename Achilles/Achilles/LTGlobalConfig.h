@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LTGlobalConfig : NSObject
+@interface LCGlobalConfig : NSObject
 @property (nonatomic, strong) NSDictionary *configDictionary;
 
-+ (LTGlobalConfig *)sharedGlobalConfig;
++ (LCGlobalConfig *)sharedGlobalConfig;
 @end
