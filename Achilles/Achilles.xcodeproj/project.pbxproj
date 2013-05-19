@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B05653D1743C74D0032458E /* LCTimestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B05653C1743C74D0032458E /* LCTimestamp.m */; };
 		9B1C4B28173E58140085CA3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1C4B27173E58140085CA3C /* UIKit.framework */; };
 		9B1C4B2A173E58140085CA3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1C4B29173E58140085CA3C /* Foundation.framework */; };
 		9B1C4B2C173E58140085CA3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1C4B2B173E58140085CA3C /* CoreGraphics.framework */; };
@@ -18,7 +19,6 @@
 		9B1C4B3E173E58140085CA3C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C4B3D173E58140085CA3C /* Default-568h@2x.png */; };
 		9B1C4B8C173E58EC0085CA3C /* LCDataPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B47173E58EB0085CA3C /* LCDataPiece.m */; };
 		9B1C4B8D173E58EC0085CA3C /* LCDataSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B49173E58EB0085CA3C /* LCDataSummary.m */; };
-		9B1C4B8E173E58EC0085CA3C /* LCDataSpan.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B4B173E58EB0085CA3C /* LCDataSpan.m */; };
 		9B1C4B8F173E58EC0085CA3C /* LCDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B4D173E58EB0085CA3C /* LCDataService.m */; };
 		9B1C4B91173E58EC0085CA3C /* LCNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B52173E58EB0085CA3C /* LCNetworkUtil.m */; };
 		9B1C4B92173E58EC0085CA3C /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B56173E58EB0085CA3C /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -51,6 +51,8 @@
 		9B1C4BB5173E7BD10085CA3C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1C4BAA173E5B060085CA3C /* libxml2.dylib */; };
 		9B1C4BC4173E80AD0085CA3C /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4BC1173E80AD0085CA3C /* ECSlidingViewController.m */; };
 		9B1C4BC5173E80AD0085CA3C /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4BC3173E80AD0085CA3C /* UIImage+ImageWithUIView.m */; };
+		9BBF09FC1744EE650067D49C /* LCEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF09FB1744EE650067D49C /* LCEnvironment.m */; };
+		9BBF0A021744F2A00067D49C /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF0A011744F2A00067D49C /* UIDevice+IdentifierAddition.m */; };
 		C910513E173E8EFC006DB5A1 /* InitialSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C910513D173E8EFC006DB5A1 /* InitialSlidingViewController.m */; };
 		C9105141173E8F1A006DB5A1 /* LCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105140173E8F1A006DB5A1 /* LCHomeViewController.m */; };
 		C9105144173E8F2D006DB5A1 /* LCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105143173E8F2D006DB5A1 /* LCMenuViewController.m */; };
@@ -72,6 +74,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B05653B1743C74D0032458E /* LCTimestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTimestamp.h; sourceTree = "<group>"; };
+		9B05653C1743C74D0032458E /* LCTimestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTimestamp.m; sourceTree = "<group>"; };
 		9B1C4B24173E58140085CA3C /* Achilles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Achilles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1C4B27173E58140085CA3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B1C4B29173E58140085CA3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,8 +93,6 @@
 		9B1C4B47173E58EB0085CA3C /* LCDataPiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDataPiece.m; sourceTree = "<group>"; };
 		9B1C4B48173E58EB0085CA3C /* LCDataSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDataSummary.h; sourceTree = "<group>"; };
 		9B1C4B49173E58EB0085CA3C /* LCDataSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDataSummary.m; sourceTree = "<group>"; };
-		9B1C4B4A173E58EB0085CA3C /* LCDataSpan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDataSpan.h; sourceTree = "<group>"; };
-		9B1C4B4B173E58EB0085CA3C /* LCDataSpan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDataSpan.m; sourceTree = "<group>"; };
 		9B1C4B4C173E58EB0085CA3C /* LCDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDataService.h; sourceTree = "<group>"; };
 		9B1C4B4D173E58EB0085CA3C /* LCDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDataService.m; sourceTree = "<group>"; };
 		9B1C4B51173E58EB0085CA3C /* LCNetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNetworkUtil.h; sourceTree = "<group>"; };
@@ -156,6 +158,11 @@
 		9B1C4BC1173E80AD0085CA3C /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
 		9B1C4BC2173E80AD0085CA3C /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
 		9B1C4BC3173E80AD0085CA3C /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
+		9BBF09FA1744EE650067D49C /* LCEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCEnvironment.h; sourceTree = "<group>"; };
+		9BBF09FB1744EE650067D49C /* LCEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCEnvironment.m; sourceTree = "<group>"; };
+		9BBF0A001744F2A00067D49C /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		9BBF0A011744F2A00067D49C /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		9BE54E151748870F0084058D /* LCDataServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDataServiceDelegate.h; sourceTree = "<group>"; };
 		C910513C173E8EFC006DB5A1 /* InitialSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InitialSlidingViewController.h; path = biz/controller/InitialSlidingViewController.h; sourceTree = "<group>"; };
 		C910513D173E8EFC006DB5A1 /* InitialSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InitialSlidingViewController.m; path = biz/controller/InitialSlidingViewController.m; sourceTree = "<group>"; };
 		C910513F173E8F1A006DB5A1 /* LCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCHomeViewController.h; path = biz/controller/LCHomeViewController.h; sourceTree = "<group>"; };
@@ -353,6 +360,9 @@
 		9B1C4B44173E58EB0085CA3C /* core */ = {
 			isa = PBXGroup;
 			children = (
+				9BBF09FA1744EE650067D49C /* LCEnvironment.h */,
+				9BBF09FB1744EE650067D49C /* LCEnvironment.m */,
+				9BE54E151748870F0084058D /* LCDataServiceDelegate.h */,
 				9B1C4B4C173E58EB0085CA3C /* LCDataService.h */,
 				9B1C4B4D173E58EB0085CA3C /* LCDataService.m */,
 				9B1C4B45173E58EB0085CA3C /* entity */,
@@ -368,8 +378,8 @@
 				9B1C4B47173E58EB0085CA3C /* LCDataPiece.m */,
 				9B1C4B48173E58EB0085CA3C /* LCDataSummary.h */,
 				9B1C4B49173E58EB0085CA3C /* LCDataSummary.m */,
-				9B1C4B4A173E58EB0085CA3C /* LCDataSpan.h */,
-				9B1C4B4B173E58EB0085CA3C /* LCDataSpan.m */,
+				9B05653B1743C74D0032458E /* LCTimestamp.h */,
+				9B05653C1743C74D0032458E /* LCTimestamp.m */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -379,6 +389,8 @@
 			children = (
 				9B1C4B51173E58EB0085CA3C /* LCNetworkUtil.h */,
 				9B1C4B52173E58EB0085CA3C /* LCNetworkUtil.m */,
+				9BBF0A001744F2A00067D49C /* UIDevice+IdentifierAddition.h */,
+				9BBF0A011744F2A00067D49C /* UIDevice+IdentifierAddition.m */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -726,7 +738,6 @@
 				9B1C4B38173E58140085CA3C /* LCAppDelegate.m in Sources */,
 				9B1C4B8C173E58EC0085CA3C /* LCDataPiece.m in Sources */,
 				9B1C4B8D173E58EC0085CA3C /* LCDataSummary.m in Sources */,
-				9B1C4B8E173E58EC0085CA3C /* LCDataSpan.m in Sources */,
 				9B1C4B8F173E58EC0085CA3C /* LCDataService.m in Sources */,
 				9B1C4B91173E58EC0085CA3C /* LCNetworkUtil.m in Sources */,
 				9B1C4B92173E58EC0085CA3C /* ASIAuthenticationDialog.m in Sources */,
@@ -767,6 +778,9 @@
 				C910515E173E8FFE006DB5A1 /* RegisterStatus.m in Sources */,
 				C9105161173E9019006DB5A1 /* WelcomeScrollView.m in Sources */,
 				C9697108173F538F00D0BEB5 /* LTGlobalConfig.m in Sources */,
+				9B05653D1743C74D0032458E /* LCTimestamp.m in Sources */,
+				9BBF09FC1744EE650067D49C /* LCEnvironment.m in Sources */,
+				9BBF0A021744F2A00067D49C /* UIDevice+IdentifierAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,6 +868,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Achilles/lib\"",
+					"\"$(SDKROOT)/usr/lib/system\"",
 				);
 				OTHER_LDFLAGS = (
 					"-Objc",
@@ -876,6 +891,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Achilles/lib\"",
+					"\"$(SDKROOT)/usr/lib/system\"",
 				);
 				OTHER_LDFLAGS = (
 					"-Objc",

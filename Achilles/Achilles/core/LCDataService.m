@@ -7,21 +7,27 @@
 //
 
 #import "LCDataService.h"
+#import "LCTimestamp.h"
 
 @implementation LCDataService
 
 static LCDataService *sharedDataService = nil;
 
-+ (LCDataService *)sharedDataService {
-	@synchronized(self) {
-		if (sharedDataService == nil) {
++ (LCDataService *)sharedDataService
+{
+	@synchronized(self)
+    {
+		if (sharedDataService == nil)
+        {
 			sharedDataService = [[LCDataService alloc] init];
 		}
 	}
 	return sharedDataService;
 }
 
-- (void)getConfigWithSuccessBlock:(void (^)(NSDictionary *))success withFailBlock:(void (^)())fail {
+- (void)getConfigWithSuccessBlock:(void (^)(NSDictionary *))success
+                    withFailBlock:(void (^)())fail
+{
 //	fail();
 	success(@{@"obd":@"xxxx", @"sid":@"xx11", @"indicator":@0});
 }
@@ -31,14 +37,10 @@ static LCDataService *sharedDataService = nil;
 // 2.每月、日平均/最佳油耗统计
 // 3.每月、日平均速度统计
 // 4.每月、日最佳温度统计
-- (NSDictionary* )getActionsBy:(Span)span from:(long)beginTime to:(long)endTime
-{
-    NSDate* beginDate = [NSDate dateWithTimeIntervalSince1970:beginTime];
-    NSDate* endDate = [NSDate dateWithTimeIntervalSince1970:endTime];
-    
-    switch (span) {
+- (NSDictionary* )getDrivingDataWithSpan:(LCTimestamp* )timestamp
+{    
+    switch ([timestamp span]) {
         case YEAR:
-            
             break;
         case MONTH:
             break;
@@ -51,63 +53,6 @@ static LCDataService *sharedDataService = nil;
     }
     return nil;
 }
-
-- (NSDictionary* )getOilCostBy:(Span)span from:(long)beginTime to:(long)endTime
-{
-    switch (span) {
-        case YEAR:
-            
-            break;
-        case MONTH:
-            break;
-        case WEEK:
-            break;
-        case TRACK:
-            break;
-        default:
-            break;
-    }
-    return nil;
-}
-
-- (NSDictionary* )getSpeedBy:(Span)span from:(long)beginTime to:(long)endTime
-{
-    switch (span) {
-        case YEAR:
-            
-            break;
-        case MONTH:
-            break;
-        case WEEK:
-            break;
-        case TRACK:
-            break;
-        default:
-            break;
-    }
-    return nil;
-}
-
-- (NSDictionary* )getTempBy:(Span)span from:(long)beginTime to:(long)endTime
-{
-    switch (span) {
-        case YEAR:
-            
-            break;
-        case MONTH:
-            break;
-        case WEEK:
-            break;
-        case TRACK:
-            break;
-        default:
-            break;
-    }
-    
-    return nil;
-}
-
-
 
 //
 // 解析原始数据
@@ -115,7 +60,7 @@ static LCDataService *sharedDataService = nil;
 // 1.单次行程summary数据
 // 2.单次行程分析后取得的各个时间片上的统计数据，主要包括各个时间点上的平均油耗、
 //
-- (NSDictionary* )parseOriginData:(NSString*) originData
+- (NSDictionary* )parseOriginData:(NSString* )originData
 {
     return nil;
 }
