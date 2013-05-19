@@ -11,7 +11,6 @@
 
 @interface LCDataPiece : NSObject
 {
-    Span span;
     int zeroTime;
     int lowTime;
     int midTime;
