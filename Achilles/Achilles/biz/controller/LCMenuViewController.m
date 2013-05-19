@@ -17,7 +17,7 @@
 
 - (void)awakeFromNib
 {
-  self.menuItems = [NSArray arrayWithObjects:@"Home", @"Route", @"Driving", @"Navigation", nil];
+  self.menuItems = [NSArray arrayWithObjects:@"Home", @"Route", @"Driving", @"Consume", @"Bill", @"Diagnose",  @"Navigation", nil];
 }
 
 - (void)viewDidLoad

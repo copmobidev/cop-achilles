@@ -82,4 +82,11 @@
   NSLog(@"top did reset");
 }
 
+#pragma mark - UIViewController
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
+}
+
+
 @end

@@ -10,6 +10,21 @@
 #import "ECSlidingViewController.h"
 #import "LCMenuViewController.h"
 
-@interface LCRouteViewController : UIViewController
+@interface LCRouteViewController : UIViewController<CPTPlotDataSource>
+
+/*Data*/
+@property (nonatomic, strong) NSMutableArray *pieData;
+
+/*Plot*/
+@property (nonatomic, strong) CPTBarPlot *speedBarPlot;
+@property (nonatomic, strong) CPTScatterPlot *oilScatterPlot;
+@property (nonatomic, strong) CPTPieChart *pieChart;
+
+/*HostingView*/
+@property (weak, nonatomic) IBOutlet CPTGraphHostingView *MainHostingView;
+@property (weak, nonatomic) IBOutlet CPTGraphHostingView *PieHostingView;
+
+/*Action in Controller*/
 - (IBAction)revealMenu:(id)sender;
+
 @end

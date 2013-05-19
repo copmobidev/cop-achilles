@@ -67,6 +67,16 @@
 		C9697108173F538F00D0BEB5 /* LTGlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C9697107173F538F00D0BEB5 /* LTGlobalConfig.m */; };
 		C969717B173F851700D0BEB5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C969717A173F851700D0BEB5 /* QuartzCore.framework */; };
 		C96971DE173FD6BD00D0BEB5 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C96971DD173FD6BD00D0BEB5 /* libCorePlot-CocoaTouch.a */; };
+		C9705DC51743DAE900E991E5 /* CPDStockPriceStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C9705DC41743DAE900E991E5 /* CPDStockPriceStore.m */; };
+		C9705DC817446BC700E991E5 /* CPDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C9705DC717446BC700E991E5 /* CPDConstants.m */; };
+		C9705DCA1746851E00E991E5 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = C9705DC91746851E00E991E5 /* car.png */; };
+		C9705DD1174770BE00E991E5 /* LCProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C9705DD0174770BE00E991E5 /* LCProvider.m */; };
+		C9705DD41747717100E991E5 /* LCPlotProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C9705DD31747717100E991E5 /* LCPlotProvider.m */; };
+		C9705DD71747C12000E991E5 /* LCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9705DD61747C11F00E991E5 /* LCBaseViewController.m */; };
+		C9705DDA1747C15600E991E5 /* LCBizController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9705DD91747C15600E991E5 /* LCBizController.m */; };
+		C9705DDF1748444600E991E5 /* LCConsumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9705DDE1748444600E991E5 /* LCConsumeViewController.m */; };
+		C9705DE21748446700E991E5 /* LCBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9705DE11748446600E991E5 /* LCBillViewController.m */; };
+		C9705DE5174848A900E991E5 /* LCDiagnoseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9705DE4174848A700E991E5 /* LCDiagnoseViewController.m */; };
 		C9AC6908174132BE00F283D0 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = C9AC6906174132BE00F283D0 /* left.png */; };
 		C9AC6909174132BE00F283D0 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = C9AC6907174132BE00F283D0 /* right.png */; };
 /* End PBXBuildFile section */
@@ -262,6 +272,26 @@
 		C969722A173FD71000D0BEB5 /* NSCoderExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCoderExtensions.h; sourceTree = "<group>"; };
 		C969722B173FD71000D0BEB5 /* NSDecimalNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDecimalNumberExtensions.h; sourceTree = "<group>"; };
 		C969722C173FD71000D0BEB5 /* NSNumberExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNumberExtensions.h; sourceTree = "<group>"; };
+		C9705DC31743DAE900E991E5 /* CPDStockPriceStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPDStockPriceStore.h; path = starter/CPDStockPriceStore.h; sourceTree = "<group>"; };
+		C9705DC41743DAE900E991E5 /* CPDStockPriceStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPDStockPriceStore.m; path = starter/CPDStockPriceStore.m; sourceTree = "<group>"; };
+		C9705DC617446BC700E991E5 /* CPDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPDConstants.h; path = starter/CPDConstants.h; sourceTree = "<group>"; };
+		C9705DC717446BC700E991E5 /* CPDConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPDConstants.m; path = starter/CPDConstants.m; sourceTree = "<group>"; };
+		C9705DC91746851E00E991E5 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		C9705DCF174770BE00E991E5 /* LCProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCProvider.h; path = biz/provider/LCProvider.h; sourceTree = "<group>"; };
+		C9705DD0174770BE00E991E5 /* LCProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCProvider.m; path = biz/provider/LCProvider.m; sourceTree = "<group>"; };
+		C9705DD21747717000E991E5 /* LCPlotProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCPlotProvider.h; path = biz/provider/LCPlotProvider.h; sourceTree = "<group>"; };
+		C9705DD31747717100E991E5 /* LCPlotProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCPlotProvider.m; path = biz/provider/LCPlotProvider.m; sourceTree = "<group>"; };
+		C9705DD51747C11E00E991E5 /* LCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBaseViewController.h; path = biz/controller/LCBaseViewController.h; sourceTree = "<group>"; };
+		C9705DD61747C11F00E991E5 /* LCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBaseViewController.m; path = biz/controller/LCBaseViewController.m; sourceTree = "<group>"; };
+		C9705DD81747C15500E991E5 /* LCBizController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBizController.h; path = biz/controller/LCBizController.h; sourceTree = "<group>"; };
+		C9705DD91747C15600E991E5 /* LCBizController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBizController.m; path = biz/controller/LCBizController.m; sourceTree = "<group>"; };
+		C9705DDC1747C5F700E991E5 /* LCBiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBiz.h; path = starter/LCBiz.h; sourceTree = "<group>"; };
+		C9705DDD1748444500E991E5 /* LCConsumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCConsumeViewController.h; path = biz/controller/LCConsumeViewController.h; sourceTree = "<group>"; };
+		C9705DDE1748444600E991E5 /* LCConsumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCConsumeViewController.m; path = biz/controller/LCConsumeViewController.m; sourceTree = "<group>"; };
+		C9705DE01748446600E991E5 /* LCBillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBillViewController.h; path = biz/controller/LCBillViewController.h; sourceTree = "<group>"; };
+		C9705DE11748446600E991E5 /* LCBillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBillViewController.m; path = biz/controller/LCBillViewController.m; sourceTree = "<group>"; };
+		C9705DE3174848A600E991E5 /* LCDiagnoseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCDiagnoseViewController.h; path = biz/controller/LCDiagnoseViewController.h; sourceTree = "<group>"; };
+		C9705DE4174848A700E991E5 /* LCDiagnoseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCDiagnoseViewController.m; path = biz/controller/LCDiagnoseViewController.m; sourceTree = "<group>"; };
 		C9AC6906174132BE00F283D0 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left.png; path = resource/left.png; sourceTree = "<group>"; };
 		C9AC6907174132BE00F283D0 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = right.png; path = resource/right.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -324,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				C9AC6905174132AB00F283D0 /* resource */,
+				C9705DC21743DAD300E991E5 /* starter */,
 				C9105135173E8DC5006DB5A1 /* biz */,
 				9B1C4B44173E58EB0085CA3C /* core */,
 				9B1C4B53173E58EB0085CA3C /* lib */,
@@ -501,6 +532,7 @@
 				C9105139173E8E39006DB5A1 /* logic */,
 				C9105138173E8E31006DB5A1 /* view */,
 				C9105137173E8E2B006DB5A1 /* model */,
+				C9705DCB17476FF600E991E5 /* provider */,
 				C9105136173E8DF8006DB5A1 /* controller */,
 			);
 			name = biz;
@@ -521,12 +553,22 @@
 				C9105146173E8F3B006DB5A1 /* LCRouteViewController.m */,
 				C9105148173E8F4A006DB5A1 /* LCDrivingViewController.h */,
 				C9105149173E8F4A006DB5A1 /* LCDrivingViewController.m */,
+				C9705DDD1748444500E991E5 /* LCConsumeViewController.h */,
+				C9705DDE1748444600E991E5 /* LCConsumeViewController.m */,
+				C9705DE01748446600E991E5 /* LCBillViewController.h */,
+				C9705DE11748446600E991E5 /* LCBillViewController.m */,
+				C9705DE3174848A600E991E5 /* LCDiagnoseViewController.h */,
+				C9705DE4174848A700E991E5 /* LCDiagnoseViewController.m */,
 				C910514B173E8F58006DB5A1 /* LCNavigationViewController.h */,
 				C910514C173E8F58006DB5A1 /* LCNavigationViewController.m */,
 				C910514E173E8F67006DB5A1 /* SampleTableViewController.h */,
 				C910514F173E8F67006DB5A1 /* SampleTableViewController.m */,
 				C9105151173E8F75006DB5A1 /* UnderRightViewController.h */,
 				C9105152173E8F75006DB5A1 /* UnderRightViewController.m */,
+				C9705DD51747C11E00E991E5 /* LCBaseViewController.h */,
+				C9705DD61747C11F00E991E5 /* LCBaseViewController.m */,
+				C9705DD81747C15500E991E5 /* LCBizController.h */,
+				C9705DD91747C15600E991E5 /* LCBizController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -644,9 +686,33 @@
 			path = CorePlotHeaders;
 			sourceTree = "<group>";
 		};
+		C9705DC21743DAD300E991E5 /* starter */ = {
+			isa = PBXGroup;
+			children = (
+				C9705DC617446BC700E991E5 /* CPDConstants.h */,
+				C9705DC717446BC700E991E5 /* CPDConstants.m */,
+				C9705DC31743DAE900E991E5 /* CPDStockPriceStore.h */,
+				C9705DC41743DAE900E991E5 /* CPDStockPriceStore.m */,
+				C9705DDC1747C5F700E991E5 /* LCBiz.h */,
+			);
+			name = starter;
+			sourceTree = "<group>";
+		};
+		C9705DCB17476FF600E991E5 /* provider */ = {
+			isa = PBXGroup;
+			children = (
+				C9705DCF174770BE00E991E5 /* LCProvider.h */,
+				C9705DD0174770BE00E991E5 /* LCProvider.m */,
+				C9705DD21747717000E991E5 /* LCPlotProvider.h */,
+				C9705DD31747717100E991E5 /* LCPlotProvider.m */,
+			);
+			name = provider;
+			sourceTree = "<group>";
+		};
 		C9AC6905174132AB00F283D0 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				C9705DC91746851E00E991E5 /* car.png */,
 				C9AC6906174132BE00F283D0 /* left.png */,
 				C9AC6907174132BE00F283D0 /* right.png */,
 			);
@@ -712,6 +778,7 @@
 				C9105155173E8FB5006DB5A1 /* iPhone.storyboard in Resources */,
 				C9AC6908174132BE00F283D0 /* left.png in Resources */,
 				C9AC6909174132BE00F283D0 /* right.png in Resources */,
+				C9705DCA1746851E00E991E5 /* car.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +834,15 @@
 				C910515E173E8FFE006DB5A1 /* RegisterStatus.m in Sources */,
 				C9105161173E9019006DB5A1 /* WelcomeScrollView.m in Sources */,
 				C9697108173F538F00D0BEB5 /* LTGlobalConfig.m in Sources */,
+				C9705DC51743DAE900E991E5 /* CPDStockPriceStore.m in Sources */,
+				C9705DC817446BC700E991E5 /* CPDConstants.m in Sources */,
+				C9705DD1174770BE00E991E5 /* LCProvider.m in Sources */,
+				C9705DD41747717100E991E5 /* LCPlotProvider.m in Sources */,
+				C9705DD71747C12000E991E5 /* LCBaseViewController.m in Sources */,
+				C9705DDA1747C15600E991E5 /* LCBizController.m in Sources */,
+				C9705DDF1748444600E991E5 /* LCConsumeViewController.m in Sources */,
+				C9705DE21748446700E991E5 /* LCBillViewController.m in Sources */,
+				C9705DE5174848A900E991E5 /* LCDiagnoseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -61,7 +61,9 @@
 	piePlot.sliceDirection = CPTPieDirectionCounterClockwise;
 	
 	//load the data for the Pie Chart,change it to lazy load
+	
 	NSLog(@"%f, %f", self.graph.frame.size.width, piePlot.frame.size.width);
+	
 	//add the Pie Chart to the graph
 	[self.graph addPlot:piePlot];
 	
@@ -72,14 +74,14 @@
 //	self.graph.titleDisplacement = CGPointMake(0.0f, -60.0f);
 	
 	// 1 - Get graph instance
-	CPTGraph *graph = self.graph;
-	// 2 - Create legend
-	CPTLegend *theLegend = [CPTLegend legendWithGraph:graph];
-	// 3 - Configure legend
-	theLegend.numberOfColumns = 1;
-	theLegend.fill = [CPTFill fillWithColor:[CPTColor whiteColor]];
-	theLegend.borderLineStyle = [CPTLineStyle lineStyle];
-	theLegend.cornerRadius = 5.0;
+//	CPTGraph *graph = self.graph;
+//	// 2 - Create legend
+//	CPTLegend *theLegend = [CPTLegend legendWithGraph:graph];
+//	// 3 - Configure legend
+//	theLegend.numberOfColumns = 1;
+//	theLegend.fill = [CPTFill fillWithColor:[CPTColor whiteColor]];
+//	theLegend.borderLineStyle = [CPTLineStyle lineStyle];
+//	theLegend.cornerRadius = 5.0;
 }
 
 - (NSMutableArray *)pieData {
@@ -146,6 +148,7 @@
 }
 
 - (NSNumber *)numberForPlot:(CPTPlot *)plot field:(NSUInteger)fieldEnum recordIndex:(NSUInteger)idx {
+	
 	return [self.pieData objectAtIndex:idx];
 }
 

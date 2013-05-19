@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIView *spanView;
 
 @property (weak, nonatomic) IBOutlet UIView *buttonView;
+
 - (IBAction)revealMenu:(id)sender;
 
 - (IBAction)revealUnderRight:(id)sender;
