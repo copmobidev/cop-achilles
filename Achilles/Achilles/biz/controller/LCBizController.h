@@ -10,11 +10,18 @@
 #import "LCBiz.h"
 #import "ECSlidingViewController.h"
 #import "LCMenuViewController.h"
+#import "LCPlotProvider.h"
+#import "CPDConstants.h"
 
 @interface LCBizController : LCBaseViewController<LCBizPlotDelegate>
 
+/*Provider*/
+@property (nonatomic, strong) LCPlotProvider *provider;
+
 /*HostingView*/
+//Main Hosting View
 @property (weak, nonatomic) IBOutlet CPTGraphHostingView *MainHostingView;
+//Pie Hosting View
 @property (weak, nonatomic) IBOutlet CPTGraphHostingView *PieHostingView;
 
 /*Action in Controller*/

@@ -22,9 +22,4 @@
 	// Do any additional setup after loading the view.
 }
 
-- (IBAction)revealMenu:(id)sender
-{
-	[self.slidingViewController anchorTopViewTo:ECRight];
-}
-
 @end

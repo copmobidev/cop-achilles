@@ -8,18 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ECSlidingViewController.h"
-#import "LCMenuViewController.h"
 #import "UnderRightViewController.h"
+#import "LCBizController.h"
 
-@interface LCDrivingViewController : UIViewController
+@interface LCDrivingViewController : LCBizController
 
-/*Data*/
-@property (nonatomic, strong) NSMutableArray *pieData;
-
-/*Plot*/
-@property (nonatomic, strong) CPTBarPlot *scoreBarPlot;
-@property (nonatomic, strong) CPTPieChart *pieChart;
-
-/*Action in Controller*/
-- (IBAction)revealMenu:(id)sender;
 @end

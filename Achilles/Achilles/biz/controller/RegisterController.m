@@ -8,9 +8,8 @@
 
 #import "RegisterController.h"
 #import "WelcomeScrollView.h"
-#import "LCDataService.h"
 #import "LTGlobalConfig.h"
-
+#import "LCDataService.h";
 @interface RegisterController()
 
 - (UILabel *)simepleLableWithFrame: (CGRect)frame andText:(NSString *)text;
@@ -59,19 +58,18 @@
 }
 
 - (void)getConfig {
-	
-	[[LCDataService sharedDataService] getConfigWithSuccessBlock:^(NSDictionary *configDictionary){
-		[[LCGlobalConfig sharedGlobalConfig] setConfigDictionary:configDictionary];
-		[self dismiss];
-	} withFailBlock:^(){
-		//alert
-		UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"初始化失败"
-													   message:@"请确认已连接车载OBD Wifi"
-													  delegate:nil
-											 cancelButtonTitle:@"ok"
-											 otherButtonTitles:nil];
-		[alert show];
-	}];
+//	[[LCDataService sharedDataService] getConfigWithSuccessBlock:^(NSDictionary *configDictionary){
+//		[[LCGlobalConfig sharedGlobalConfig] setConfigDictionary:configDictionary];
+//		[self dismiss];
+//	} withFailBlock:^(){
+//		//alert
+//		UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"初始化失败"
+//													   message:@"请确认已连接车载OBD Wifi"
+//													  delegate:nil
+//											 cancelButtonTitle:@"ok"
+//											 otherButtonTitles:nil];
+//		[alert show];
+//	}];
 }
 
 

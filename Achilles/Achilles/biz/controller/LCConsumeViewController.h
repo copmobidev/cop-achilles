@@ -7,12 +7,7 @@
 //
 
 #import "LCBizController.h"
-#import "ECSlidingViewController.h"
-#import "LCMenuViewController.h"
 
 @interface LCConsumeViewController : LCBizController
-
-/*Action in Controller*/
-- (IBAction)revealMenu:(id)sender;
 
 @end

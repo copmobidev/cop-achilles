@@ -12,6 +12,7 @@
 
 @implementation LCHomeViewController
 
+
 - (void)viewDidLoad {
 	//0. add subview of bow view
 	self.bowView = [[UIView alloc] initWithFrame:CGRectMake(120, 170, 80, 30)];
@@ -96,11 +97,11 @@
 
 - (void)viewDidAppear:(BOOL)animated {
 	
-	if (![RegisterStatus sharedInstance].isRegisterd) {
-		[RegisterStatus sharedInstance].isRegisterd = YES;
-		RegisterController *registerController = [[RegisterController alloc] init];
-		[self presentModalViewController:registerController animated:NO];
-	}	
+//	if (![RegisterStatus sharedInstance].isRegisterd) {
+//		[RegisterStatus sharedInstance].isRegisterd = YES;
+//		RegisterController *registerController = [[RegisterController alloc] init];
+//		[self presentModalViewController:registerController animated:NO];
+//	}	
 }
 
 - (void)viewWillAppear:(BOOL)animated

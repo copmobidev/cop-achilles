@@ -10,6 +10,8 @@
 
 @implementation LCDrivingViewController
 
+#pragma mark - UIViewController
+
 - (void)awakeFromNib
 {
   [[NSNotificationCenter defaultCenter] addObserver:self 
@@ -36,26 +38,7 @@
                                              object:self.slidingViewController];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-  [super viewWillAppear:animated];
-  
-  if (![self.slidingViewController.underLeftViewController isKindOfClass:[LCMenuViewController class]]) {
-    self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
-  }
-  
-  if (![self.slidingViewController.underRightViewController isKindOfClass:[UnderRightViewController class]]) {
-    self.slidingViewController.underRightViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"UnderRight"];
-  }
-  
-  [self.view addGestureRecognizer:self.slidingViewController.panGesture];
-}
-
-- (IBAction)revealMenu:(id)sender
-{
-  [self.slidingViewController anchorTopViewTo:ECRight];
-}
-
+#pragma mark - SlidingViewController Notification
 // slidingViewController notification
 - (void)underLeftWillAppear:(NSNotification *)notification
 {
@@ -82,11 +65,51 @@
   NSLog(@"top did reset");
 }
 
-#pragma mark - UIViewController
+#pragma mark - BizPlotDelegate
 
-- (void)viewDidUnload {
-    [super viewDidUnload];
+- (void)configurePlots {
+	/*Main Plots*/
+	
+	/*Speed Bar Plot*/
+	// 1 Set up
+	CPTBarPlot *speedBarPlot = [CPTBarPlot tubularBarPlotWithColor:[CPTColor greenColor] horizontalBars:NO];
+	speedBarPlot.identifier = CPDTickerSymbolSpeed;//设定该barplot的id，方便后面使用
+	speedBarPlot.dataSource = self.provider;
+	//	self.speedBarPlot.delegate = self.provider; //**
+	// 2 Set up line style & barWidth &baroffset
+	CPTMutableLineStyle *speedBarLineStyle = [CPTMutableLineStyle lineStyle];
+	speedBarLineStyle.lineColor = [CPTColor lightGrayColor];
+	speedBarLineStyle.lineWidth = 0.5;
+	speedBarPlot.lineStyle = speedBarLineStyle;
+	speedBarPlot.barWidth = CPTDecimalFromDouble(CPDBarWidth);
+	speedBarPlot.barOffset = CPTDecimalFromDouble(CPDBarInitialX);
+	// 3 Add to graph
+	CPTGraph *mainGraph = self.MainHostingView.hostedGraph;
+	[mainGraph addPlot:speedBarPlot toPlotSpace:mainGraph.defaultPlotSpace];
+	
+	/*Time Pie Plot*/
+	// 1 Set up
+	CPTPieChart *piePlot = [[CPTPieChart alloc] init];
+	piePlot.identifier = CPDTickerSymbolTime;
+	piePlot.centerAnchor = CGPointMake(0.5, 0.5);
+	piePlot.pieRadius = 40.0f;
+	piePlot.startAngle = M_PI_4;
+	piePlot.sliceDirection = CPTPieDirectionClockwise;
+	piePlot.dataSource = self.provider;
+	//	piePlot.delegate = self.provider;
+		
+	// 2 Set up linestyle
+	CPTMutableTextStyle * pieTextStyle = [CPTMutableTextStyle textStyle];
+	pieTextStyle.color = [CPTColor blackColor];
+	pieTextStyle.fontName = @"Helvetica-Bold";
+	pieTextStyle.fontSize = 16.0f;
+	// 3 Add pie chart to graph
+	CPTGraph *pieGraph = self.PieHostingView.hostedGraph;
+	[pieGraph addPlot:piePlot];
+	// 4 Pie chart title
+	NSString *title = @"堵车指数";
+	pieGraph.title = title;
+	pieGraph.titleTextStyle = pieTextStyle;
+	pieGraph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
 }
-
-
 @end

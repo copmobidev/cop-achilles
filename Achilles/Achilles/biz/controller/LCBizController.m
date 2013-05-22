@@ -15,6 +15,7 @@
 
 @implementation LCBizController
 
+
 #pragma mark - IBAction
 
 - (IBAction)revealMenu:(id)sender {
@@ -59,15 +60,18 @@
 - (void)configureGraph {
 	/*Main graph*/
 	// 1 - Create the graph & add it to hosting view
-	CPTGraph *graph = [[CPTXYGraph alloc] initWithFrame:self.MainHostingView.bounds];
-	graph.plotAreaFrame.masksToBorder = NO;//**
-	self.MainHostingView.hostedGraph = graph;
+	CPTGraph *mainGraph = [[CPTXYGraph alloc] initWithFrame:self.MainHostingView.bounds];
+	mainGraph.plotAreaFrame.masksToBorder = NO;//**
+	self.MainHostingView.hostedGraph = mainGraph;
+	
 	// 2 - Configure the graph (theme & padding)
-	[graph applyTheme:[CPTTheme themeNamed:kCPTPlainWhiteTheme]];
-	graph.paddingBottom = 30.0f;
-	graph.paddingLeft = 30.0f;
-	graph.paddingTop = -1.0f;
-	graph.paddingRight = -0.5f;
+	[mainGraph applyTheme:[CPTTheme themeNamed:kCPTPlainWhiteTheme]];
+	mainGraph.paddingBottom = 0.0f;
+	mainGraph.paddingLeft = 0.0f;
+	mainGraph.paddingTop = 0.0f;
+	mainGraph.paddingRight = 0.0f;
+	mainGraph.axisSet = nil;
+	
 	// 3 - Set up the styles
 	CPTMutableTextStyle *titleStyle = [CPTMutableTextStyle textStyle];
 	titleStyle.color = [CPTColor whiteColor];
@@ -75,16 +79,16 @@
 	titleStyle.fontSize = 12.0f;
 	// 4 - Set up title
 	NSString *title = @"标题信息";
-	graph.title = title;
-	graph.titleTextStyle = titleStyle;
-	graph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
-	graph.titleDisplacement = CGPointMake(0.0f, -16.0f);
+	mainGraph.title = title;
+	mainGraph.titleTextStyle = titleStyle;
+	mainGraph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
+	mainGraph.titleDisplacement = CGPointMake(0.0f, -16.0f);
 	// 5 - Set up plot space (with xmin xmax ymin ymax)
 	CGFloat xMin = 0.0f;
 	CGFloat xMax = [[[CPDStockPriceStore sharedInstance] datesInWeek] count];
 	CGFloat yMin = 0.0f;
-	CGFloat yMax = 800.0f; // should determine dynamically based on max price
-	CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *) graph.defaultPlotSpace;
+	CGFloat yMax = 700.0f; // should determine dynamically based on max price
+	CPTXYPlotSpace *plotSpace = (CPTXYPlotSpace *) mainGraph.defaultPlotSpace;
 	plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(xMin) length:CPTDecimalFromFloat(xMax)];
 	plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(yMin) length:CPTDecimalFromFloat(yMax)];
 	plotSpace.allowsUserInteraction = NO;
@@ -107,6 +111,44 @@
 }
 
 - (void)configureAxes {
+	/*Main axes*/
+	// 1 - Configure styles
+	CPTMutableTextStyle *axisTitleStyle = [CPTMutableTextStyle textStyle];
+	axisTitleStyle.color = [CPTColor blackColor];
+	axisTitleStyle.fontName = @"Helvetica";
+	axisTitleStyle.fontSize = 14.0f;
 	
+	CPTMutableLineStyle *axisLineStyle = [CPTMutableLineStyle lineStyle];
+	axisLineStyle.lineWidth = 1.0f;
+	axisLineStyle.lineColor = [[CPTColor whiteColor] colorWithAlphaComponent:1];
+	
+	// 2 - Get the graph's axis set
+	CPTXYAxisSet *axisSet = (CPTXYAxisSet *) self.MainHostingView.hostedGraph.axisSet;
+	
+	// 3 - Configure the x-axis
+	axisSet.xAxis.labelingPolicy = CPTAxisLabelingPolicyEqualDivisions;
+	axisSet.xAxis.title = @"Days of Week (Mon - Fri)";
+	axisSet.xAxis.titleTextStyle = axisTitleStyle;
+	axisSet.xAxis.titleOffset = 1.0f;
+	axisSet.xAxis.axisLineStyle = axisLineStyle;
+	
+	// 4 - Configure the y-axis
+	axisSet.yAxis.labelingPolicy = CPTAxisLabelingPolicyEqualDivisions;
+	axisSet.yAxis.title = @"Price";
+	axisSet.yAxis.titleTextStyle = axisTitleStyle;
+	axisSet.yAxis.titleOffset = 1.0f;
+	axisSet.yAxis.axisLineStyle = axisLineStyle;
+	
+	/*Pie axes*/
 }
+
+#pragma mark - Provider for Plot DataSource
+
+- (LCPlotProvider *)provider {
+	if (!_provider) {
+		_provider = [[LCPlotProvider alloc] init];
+	}
+	return _provider;
+}
+					 
 @end
