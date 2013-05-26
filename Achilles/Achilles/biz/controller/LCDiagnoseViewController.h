@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "ECSlidingViewController.h"
 #import "LCMenuViewController.h"
+#import "LCDiagnoseCell.h"
 
-@interface LCDiagnoseViewController : UITableViewController
+@interface LCDiagnoseViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, strong) NSMutableArray *data;
+@property (nonatomic, strong) NSMutableArray *diagnoseItems;
+
+@property (weak, nonatomic) IBOutlet UITableView *diagnoseTableView;
 
 - (IBAction)revealMenu:(id)sender;
 

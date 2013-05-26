@@ -93,8 +93,14 @@
     }
     else if ([CPDTickerSymbolTime isEqualToString:[tickerSymbol uppercaseString]] == YES)
     {
-        return [self weeklyMsftPrices];
+        return [self weeklyTime];
     }
+	else if ([LCConsumeAverageConsume isEqualToString:tickerSymbol] == YES) {
+		return [self weeklyAverageConsume];
+	}
+	else if ([LCConsumeLeastConsume isEqualToString:tickerSymbol] == YES) {
+		return [self weeklyLeastConsume];
+	}
     return [NSArray array];
 }
 
@@ -180,7 +186,7 @@
     return prices;
 }
 
-- (NSArray *)weeklyMsftPrices
+- (NSArray *)weeklyTime
 {
     static NSArray *prices = nil;
     if (!prices)
@@ -191,6 +197,38 @@
                   [NSDecimalNumber numberWithFloat:32.20], 
                   [NSDecimalNumber numberWithFloat:32.11], 
                   [NSDecimalNumber numberWithFloat:31.98],                   
+                  nil];
+    }
+    return prices;
+}
+
+- (NSArray *)weeklyAverageConsume
+{
+    static NSArray *prices = nil;
+    if (!prices)
+    {
+        prices = [NSArray arrayWithObjects:
+                  [NSDecimalNumber numberWithFloat:32.12],
+                  [NSDecimalNumber numberWithFloat:31.92],
+                  [NSDecimalNumber numberWithFloat:32.20],
+                  [NSDecimalNumber numberWithFloat:32.11],
+                  [NSDecimalNumber numberWithFloat:31.98],
+                  nil];
+    }
+    return prices;
+}
+
+- (NSArray *)weeklyLeastConsume
+{
+    static NSArray *prices = nil;
+    if (!prices)
+    {
+        prices = [NSArray arrayWithObjects:
+                  [NSDecimalNumber numberWithFloat:597.60],
+                  [NSDecimalNumber numberWithFloat:601.27],
+                  [NSDecimalNumber numberWithFloat:609.72],
+                  [NSDecimalNumber numberWithFloat:615.47],
+                  [NSDecimalNumber numberWithFloat:614.98],
                   nil];
     }
     return prices;

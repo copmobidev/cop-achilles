@@ -7,7 +7,12 @@
 //
 
 #import "LCBizController.h"
+#import "LCTableProvider.h"
 
 @interface LCBillViewController : LCBizController
+
+@property (nonatomic, weak) IBOutlet UITableView* billTableView;
+
+@property (nonatomic, strong) LCTableProvider *tableProvider;
 
 @end

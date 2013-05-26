@@ -66,6 +66,25 @@
 		C910515D173E8FFE006DB5A1 /* RegisterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C910515A173E8FFE006DB5A1 /* RegisterInfo.m */; };
 		C910515E173E8FFE006DB5A1 /* RegisterStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = C910515C173E8FFE006DB5A1 /* RegisterStatus.m */; };
 		C9105161173E9019006DB5A1 /* WelcomeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105160173E9019006DB5A1 /* WelcomeScrollView.m */; };
+		C9150A43174FAF890077A693 /* LCSectionBillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9150A42174FAF890077A693 /* LCSectionBillCell.m */; };
+		C9150A45174FAFAF0077A693 /* LCSectionBillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9150A44174FAFAF0077A693 /* LCSectionBillCell.xib */; };
+		C9150A47174FB05D0077A693 /* bill_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A46174FB05D0077A693 /* bill_bg.png */; };
+		C9150A49174FB0850077A693 /* accessory_down.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A48174FB0850077A693 /* accessory_down.png */; };
+		C9150A4B174FB0920077A693 /* accessory_up.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A4A174FB0920077A693 /* accessory_up.png */; };
+		C9150A4D174FB21B0077A693 /* LCSubBillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9150A4C174FB21B0077A693 /* LCSubBillCell.xib */; };
+		C9150A50174FB2370077A693 /* LCSubBillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9150A4F174FB2370077A693 /* LCSubBillCell.m */; };
+		C9150A53174FBC7F0077A693 /* LCTableProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C9150A52174FBC7F0077A693 /* LCTableProvider.m */; };
+		C9150A55174FC1AC0077A693 /* bills.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9150A54174FC1AC0077A693 /* bills.plist */; };
+		C9150A57175036E00077A693 /* numberboxout.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A56175036E00077A693 /* numberboxout.png */; };
+		C9150A59175036F50077A693 /* diagnose_gyrate.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A58175036F50077A693 /* diagnose_gyrate.png */; };
+		C9150A5B175038270077A693 /* diagnose_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A5A175038270077A693 /* diagnose_background.png */; };
+		C9150A5F175039B00077A693 /* LCDiagnoseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9150A5D175039AF0077A693 /* LCDiagnoseCell.m */; };
+		C9150A60175039B00077A693 /* LCDiagnoseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9150A5E175039AF0077A693 /* LCDiagnoseCell.xib */; };
+		C9150A6317503A1B0077A693 /* diagnose_status_right.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A6117503A1B0077A693 /* diagnose_status_right.png */; };
+		C9150A6417503A1B0077A693 /* diagnose_status_wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A6217503A1B0077A693 /* diagnose_status_wrong.png */; };
+		C9150A6617503A280077A693 /* diagnosis_zdqdzxt_img.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A6517503A280077A693 /* diagnosis_zdqdzxt_img.png */; };
+		C9150A6817503B450077A693 /* diagnose.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9150A6717503B450077A693 /* diagnose.plist */; };
+		C9150A6A17503B6E0077A693 /* bg_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A6917503B6E0077A693 /* bg_texture.png */; };
 		C9697108173F538F00D0BEB5 /* LTGlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C9697107173F538F00D0BEB5 /* LTGlobalConfig.m */; };
 		C969717B173F851700D0BEB5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C969717A173F851700D0BEB5 /* QuartzCore.framework */; };
 		C96971DE173FD6BD00D0BEB5 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C96971DD173FD6BD00D0BEB5 /* libCorePlot-CocoaTouch.a */; };
@@ -198,6 +217,29 @@
 		C910515C173E8FFE006DB5A1 /* RegisterStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterStatus.m; path = biz/model/RegisterStatus.m; sourceTree = "<group>"; };
 		C910515F173E9019006DB5A1 /* WelcomeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeScrollView.h; path = biz/view/WelcomeScrollView.h; sourceTree = "<group>"; };
 		C9105160173E9019006DB5A1 /* WelcomeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeScrollView.m; path = biz/view/WelcomeScrollView.m; sourceTree = "<group>"; };
+		C9150A41174FAF890077A693 /* LCSectionBillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCSectionBillCell.h; path = biz/view/cell/LCSectionBillCell.h; sourceTree = "<group>"; };
+		C9150A42174FAF890077A693 /* LCSectionBillCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCSectionBillCell.m; path = biz/view/cell/LCSectionBillCell.m; sourceTree = "<group>"; };
+		C9150A44174FAFAF0077A693 /* LCSectionBillCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LCSectionBillCell.xib; path = biz/view/cell/LCSectionBillCell.xib; sourceTree = "<group>"; };
+		C9150A46174FB05D0077A693 /* bill_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bill_bg.png; sourceTree = "<group>"; };
+		C9150A48174FB0850077A693 /* accessory_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessory_down.png; sourceTree = "<group>"; };
+		C9150A4A174FB0920077A693 /* accessory_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accessory_up.png; sourceTree = "<group>"; };
+		C9150A4C174FB21B0077A693 /* LCSubBillCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LCSubBillCell.xib; path = biz/view/cell/LCSubBillCell.xib; sourceTree = "<group>"; };
+		C9150A4E174FB2360077A693 /* LCSubBillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCSubBillCell.h; path = biz/view/cell/LCSubBillCell.h; sourceTree = "<group>"; };
+		C9150A4F174FB2370077A693 /* LCSubBillCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCSubBillCell.m; path = biz/view/cell/LCSubBillCell.m; sourceTree = "<group>"; };
+		C9150A51174FBC7F0077A693 /* LCTableProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCTableProvider.h; path = biz/provider/LCTableProvider.h; sourceTree = "<group>"; };
+		C9150A52174FBC7F0077A693 /* LCTableProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCTableProvider.m; path = biz/provider/LCTableProvider.m; sourceTree = "<group>"; };
+		C9150A54174FC1AC0077A693 /* bills.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bills.plist; sourceTree = "<group>"; };
+		C9150A56175036E00077A693 /* numberboxout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberboxout.png; sourceTree = "<group>"; };
+		C9150A58175036F50077A693 /* diagnose_gyrate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diagnose_gyrate.png; sourceTree = "<group>"; };
+		C9150A5A175038270077A693 /* diagnose_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diagnose_background.png; sourceTree = "<group>"; };
+		C9150A5C175039AE0077A693 /* LCDiagnoseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDiagnoseCell.h; sourceTree = "<group>"; };
+		C9150A5D175039AF0077A693 /* LCDiagnoseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDiagnoseCell.m; sourceTree = "<group>"; };
+		C9150A5E175039AF0077A693 /* LCDiagnoseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCDiagnoseCell.xib; sourceTree = "<group>"; };
+		C9150A6117503A1B0077A693 /* diagnose_status_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diagnose_status_right.png; sourceTree = "<group>"; };
+		C9150A6217503A1B0077A693 /* diagnose_status_wrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diagnose_status_wrong.png; sourceTree = "<group>"; };
+		C9150A6517503A280077A693 /* diagnosis_zdqdzxt_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diagnosis_zdqdzxt_img.png; sourceTree = "<group>"; };
+		C9150A6717503B450077A693 /* diagnose.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = diagnose.plist; sourceTree = "<group>"; };
+		C9150A6917503B6E0077A693 /* bg_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_texture.png; sourceTree = "<group>"; };
 		C9697106173F538F00D0BEB5 /* LTGlobalConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTGlobalConfig.h; sourceTree = "<group>"; };
 		C9697107173F538F00D0BEB5 /* LTGlobalConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTGlobalConfig.m; sourceTree = "<group>"; };
 		C969717A173F851700D0BEB5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -601,6 +643,7 @@
 		C9105138173E8E31006DB5A1 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				C9150A40174FAF450077A693 /* cell */,
 				C910515F173E9019006DB5A1 /* WelcomeScrollView.h */,
 				C9105160173E9019006DB5A1 /* WelcomeScrollView.m */,
 			);
@@ -612,6 +655,22 @@
 			children = (
 			);
 			name = logic;
+			sourceTree = "<group>";
+		};
+		C9150A40174FAF450077A693 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				C9150A5C175039AE0077A693 /* LCDiagnoseCell.h */,
+				C9150A5D175039AF0077A693 /* LCDiagnoseCell.m */,
+				C9150A5E175039AF0077A693 /* LCDiagnoseCell.xib */,
+				C9150A41174FAF890077A693 /* LCSectionBillCell.h */,
+				C9150A42174FAF890077A693 /* LCSectionBillCell.m */,
+				C9150A44174FAFAF0077A693 /* LCSectionBillCell.xib */,
+				C9150A4E174FB2360077A693 /* LCSubBillCell.h */,
+				C9150A4F174FB2370077A693 /* LCSubBillCell.m */,
+				C9150A4C174FB21B0077A693 /* LCSubBillCell.xib */,
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 		C96971DF173FD71000D0BEB5 /* CorePlotHeaders */ = {
@@ -717,6 +776,8 @@
 				C9705DD0174770BE00E991E5 /* LCProvider.m */,
 				C9705DD21747717000E991E5 /* LCPlotProvider.h */,
 				C9705DD31747717100E991E5 /* LCPlotProvider.m */,
+				C9150A51174FBC7F0077A693 /* LCTableProvider.h */,
+				C9150A52174FBC7F0077A693 /* LCTableProvider.m */,
 			);
 			name = provider;
 			sourceTree = "<group>";
@@ -724,6 +785,8 @@
 		C9705DE61748A89600E991E5 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				C9150A6717503B450077A693 /* diagnose.plist */,
+				C9150A54174FC1AC0077A693 /* bills.plist */,
 				C9705DE71748A89600E991E5 /* images */,
 			);
 			path = resource;
@@ -732,6 +795,16 @@
 		C9705DE71748A89600E991E5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C9150A6517503A280077A693 /* diagnosis_zdqdzxt_img.png */,
+				C9150A6917503B6E0077A693 /* bg_texture.png */,
+				C9150A6117503A1B0077A693 /* diagnose_status_right.png */,
+				C9150A6217503A1B0077A693 /* diagnose_status_wrong.png */,
+				C9150A5A175038270077A693 /* diagnose_background.png */,
+				C9150A58175036F50077A693 /* diagnose_gyrate.png */,
+				C9150A56175036E00077A693 /* numberboxout.png */,
+				C9150A4A174FB0920077A693 /* accessory_up.png */,
+				C9150A48174FB0850077A693 /* accessory_down.png */,
+				C9150A46174FB05D0077A693 /* bill_bg.png */,
 				C9705DE81748A89600E991E5 /* car.png */,
 				C9705DE91748A89600E991E5 /* left.png */,
 				C9705DEA1748A89600E991E5 /* right.png */,
@@ -799,6 +872,21 @@
 				C9705DEB1748A89600E991E5 /* car.png in Resources */,
 				C9705DEC1748A89600E991E5 /* left.png in Resources */,
 				C9705DED1748A89600E991E5 /* right.png in Resources */,
+				C9150A45174FAFAF0077A693 /* LCSectionBillCell.xib in Resources */,
+				C9150A47174FB05D0077A693 /* bill_bg.png in Resources */,
+				C9150A49174FB0850077A693 /* accessory_down.png in Resources */,
+				C9150A4B174FB0920077A693 /* accessory_up.png in Resources */,
+				C9150A4D174FB21B0077A693 /* LCSubBillCell.xib in Resources */,
+				C9150A55174FC1AC0077A693 /* bills.plist in Resources */,
+				C9150A57175036E00077A693 /* numberboxout.png in Resources */,
+				C9150A59175036F50077A693 /* diagnose_gyrate.png in Resources */,
+				C9150A5B175038270077A693 /* diagnose_background.png in Resources */,
+				C9150A60175039B00077A693 /* LCDiagnoseCell.xib in Resources */,
+				C9150A6317503A1B0077A693 /* diagnose_status_right.png in Resources */,
+				C9150A6417503A1B0077A693 /* diagnose_status_wrong.png in Resources */,
+				C9150A6617503A280077A693 /* diagnosis_zdqdzxt_img.png in Resources */,
+				C9150A6817503B450077A693 /* diagnose.plist in Resources */,
+				C9150A6A17503B6E0077A693 /* bg_texture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -865,6 +953,10 @@
 				9B05653D1743C74D0032458E /* LCTimestamp.m in Sources */,
 				9BBF09FC1744EE650067D49C /* LCEnvironment.m in Sources */,
 				9BBF0A021744F2A00067D49C /* UIDevice+IdentifierAddition.m in Sources */,
+				C9150A43174FAF890077A693 /* LCSectionBillCell.m in Sources */,
+				C9150A50174FB2370077A693 /* LCSubBillCell.m in Sources */,
+				C9150A53174FBC7F0077A693 /* LCTableProvider.m in Sources */,
+				C9150A5F175039B00077A693 /* LCDiagnoseCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

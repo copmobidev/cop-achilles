@@ -8,6 +8,13 @@
 
 #import "LCProvider.h"
 
+@interface LCProvider()
+
+
+@end
+
 @implementation LCProvider
+
+- (void)initProvider {}
 
 @end
