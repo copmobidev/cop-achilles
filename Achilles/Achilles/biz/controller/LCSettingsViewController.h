@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "ECSlidingViewController.h"
 
-@interface SampleTableViewController : UITableViewController <UITableViewDataSource, UITabBarControllerDelegate>
+@interface LCSettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *settingsTableView;
+
 - (IBAction)revealMenu:(id)sender;
+
 @end

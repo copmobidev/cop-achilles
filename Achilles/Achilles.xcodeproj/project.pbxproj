@@ -59,7 +59,7 @@
 		C9105147173E8F3B006DB5A1 /* LCRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105146173E8F3B006DB5A1 /* LCRouteViewController.m */; };
 		C910514A173E8F4A006DB5A1 /* LCDrivingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105149173E8F4A006DB5A1 /* LCDrivingViewController.m */; };
 		C910514D173E8F58006DB5A1 /* LCNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C910514C173E8F58006DB5A1 /* LCNavigationViewController.m */; };
-		C9105150173E8F67006DB5A1 /* SampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C910514F173E8F67006DB5A1 /* SampleTableViewController.m */; };
+		C9105150173E8F67006DB5A1 /* LCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C910514F173E8F67006DB5A1 /* LCSettingsViewController.m */; };
 		C9105153173E8F75006DB5A1 /* UnderRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105152173E8F75006DB5A1 /* UnderRightViewController.m */; };
 		C9105155173E8FB5006DB5A1 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9105154173E8FB5006DB5A1 /* iPhone.storyboard */; };
 		C9105158173E8FE2006DB5A1 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105157173E8FE2006DB5A1 /* RegisterController.m */; };
@@ -100,6 +100,9 @@
 		C9705DEB1748A89600E991E5 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = C9705DE81748A89600E991E5 /* car.png */; };
 		C9705DEC1748A89600E991E5 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = C9705DE91748A89600E991E5 /* left.png */; };
 		C9705DED1748A89600E991E5 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = C9705DEA1748A89600E991E5 /* right.png */; };
+		C9A4BE97175250F800D5C213 /* LCAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A4BE96175250F700D5C213 /* LCAccountViewController.m */; };
+		C9A4BE9A1752544E00D5C213 /* LCSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A4BE991752544E00D5C213 /* LCSettingCell.m */; };
+		C9A4BE9C1752546800D5C213 /* LCSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A4BE9B1752546800D5C213 /* LCSettingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,8 +207,8 @@
 		C9105149173E8F4A006DB5A1 /* LCDrivingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCDrivingViewController.m; path = biz/controller/LCDrivingViewController.m; sourceTree = "<group>"; };
 		C910514B173E8F58006DB5A1 /* LCNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCNavigationViewController.h; path = biz/controller/LCNavigationViewController.h; sourceTree = "<group>"; };
 		C910514C173E8F58006DB5A1 /* LCNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCNavigationViewController.m; path = biz/controller/LCNavigationViewController.m; sourceTree = "<group>"; };
-		C910514E173E8F67006DB5A1 /* SampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleTableViewController.h; path = biz/controller/SampleTableViewController.h; sourceTree = "<group>"; };
-		C910514F173E8F67006DB5A1 /* SampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleTableViewController.m; path = biz/controller/SampleTableViewController.m; sourceTree = "<group>"; };
+		C910514E173E8F67006DB5A1 /* LCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCSettingsViewController.h; path = biz/controller/LCSettingsViewController.h; sourceTree = "<group>"; };
+		C910514F173E8F67006DB5A1 /* LCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCSettingsViewController.m; path = biz/controller/LCSettingsViewController.m; sourceTree = "<group>"; };
 		C9105151173E8F75006DB5A1 /* UnderRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnderRightViewController.h; path = biz/controller/UnderRightViewController.h; sourceTree = "<group>"; };
 		C9105152173E8F75006DB5A1 /* UnderRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UnderRightViewController.m; path = biz/controller/UnderRightViewController.m; sourceTree = "<group>"; };
 		C9105154173E8FB5006DB5A1 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
@@ -343,6 +346,11 @@
 		C9705DE81748A89600E991E5 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
 		C9705DE91748A89600E991E5 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
 		C9705DEA1748A89600E991E5 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		C9A4BE95175250F700D5C213 /* LCAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCAccountViewController.h; path = biz/controller/LCAccountViewController.h; sourceTree = "<group>"; };
+		C9A4BE96175250F700D5C213 /* LCAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCAccountViewController.m; path = biz/controller/LCAccountViewController.m; sourceTree = "<group>"; };
+		C9A4BE981752544E00D5C213 /* LCSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCSettingCell.h; path = biz/view/cell/LCSettingCell.h; sourceTree = "<group>"; };
+		C9A4BE991752544E00D5C213 /* LCSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCSettingCell.m; path = biz/view/cell/LCSettingCell.m; sourceTree = "<group>"; };
+		C9A4BE9B1752546800D5C213 /* LCSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LCSettingCell.xib; path = biz/view/cell/LCSettingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -619,8 +627,10 @@
 				C9705DE4174848A700E991E5 /* LCDiagnoseViewController.m */,
 				C910514B173E8F58006DB5A1 /* LCNavigationViewController.h */,
 				C910514C173E8F58006DB5A1 /* LCNavigationViewController.m */,
-				C910514E173E8F67006DB5A1 /* SampleTableViewController.h */,
-				C910514F173E8F67006DB5A1 /* SampleTableViewController.m */,
+				C910514E173E8F67006DB5A1 /* LCSettingsViewController.h */,
+				C910514F173E8F67006DB5A1 /* LCSettingsViewController.m */,
+				C9A4BE95175250F700D5C213 /* LCAccountViewController.h */,
+				C9A4BE96175250F700D5C213 /* LCAccountViewController.m */,
 				C9105151173E8F75006DB5A1 /* UnderRightViewController.h */,
 				C9105152173E8F75006DB5A1 /* UnderRightViewController.m */,
 			);
@@ -669,6 +679,9 @@
 				C9150A4E174FB2360077A693 /* LCSubBillCell.h */,
 				C9150A4F174FB2370077A693 /* LCSubBillCell.m */,
 				C9150A4C174FB21B0077A693 /* LCSubBillCell.xib */,
+				C9A4BE981752544E00D5C213 /* LCSettingCell.h */,
+				C9A4BE991752544E00D5C213 /* LCSettingCell.m */,
+				C9A4BE9B1752546800D5C213 /* LCSettingCell.xib */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -887,6 +900,7 @@
 				C9150A6617503A280077A693 /* diagnosis_zdqdzxt_img.png in Resources */,
 				C9150A6817503B450077A693 /* diagnose.plist in Resources */,
 				C9150A6A17503B6E0077A693 /* bg_texture.png in Resources */,
+				C9A4BE9C1752546800D5C213 /* LCSettingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -934,7 +948,7 @@
 				C9105147173E8F3B006DB5A1 /* LCRouteViewController.m in Sources */,
 				C910514A173E8F4A006DB5A1 /* LCDrivingViewController.m in Sources */,
 				C910514D173E8F58006DB5A1 /* LCNavigationViewController.m in Sources */,
-				C9105150173E8F67006DB5A1 /* SampleTableViewController.m in Sources */,
+				C9105150173E8F67006DB5A1 /* LCSettingsViewController.m in Sources */,
 				C9105153173E8F75006DB5A1 /* UnderRightViewController.m in Sources */,
 				C9105158173E8FE2006DB5A1 /* RegisterController.m in Sources */,
 				C910515D173E8FFE006DB5A1 /* RegisterInfo.m in Sources */,
@@ -957,6 +971,8 @@
 				C9150A50174FB2370077A693 /* LCSubBillCell.m in Sources */,
 				C9150A53174FBC7F0077A693 /* LCTableProvider.m in Sources */,
 				C9150A5F175039B00077A693 /* LCDiagnoseCell.m in Sources */,
+				C9A4BE97175250F800D5C213 /* LCAccountViewController.m in Sources */,
+				C9A4BE9A1752544E00D5C213 /* LCSettingCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
