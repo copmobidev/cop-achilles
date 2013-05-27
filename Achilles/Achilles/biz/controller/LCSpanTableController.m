@@ -17,7 +17,7 @@
 
 - (NSArray *)spanType {
 	if (!_spanType) {
-		_spanType = @[@"年", @"月", @"周", @"次"];
+		_spanType = @[@"按年查看", @"按月查看", @"按周查看", @"按次查看"];
 	}
 	return _spanType;
 }
@@ -47,7 +47,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"SpanCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if(cell == nil)
@@ -55,7 +55,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     cell.textLabel.text = [self.spanType objectAtIndex:indexPath.row];
-    cell.textLabel.textAlignment = UITextAlignmentRight;
+    cell.textLabel.textAlignment = UITextAlignmentCenter;
 	
     return cell;
 }
