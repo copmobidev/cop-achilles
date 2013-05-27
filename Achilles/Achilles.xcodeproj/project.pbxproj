@@ -103,6 +103,11 @@
 		C9A4BE97175250F800D5C213 /* LCAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A4BE96175250F700D5C213 /* LCAccountViewController.m */; };
 		C9A4BE9A1752544E00D5C213 /* LCSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A4BE991752544E00D5C213 /* LCSettingCell.m */; };
 		C9A4BE9C1752546800D5C213 /* LCSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A4BE9B1752546800D5C213 /* LCSettingCell.xib */; };
+		C9AC02B517537A0000258733 /* FPPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02B017537A0000258733 /* FPPopoverController.m */; };
+		C9AC02B617537A0000258733 /* FPPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02B217537A0000258733 /* FPPopoverView.m */; };
+		C9AC02B717537A0000258733 /* FPTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02B417537A0000258733 /* FPTouchView.m */; };
+		C9AC02BA17537A5900258733 /* LCBizSpanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02B917537A5900258733 /* LCBizSpanViewController.m */; };
+		C9AC02C017537C0100258733 /* LCSpanTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02BF17537C0100258733 /* LCSpanTableController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -351,6 +356,17 @@
 		C9A4BE981752544E00D5C213 /* LCSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCSettingCell.h; path = biz/view/cell/LCSettingCell.h; sourceTree = "<group>"; };
 		C9A4BE991752544E00D5C213 /* LCSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCSettingCell.m; path = biz/view/cell/LCSettingCell.m; sourceTree = "<group>"; };
 		C9A4BE9B1752546800D5C213 /* LCSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LCSettingCell.xib; path = biz/view/cell/LCSettingCell.xib; sourceTree = "<group>"; };
+		C9AC02AE17537A0000258733 /* ARCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARCMacros.h; path = biz/util/FPPopover/ARCMacros.h; sourceTree = "<group>"; };
+		C9AC02AF17537A0000258733 /* FPPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPPopoverController.h; path = biz/util/FPPopover/FPPopoverController.h; sourceTree = "<group>"; };
+		C9AC02B017537A0000258733 /* FPPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPPopoverController.m; path = biz/util/FPPopover/FPPopoverController.m; sourceTree = "<group>"; };
+		C9AC02B117537A0000258733 /* FPPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPPopoverView.h; path = biz/util/FPPopover/FPPopoverView.h; sourceTree = "<group>"; };
+		C9AC02B217537A0000258733 /* FPPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPPopoverView.m; path = biz/util/FPPopover/FPPopoverView.m; sourceTree = "<group>"; };
+		C9AC02B317537A0000258733 /* FPTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPTouchView.h; path = biz/util/FPPopover/FPTouchView.h; sourceTree = "<group>"; };
+		C9AC02B417537A0000258733 /* FPTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPTouchView.m; path = biz/util/FPPopover/FPTouchView.m; sourceTree = "<group>"; };
+		C9AC02B817537A5900258733 /* LCBizSpanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBizSpanViewController.h; path = biz/controller/LCBizSpanViewController.h; sourceTree = "<group>"; };
+		C9AC02B917537A5900258733 /* LCBizSpanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBizSpanViewController.m; path = biz/controller/LCBizSpanViewController.m; sourceTree = "<group>"; };
+		C9AC02BE17537C0100258733 /* LCSpanTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCSpanTableController.h; path = biz/controller/LCSpanTableController.h; sourceTree = "<group>"; };
+		C9AC02BF17537C0100258733 /* LCSpanTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCSpanTableController.m; path = biz/controller/LCSpanTableController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -591,6 +607,7 @@
 		C9105135173E8DC5006DB5A1 /* biz */ = {
 			isa = PBXGroup;
 			children = (
+				C9AC02AC175379E200258733 /* util */,
 				C9105139173E8E39006DB5A1 /* logic */,
 				C9105138173E8E31006DB5A1 /* view */,
 				C9105137173E8E2B006DB5A1 /* model */,
@@ -603,10 +620,14 @@
 		C9105136173E8DF8006DB5A1 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				C9AC02BE17537C0100258733 /* LCSpanTableController.h */,
+				C9AC02BF17537C0100258733 /* LCSpanTableController.m */,
 				C9705DD51747C11E00E991E5 /* LCBaseViewController.h */,
 				C9705DD61747C11F00E991E5 /* LCBaseViewController.m */,
 				C9705DD81747C15500E991E5 /* LCBizController.h */,
 				C9705DD91747C15600E991E5 /* LCBizController.m */,
+				C9AC02B817537A5900258733 /* LCBizSpanViewController.h */,
+				C9AC02B917537A5900258733 /* LCBizSpanViewController.m */,
 				C9105156173E8FE2006DB5A1 /* RegisterController.h */,
 				C9105157173E8FE2006DB5A1 /* RegisterController.m */,
 				C910513C173E8EFC006DB5A1 /* InitialSlidingViewController.h */,
@@ -825,6 +846,28 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		C9AC02AC175379E200258733 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				C9AC02AD175379EC00258733 /* FPPopover */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		C9AC02AD175379EC00258733 /* FPPopover */ = {
+			isa = PBXGroup;
+			children = (
+				C9AC02AE17537A0000258733 /* ARCMacros.h */,
+				C9AC02AF17537A0000258733 /* FPPopoverController.h */,
+				C9AC02B017537A0000258733 /* FPPopoverController.m */,
+				C9AC02B117537A0000258733 /* FPPopoverView.h */,
+				C9AC02B217537A0000258733 /* FPPopoverView.m */,
+				C9AC02B317537A0000258733 /* FPTouchView.h */,
+				C9AC02B417537A0000258733 /* FPTouchView.m */,
+			);
+			name = FPPopover;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -973,6 +1016,11 @@
 				C9150A5F175039B00077A693 /* LCDiagnoseCell.m in Sources */,
 				C9A4BE97175250F800D5C213 /* LCAccountViewController.m in Sources */,
 				C9A4BE9A1752544E00D5C213 /* LCSettingCell.m in Sources */,
+				C9AC02B517537A0000258733 /* FPPopoverController.m in Sources */,
+				C9AC02B617537A0000258733 /* FPPopoverView.m in Sources */,
+				C9AC02B717537A0000258733 /* FPTouchView.m in Sources */,
+				C9AC02BA17537A5900258733 /* LCBizSpanViewController.m in Sources */,
+				C9AC02C017537C0100258733 /* LCSpanTableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "ECSlidingViewController.h"
 #import "UnderRightViewController.h"
-#import "LCBizController.h"
+#import "LCBizSpanViewController.h"
 
-@interface LCDrivingViewController : LCBizController
+@interface LCDrivingViewController : LCBizSpanViewController
 
 @end

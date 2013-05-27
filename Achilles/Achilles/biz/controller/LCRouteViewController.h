@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LCBizController.h"
+#import "LCBizSpanViewController.h"
 #import "CPDConstants.h"
 
-@interface LCRouteViewController : LCBizController
+@interface LCRouteViewController : LCBizSpanViewController
 
 @end

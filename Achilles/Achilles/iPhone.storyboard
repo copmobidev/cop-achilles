@@ -58,17 +58,10 @@
                                                 <action selector="revealMenu:" destination="LsE-e5-Jbi" id="oy5-kv-YFG"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="FRm-zG-8eP">
-                                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="KlA-er-tfh">
-                                                <rect key="frame" x="244" y="7" width="71" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <segments>
-                                                    <segment title="年"/>
-                                                    <segment title="月"/>
-                                                    <segment title="周"/>
-                                                    <segment title="次"/>
-                                                </segments>
-                                            </segmentedControl>
+                                        <barButtonItem key="rightBarButtonItem" title="时间跨度" id="mqm-ST-VvK">
+                                            <connections>
+                                                <action selector="popover:" destination="LsE-e5-Jbi" id="o2c-nF-tpT"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -638,17 +631,10 @@
                                                 <action selector="revealMenu:" destination="XYc-ji-qQz" id="BIq-jV-nk9"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="phV-az-NU9">
-                                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="PjY-mq-gVB">
-                                                <rect key="frame" x="244" y="7" width="71" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <segments>
-                                                    <segment title="年"/>
-                                                    <segment title="月"/>
-                                                    <segment title="周"/>
-                                                    <segment title="次"/>
-                                                </segments>
-                                            </segmentedControl>
+                                        <barButtonItem key="rightBarButtonItem" title="时间跨度" id="V7Q-W2-oN1">
+                                            <connections>
+                                                <action selector="popover:" destination="XYc-ji-qQz" id="uah-XT-kUq"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -1344,17 +1330,24 @@
                 <relationship kind="outlet" name="PieHostingView" candidateClass="CPTGraphHostingView"/>
             </relationships>
         </class>
+        <class className="LCBizSpanViewController" superclassName="LCBizController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LCBizSpanViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="popover:"/>
+            </relationships>
+        </class>
         <class className="LCConsumeViewController" superclassName="LCBizController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LCConsumeViewController.h"/>
         </class>
         <class className="LCDiagnoseViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LCDiagnoseViewController.h"/>
             <relationships>
+                <relationship kind="action" name="diagnose:"/>
                 <relationship kind="action" name="revealMenu:"/>
                 <relationship kind="outlet" name="diagnoseTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
-        <class className="LCDrivingViewController" superclassName="LCBizController">
+        <class className="LCDrivingViewController" superclassName="LCBizSpanViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LCDrivingViewController.h"/>
         </class>
         <class className="LCHomeViewController" superclassName="UIViewController">
@@ -1372,7 +1365,7 @@
         <class className="LCNavigationViewController" superclassName="UINavigationController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LCNavigationViewController.h"/>
         </class>
-        <class className="LCRouteViewController" superclassName="LCBizController">
+        <class className="LCRouteViewController" superclassName="LCBizSpanViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LCRouteViewController.h"/>
         </class>
         <class className="LCSettingCell" superclassName="UITableViewCell">
