@@ -7,6 +7,7 @@
 //
 
 #import "LCMenuViewController.h"
+#import "LCMenuItemCell.h"
 
 @interface LCMenuViewController()
 @property (nonatomic, strong) NSArray *menuItems;
@@ -17,7 +18,7 @@
 
 - (void)awakeFromNib
 {
-  self.menuItems = [NSArray arrayWithObjects:@"Home", @"Route", @"Driving", @"Consume", @"Bill", @"Diagnose",  @"Navigation", nil];
+	self.menuItems = @[@{@"name":@"Home", @"displayName":@"首页"}, @{@"name":@"Route", @"displayName":@"行程"}, @{@"name":@"Driving", @"displayName":@"驾驶"}, @{@"name":@"Consume", @"displayName":@"油耗"}, @{@"name":@"Bill", @"displayName":@"账单"}, @{@"name":@"Diagnose", @"displayName":@"诊断"}, @{@"name":@"Navigation", @"displayName":@"设置"}];
 }
 
 - (void)viewDidLoad
@@ -28,6 +29,9 @@
   self.slidingViewController.underLeftWidthLayout = ECFullWidth;
 }
 
+#pragma mark - UITableView DataSource
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
   return self.menuItems.count;
@@ -35,20 +39,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  NSString *cellIdentifier = @"MenuItemCell";
-  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+  NSString *cellIdentifier = @"LCMenuItemCell";
+  LCMenuItemCell *cell = (LCMenuItemCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
   if (cell == nil) {
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
-  }
-  
-  cell.textLabel.text = [self.menuItems objectAtIndex:indexPath.row];
-  
+	  cell = [[[NSBundle mainBundle] loadNibNamed:cellIdentifier
+											owner:self
+										  options:nil] objectAtIndex:0];  }
+
+  cell.nameLabel.text = [[self.menuItems objectAtIndex:indexPath.row] valueForKey:@"displayName"];
+//	cell.thumbnail.image = [UIImage imageNamed:@"car.png"];
   return cell;
 }
 
+#pragma mark - UITableView Delegate
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  NSString *identifier = [NSString stringWithFormat:@"LC%@", [self.menuItems objectAtIndex:indexPath.row]];
+  NSString *identifier = [NSString stringWithFormat:@"LC%@", [[self.menuItems objectAtIndex:indexPath.row] valueForKey:@"name"]];
 
   UIViewController *newTopViewController = [self.storyboard instantiateViewControllerWithIdentifier:identifier];
   
@@ -58,6 +65,8 @@
     self.slidingViewController.topViewController.view.frame = frame;
     [self.slidingViewController resetTopView];
   }];
+	
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

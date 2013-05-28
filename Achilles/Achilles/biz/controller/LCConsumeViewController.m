@@ -40,7 +40,7 @@
 	
 	averageBarPlot.barWidth = CPTDecimalFromDouble(CPDBarWidth);
 	averageBarPlot.barOffset = CPTDecimalFromDouble(CPDBarInitialX);
-//	averageBarPlot.paddingBottom = 350.0f;//padding bottom
+	averageBarPlot.barBasesVary = YES;
 
 	// 3 Add to graph
 	CPTGraph *mainGraph = self.MainHostingView.hostedGraph;
@@ -51,7 +51,7 @@
 	CPTBarPlot *leastBarPlot = [CPTBarPlot tubularBarPlotWithColor:[CPTColor redColor] horizontalBars:NO];
 	leastBarPlot.identifier = LCConsumeLeastConsume;
 	leastBarPlot.dataSource = self.provider;
-	leastBarPlot.opacity = 0.3;
+//	leastBarPlot.opacity = 0.3;
 	
 	// 2 Set up line style
 	CPTMutableLineStyle *leastLineStyle = [CPTMutableLineStyle lineStyle];
@@ -61,7 +61,6 @@
 	
 	leastBarPlot.barWidth = CPTDecimalFromDouble(CPDBarWidth);
 	leastBarPlot.barOffset = CPTDecimalFromDouble(CPDBarInitialX * 2);
-//	leastBarPlot.paddingBottom = 100.0f;
 	
 	// 3 Add plot to graph
 	[mainGraph addPlot:leastBarPlot toPlotSpace:mainGraph.defaultPlotSpace];

@@ -103,6 +103,7 @@
 		C9A4BE97175250F800D5C213 /* LCAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A4BE96175250F700D5C213 /* LCAccountViewController.m */; };
 		C9A4BE9A1752544E00D5C213 /* LCSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A4BE991752544E00D5C213 /* LCSettingCell.m */; };
 		C9A4BE9C1752546800D5C213 /* LCSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A4BE9B1752546800D5C213 /* LCSettingCell.xib */; };
+		C9A705D31754F91F000DA8B2 /* LCMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A705D21754F91F000DA8B2 /* LCMenuItemCell.m */; };
 		C9AC02B517537A0000258733 /* FPPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02B017537A0000258733 /* FPPopoverController.m */; };
 		C9AC02B617537A0000258733 /* FPPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02B217537A0000258733 /* FPPopoverView.m */; };
 		C9AC02B717537A0000258733 /* FPTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02B417537A0000258733 /* FPTouchView.m */; };
@@ -356,6 +357,8 @@
 		C9A4BE981752544E00D5C213 /* LCSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCSettingCell.h; path = biz/view/cell/LCSettingCell.h; sourceTree = "<group>"; };
 		C9A4BE991752544E00D5C213 /* LCSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCSettingCell.m; path = biz/view/cell/LCSettingCell.m; sourceTree = "<group>"; };
 		C9A4BE9B1752546800D5C213 /* LCSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LCSettingCell.xib; path = biz/view/cell/LCSettingCell.xib; sourceTree = "<group>"; };
+		C9A705D11754F91F000DA8B2 /* LCMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCMenuItemCell.h; path = biz/view/cell/LCMenuItemCell.h; sourceTree = "<group>"; };
+		C9A705D21754F91F000DA8B2 /* LCMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCMenuItemCell.m; path = biz/view/cell/LCMenuItemCell.m; sourceTree = "<group>"; };
 		C9AC02AE17537A0000258733 /* ARCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARCMacros.h; path = biz/util/FPPopover/ARCMacros.h; sourceTree = "<group>"; };
 		C9AC02AF17537A0000258733 /* FPPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPPopoverController.h; path = biz/util/FPPopover/FPPopoverController.h; sourceTree = "<group>"; };
 		C9AC02B017537A0000258733 /* FPPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPPopoverController.m; path = biz/util/FPPopover/FPPopoverController.m; sourceTree = "<group>"; };
@@ -703,6 +706,8 @@
 				C9A4BE981752544E00D5C213 /* LCSettingCell.h */,
 				C9A4BE991752544E00D5C213 /* LCSettingCell.m */,
 				C9A4BE9B1752546800D5C213 /* LCSettingCell.xib */,
+				C9A705D11754F91F000DA8B2 /* LCMenuItemCell.h */,
+				C9A705D21754F91F000DA8B2 /* LCMenuItemCell.m */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -1021,6 +1026,7 @@
 				C9AC02B717537A0000258733 /* FPTouchView.m in Sources */,
 				C9AC02BA17537A5900258733 /* LCBizSpanViewController.m in Sources */,
 				C9AC02C017537C0100258733 /* LCSpanTableController.m in Sources */,
+				C9A705D31754F91F000DA8B2 /* LCMenuItemCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

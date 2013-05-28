@@ -71,6 +71,12 @@
 			case CPTBarPlotFieldBarLocation:
 				return [NSDecimalNumber numberWithUnsignedInteger:idx];
 				break;
+			//bar base
+			case CPTBarPlotFieldBarBase:
+				if ([plot.identifier isEqual:LCConsumeAverageConsume] && idx < [[[CPDStockPriceStore sharedInstance] datesInWeek] count]) {
+					return [NSDecimalNumber numberWithUnsignedInteger:1000];
+				}
+				break;
 		}
 	}
 	/*For Scatter*/
