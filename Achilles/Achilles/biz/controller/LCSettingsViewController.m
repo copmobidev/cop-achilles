@@ -28,6 +28,7 @@
 #pragma mark - UIViewController
 
 - (void)viewDidLoad {
+	self.settingsTableView.scrollEnabled = NO;
 	self.settingsTableView.dataSource = self;
 	self.settingsTableView.delegate = self;
 }
@@ -53,6 +54,7 @@
   
 	cell.displayLabel.text = [[self.settingsItems objectAtIndex:indexPath.row] objectForKey:@"displayName"];
 	cell.descriptionLabel.text = [[self.settingsItems objectAtIndex:indexPath.row] objectForKey:@"description"];
+	cell.settingSwitch.tag = indexPath.row;
 	
   return cell;
 }

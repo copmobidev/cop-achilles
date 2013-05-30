@@ -7,6 +7,7 @@
 //
 
 #import "LCSettingCell.h"
+#import "LCBizUtil.h"
 
 @implementation LCSettingCell
 
@@ -27,5 +28,7 @@
 }
 
 - (IBAction)switchChanged:(id)sender {
+	UISwitch *settingSwitch = (UISwitch *)sender;
+	[LCBizUtil setUserDefaultsAt:settingSwitch.tag withFlag:settingSwitch.on];
 }
 @end
