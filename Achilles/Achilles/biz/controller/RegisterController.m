@@ -9,7 +9,6 @@
 #import "RegisterController.h"
 #import "WelcomeScrollView.h"
 #import "LTGlobalConfig.h"
-#import "LCDataService.h";
 @interface RegisterController()
 
 - (UILabel *)simepleLableWithFrame: (CGRect)frame andText:(NSString *)text;

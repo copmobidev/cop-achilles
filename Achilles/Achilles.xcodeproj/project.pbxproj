@@ -103,6 +103,7 @@
 		C9AC02B717537A0000258733 /* FPTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02B417537A0000258733 /* FPTouchView.m */; };
 		C9AC02BA17537A5900258733 /* LCBizSpanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02B917537A5900258733 /* LCBizSpanViewController.m */; };
 		C9AC02C017537C0100258733 /* LCSpanTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02BF17537C0100258733 /* LCSpanTableController.m */; };
+		C9CED427175AF6BB0074A498 /* LCAddBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED426175AF6BB0074A498 /* LCAddBillViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -351,6 +352,8 @@
 		C9AC02B917537A5900258733 /* LCBizSpanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBizSpanViewController.m; path = biz/controller/LCBizSpanViewController.m; sourceTree = "<group>"; };
 		C9AC02BE17537C0100258733 /* LCSpanTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCSpanTableController.h; path = biz/controller/LCSpanTableController.h; sourceTree = "<group>"; };
 		C9AC02BF17537C0100258733 /* LCSpanTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCSpanTableController.m; path = biz/controller/LCSpanTableController.m; sourceTree = "<group>"; };
+		C9CED425175AF6BB0074A498 /* LCAddBillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCAddBillViewController.h; path = biz/controller/LCAddBillViewController.h; sourceTree = "<group>"; };
+		C9CED426175AF6BB0074A498 /* LCAddBillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCAddBillViewController.m; path = biz/controller/LCAddBillViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -589,6 +592,8 @@
 				C9705DDE1748444600E991E5 /* LCConsumeViewController.m */,
 				C9705DE01748446600E991E5 /* LCBillViewController.h */,
 				C9705DE11748446600E991E5 /* LCBillViewController.m */,
+				C9CED425175AF6BB0074A498 /* LCAddBillViewController.h */,
+				C9CED426175AF6BB0074A498 /* LCAddBillViewController.m */,
 				C9705DE3174848A600E991E5 /* LCDiagnoseViewController.h */,
 				C9705DE4174848A700E991E5 /* LCDiagnoseViewController.m */,
 				C910514B173E8F58006DB5A1 /* LCNavigationViewController.h */,
@@ -965,6 +970,7 @@
 				C9AC02C017537C0100258733 /* LCSpanTableController.m in Sources */,
 				C9A705D31754F91F000DA8B2 /* LCMenuItemCell.m in Sources */,
 				C9799B2217579B5A00D44F50 /* LCBizUtil.m in Sources */,
+				C9CED427175AF6BB0074A498 /* LCAddBillViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

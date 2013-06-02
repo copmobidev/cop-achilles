@@ -7,6 +7,7 @@
 //
 
 #import "LCBillViewController.h"
+#import "LCAddBillViewController.h"
 
 @interface LCBillViewController ()
 
@@ -38,6 +39,8 @@
 	}
 	return _tableProvider;
 }
+
+
 
 #pragma mark - BizPlotDelegate
 
@@ -83,5 +86,9 @@
 	// 3 Add plot to graph
 	[mainGraph addPlot:oilScatterPlot toPlotSpace:mainGraph.defaultPlotSpace];
 }
+
+#pragma mark - IBAction 
+
+
 
 @end
