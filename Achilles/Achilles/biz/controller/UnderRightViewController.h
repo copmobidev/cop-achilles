@@ -9,7 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "ECSlidingViewController.h"
 
-@interface UnderRightViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
-@property (weak, nonatomic) IBOutlet UIPickerView *spanPicker;
-@property (nonatomic, strong) NSArray *spanArray;
+@interface UnderRightViewController : UIViewController
 @end

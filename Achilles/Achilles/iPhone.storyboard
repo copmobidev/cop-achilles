@@ -1398,20 +1398,9 @@
                                     <navigationItem title="时间跨度" id="Mlg-T8-GW4"/>
                                 </items>
                             </navigationBar>
-                            <pickerView contentMode="scaleToFill" id="WJy-kp-ogH">
-                                <rect key="frame" x="0.0" y="44" width="320" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="Frc-Ky-c6P" id="Hty-Of-XPF"/>
-                                    <outlet property="delegate" destination="Frc-Ky-c6P" id="2A7-Tg-Xby"/>
-                                </connections>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="spanPicker" destination="WJy-kp-ogH" id="qMs-PV-cRh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqG-Uu-TCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1537,9 +1526,6 @@
         </class>
         <class className="UnderRightViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UnderRightViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="spanPicker" candidateClass="UIPickerView"/>
-            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

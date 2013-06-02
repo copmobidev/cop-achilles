@@ -129,6 +129,7 @@ NSString *const ECSlidingViewTopDidReset          = @"ECSlidingViewTopDidReset";
 
 - (void)setUnderRightViewController:(UIViewController *)theUnderRightViewController
 {
+	return;
   [_underRightViewController.view removeFromSuperview];
   [_underRightViewController willMoveToParentViewController:nil];
   [_underRightViewController removeFromParentViewController];
