@@ -21,4 +21,6 @@
 	// Do any additional setup after loading the view.
 }
 
+- (IBAction)editProfile:(id)sender {
+}
 @end

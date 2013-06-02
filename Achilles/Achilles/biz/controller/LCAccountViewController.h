@@ -10,4 +10,5 @@
 
 @interface LCAccountViewController : UIViewController
 
+- (IBAction)editProfile:(id)sender;
 @end

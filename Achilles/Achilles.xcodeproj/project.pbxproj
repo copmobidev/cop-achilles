@@ -104,6 +104,7 @@
 		C9AC02BA17537A5900258733 /* LCBizSpanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02B917537A5900258733 /* LCBizSpanViewController.m */; };
 		C9AC02C017537C0100258733 /* LCSpanTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02BF17537C0100258733 /* LCSpanTableController.m */; };
 		C9CED427175AF6BB0074A498 /* LCAddBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED426175AF6BB0074A498 /* LCAddBillViewController.m */; };
+		C9CED42A175B15AC0074A498 /* LCEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED429175B15AC0074A498 /* LCEditProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -354,6 +355,8 @@
 		C9AC02BF17537C0100258733 /* LCSpanTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCSpanTableController.m; path = biz/controller/LCSpanTableController.m; sourceTree = "<group>"; };
 		C9CED425175AF6BB0074A498 /* LCAddBillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCAddBillViewController.h; path = biz/controller/LCAddBillViewController.h; sourceTree = "<group>"; };
 		C9CED426175AF6BB0074A498 /* LCAddBillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCAddBillViewController.m; path = biz/controller/LCAddBillViewController.m; sourceTree = "<group>"; };
+		C9CED428175B15AC0074A498 /* LCEditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCEditProfileViewController.h; path = biz/controller/LCEditProfileViewController.h; sourceTree = "<group>"; };
+		C9CED429175B15AC0074A498 /* LCEditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCEditProfileViewController.m; path = biz/controller/LCEditProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -604,6 +607,8 @@
 				C9A4BE96175250F700D5C213 /* LCAccountViewController.m */,
 				C9105151173E8F75006DB5A1 /* UnderRightViewController.h */,
 				C9105152173E8F75006DB5A1 /* UnderRightViewController.m */,
+				C9CED428175B15AC0074A498 /* LCEditProfileViewController.h */,
+				C9CED429175B15AC0074A498 /* LCEditProfileViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -971,6 +976,7 @@
 				C9A705D31754F91F000DA8B2 /* LCMenuItemCell.m in Sources */,
 				C9799B2217579B5A00D44F50 /* LCBizUtil.m in Sources */,
 				C9CED427175AF6BB0074A498 /* LCAddBillViewController.m in Sources */,
+				C9CED42A175B15AC0074A498 /* LCEditProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
