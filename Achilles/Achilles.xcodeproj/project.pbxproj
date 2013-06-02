@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B05653D1743C74D0032458E /* LCTimestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B05653C1743C74D0032458E /* LCTimestamp.m */; };
 		9B1C4B28173E58140085CA3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1C4B27173E58140085CA3C /* UIKit.framework */; };
 		9B1C4B2A173E58140085CA3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1C4B29173E58140085CA3C /* Foundation.framework */; };
 		9B1C4B2C173E58140085CA3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1C4B2B173E58140085CA3C /* CoreGraphics.framework */; };
@@ -17,10 +16,6 @@
 		9B1C4B3A173E58140085CA3C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C4B39173E58140085CA3C /* Default.png */; };
 		9B1C4B3C173E58140085CA3C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C4B3B173E58140085CA3C /* Default@2x.png */; };
 		9B1C4B3E173E58140085CA3C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C4B3D173E58140085CA3C /* Default-568h@2x.png */; };
-		9B1C4B8C173E58EC0085CA3C /* LCDataPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B47173E58EB0085CA3C /* LCDataPiece.m */; };
-		9B1C4B8D173E58EC0085CA3C /* LCDataSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B49173E58EB0085CA3C /* LCDataSummary.m */; };
-		9B1C4B8F173E58EC0085CA3C /* LCDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B4D173E58EB0085CA3C /* LCDataService.m */; };
-		9B1C4B91173E58EC0085CA3C /* LCNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B52173E58EB0085CA3C /* LCNetworkUtil.m */; };
 		9B1C4B92173E58EC0085CA3C /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B56173E58EB0085CA3C /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9B1C4B93173E58EC0085CA3C /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B59173E58EB0085CA3C /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9B1C4B94173E58EC0085CA3C /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4B5B173E58EB0085CA3C /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -51,8 +46,6 @@
 		9B1C4BB5173E7BD10085CA3C /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1C4BAA173E5B060085CA3C /* libxml2.dylib */; };
 		9B1C4BC4173E80AD0085CA3C /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4BC1173E80AD0085CA3C /* ECSlidingViewController.m */; };
 		9B1C4BC5173E80AD0085CA3C /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C4BC3173E80AD0085CA3C /* UIImage+ImageWithUIView.m */; };
-		9BBF09FC1744EE650067D49C /* LCEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF09FB1744EE650067D49C /* LCEnvironment.m */; };
-		9BBF0A021744F2A00067D49C /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF0A011744F2A00067D49C /* UIDevice+IdentifierAddition.m */; };
 		C910513E173E8EFC006DB5A1 /* InitialSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C910513D173E8EFC006DB5A1 /* InitialSlidingViewController.m */; };
 		C9105141173E8F1A006DB5A1 /* LCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105140173E8F1A006DB5A1 /* LCHomeViewController.m */; };
 		C9105144173E8F2D006DB5A1 /* LCMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105143173E8F2D006DB5A1 /* LCMenuViewController.m */; };
@@ -113,8 +106,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B05653B1743C74D0032458E /* LCTimestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTimestamp.h; sourceTree = "<group>"; };
-		9B05653C1743C74D0032458E /* LCTimestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTimestamp.m; sourceTree = "<group>"; };
 		9B1C4B24173E58140085CA3C /* Achilles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Achilles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1C4B27173E58140085CA3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B1C4B29173E58140085CA3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,14 +119,6 @@
 		9B1C4B39173E58140085CA3C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		9B1C4B3B173E58140085CA3C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9B1C4B3D173E58140085CA3C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		9B1C4B46173E58EB0085CA3C /* LCDataPiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDataPiece.h; sourceTree = "<group>"; };
-		9B1C4B47173E58EB0085CA3C /* LCDataPiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDataPiece.m; sourceTree = "<group>"; };
-		9B1C4B48173E58EB0085CA3C /* LCDataSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDataSummary.h; sourceTree = "<group>"; };
-		9B1C4B49173E58EB0085CA3C /* LCDataSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDataSummary.m; sourceTree = "<group>"; };
-		9B1C4B4C173E58EB0085CA3C /* LCDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDataService.h; sourceTree = "<group>"; };
-		9B1C4B4D173E58EB0085CA3C /* LCDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDataService.m; sourceTree = "<group>"; };
-		9B1C4B51173E58EB0085CA3C /* LCNetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNetworkUtil.h; sourceTree = "<group>"; };
-		9B1C4B52173E58EB0085CA3C /* LCNetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNetworkUtil.m; sourceTree = "<group>"; };
 		9B1C4B55173E58EB0085CA3C /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		9B1C4B56173E58EB0085CA3C /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		9B1C4B57173E58EB0085CA3C /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -197,11 +180,6 @@
 		9B1C4BC1173E80AD0085CA3C /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
 		9B1C4BC2173E80AD0085CA3C /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
 		9B1C4BC3173E80AD0085CA3C /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
-		9BBF09FA1744EE650067D49C /* LCEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCEnvironment.h; sourceTree = "<group>"; };
-		9BBF09FB1744EE650067D49C /* LCEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCEnvironment.m; sourceTree = "<group>"; };
-		9BBF0A001744F2A00067D49C /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
-		9BBF0A011744F2A00067D49C /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
-		9BE54E151748870F0084058D /* LCDataServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDataServiceDelegate.h; sourceTree = "<group>"; };
 		C910513C173E8EFC006DB5A1 /* InitialSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InitialSlidingViewController.h; path = biz/controller/InitialSlidingViewController.h; sourceTree = "<group>"; };
 		C910513D173E8EFC006DB5A1 /* InitialSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InitialSlidingViewController.m; path = biz/controller/InitialSlidingViewController.m; sourceTree = "<group>"; };
 		C910513F173E8F1A006DB5A1 /* LCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCHomeViewController.h; path = biz/controller/LCHomeViewController.h; sourceTree = "<group>"; };
@@ -435,7 +413,6 @@
 				C9705DE61748A89600E991E5 /* resource */,
 				C9705DC21743DAD300E991E5 /* starter */,
 				C9105135173E8DC5006DB5A1 /* biz */,
-				9B1C4B44173E58EB0085CA3C /* core */,
 				9B1C4B53173E58EB0085CA3C /* lib */,
 				9B1C4B2E173E58140085CA3C /* Supporting Files */,
 				9B1C4BA9173E5A9C0085CA3C /* LCConfig.h */,
@@ -458,44 +435,6 @@
 				9B1C4B3D173E58140085CA3C /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9B1C4B44173E58EB0085CA3C /* core */ = {
-			isa = PBXGroup;
-			children = (
-				9BBF09FA1744EE650067D49C /* LCEnvironment.h */,
-				9BBF09FB1744EE650067D49C /* LCEnvironment.m */,
-				9BE54E151748870F0084058D /* LCDataServiceDelegate.h */,
-				9B1C4B4C173E58EB0085CA3C /* LCDataService.h */,
-				9B1C4B4D173E58EB0085CA3C /* LCDataService.m */,
-				9B1C4B45173E58EB0085CA3C /* entity */,
-				9B1C4B50173E58EB0085CA3C /* util */,
-			);
-			path = core;
-			sourceTree = "<group>";
-		};
-		9B1C4B45173E58EB0085CA3C /* entity */ = {
-			isa = PBXGroup;
-			children = (
-				9B1C4B46173E58EB0085CA3C /* LCDataPiece.h */,
-				9B1C4B47173E58EB0085CA3C /* LCDataPiece.m */,
-				9B1C4B48173E58EB0085CA3C /* LCDataSummary.h */,
-				9B1C4B49173E58EB0085CA3C /* LCDataSummary.m */,
-				9B05653B1743C74D0032458E /* LCTimestamp.h */,
-				9B05653C1743C74D0032458E /* LCTimestamp.m */,
-			);
-			path = entity;
-			sourceTree = "<group>";
-		};
-		9B1C4B50173E58EB0085CA3C /* util */ = {
-			isa = PBXGroup;
-			children = (
-				9B1C4B51173E58EB0085CA3C /* LCNetworkUtil.h */,
-				9B1C4B52173E58EB0085CA3C /* LCNetworkUtil.m */,
-				9BBF0A001744F2A00067D49C /* UIDevice+IdentifierAddition.h */,
-				9BBF0A011744F2A00067D49C /* UIDevice+IdentifierAddition.m */,
-			);
-			path = util;
 			sourceTree = "<group>";
 		};
 		9B1C4B53173E58EB0085CA3C /* lib */ = {
@@ -966,10 +905,6 @@
 			files = (
 				9B1C4B34173E58140085CA3C /* main.m in Sources */,
 				9B1C4B38173E58140085CA3C /* LCAppDelegate.m in Sources */,
-				9B1C4B8C173E58EC0085CA3C /* LCDataPiece.m in Sources */,
-				9B1C4B8D173E58EC0085CA3C /* LCDataSummary.m in Sources */,
-				9B1C4B8F173E58EC0085CA3C /* LCDataService.m in Sources */,
-				9B1C4B91173E58EC0085CA3C /* LCNetworkUtil.m in Sources */,
 				9B1C4B92173E58EC0085CA3C /* ASIAuthenticationDialog.m in Sources */,
 				9B1C4B93173E58EC0085CA3C /* ASIDataCompressor.m in Sources */,
 				9B1C4B94173E58EC0085CA3C /* ASIDataDecompressor.m in Sources */,
@@ -1017,9 +952,6 @@
 				C9705DDF1748444600E991E5 /* LCConsumeViewController.m in Sources */,
 				C9705DE21748446700E991E5 /* LCBillViewController.m in Sources */,
 				C9705DE5174848A900E991E5 /* LCDiagnoseViewController.m in Sources */,
-				9B05653D1743C74D0032458E /* LCTimestamp.m in Sources */,
-				9BBF09FC1744EE650067D49C /* LCEnvironment.m in Sources */,
-				9BBF0A021744F2A00067D49C /* UIDevice+IdentifierAddition.m in Sources */,
 				C9150A43174FAF890077A693 /* LCSectionBillCell.m in Sources */,
 				C9150A50174FB2370077A693 /* LCSubBillCell.m in Sources */,
 				C9150A53174FBC7F0077A693 /* LCTableProvider.m in Sources */,
