@@ -12,8 +12,7 @@
 
 @implementation LCHomeViewController
 
-
-- (void)viewDidLoad {
+- (void)viewDidLoad {	
 	//0. add subview of bow view
 	self.bowView = [[UIView alloc] initWithFrame:CGRectMake(120, 170, 80, 50)];
 	self.bowView.backgroundColor = [UIColor blackColor];

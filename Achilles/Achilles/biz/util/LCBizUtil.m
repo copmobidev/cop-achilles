@@ -24,4 +24,7 @@
 	[[self sharedUserDefaults] setBool:flag forKey:[self getUserDefautKey:idx]];
 }
 
++ (BOOL)UserDefaultsAt:(NSInteger)idx withFlag:(BOOL)flag {
+	return [[self sharedUserDefaults] boolForKey:[self getUserDefautKey:idx]];
+}
 @end
