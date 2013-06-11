@@ -9,8 +9,8 @@
 #import "LCRegisterController.h"
 #import "WelcomeScrollView.h"
 #import "LTGlobalConfig.h"
-//#import "Peleus/LCDataService.h"
 #import "LCDataService.h"
+#import "LCServiceDelegate.h"
 
 @interface LCRegisterController()
 
@@ -18,6 +18,7 @@
 - (UIButton *)simepleButtonWithFrame:(CGRect)frame andText:(NSString *)text;
 - (void)getConfig;
 @end
+
 
 @implementation LCRegisterController
 
@@ -59,19 +60,11 @@
 }
 
 - (void)getConfig {
-	
-//	[[LCDataService sharedDataService] getConfigWithSuccessBlock:^(NSDictionary *configDictionary){
-//		[[LCGlobalConfig sharedGlobalConfig] setConfigDictionary:configDictionary];
-//		[self dismiss];
-//	} withFailBlock:^(){
-//		//alert
-//		UIAlertView *alert =[[UIAlertView alloc] initWithTitle:@"初始化失败"
-//													   message:@"请确认已连接车载OBD Wifi"
-//													  delegate:nil
-//											 cancelButtonTitle:@"ok"
-//											 otherButtonTitles:nil];
-//		[alert show];
-//	}];
+	if (![LCDataService sharedDataService].delegate) {
+		[[LCDataService sharedDataService] setDelegate:[LCServiceDelegate sharedInstance]];
+		[[LCServiceDelegate sharedInstance] setRegisterController:self];
+	}
+	[[LCDataService sharedDataService] obdConfig];
 }
 
 

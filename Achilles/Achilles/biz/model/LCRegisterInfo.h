@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "LCModel.h"
 
-@interface RegisterInfo : LCModel
+@interface LCRegisterInfo : LCModel
 
+@property (nonatomic, strong) NSString *obd;
 @property (nonatomic, strong) NSString *sid;
-@property (nonatomic, strong) NSString *cid;
 
 @end

@@ -13,5 +13,6 @@
 @interface LCRegisterController : UIViewController
 
 @property (nonatomic, strong) WelcomeScrollView *scrollView;
-		
+
+- (void)dismiss;
 @end

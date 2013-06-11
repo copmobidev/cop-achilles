@@ -6,8 +6,8 @@
 //  Copyright (c) 2013年 weiyanen. All rights reserved.
 //
 
-#import "RegisterInfo.h"
+#import "LCRegisterInfo.h"
 
-@implementation RegisterInfo
+@implementation LCRegisterInfo
 
 @end

@@ -33,7 +33,7 @@
 		C9105153173E8F75006DB5A1 /* UnderRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105152173E8F75006DB5A1 /* UnderRightViewController.m */; };
 		C9105155173E8FB5006DB5A1 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9105154173E8FB5006DB5A1 /* iPhone.storyboard */; };
 		C9105158173E8FE2006DB5A1 /* LCRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105157173E8FE2006DB5A1 /* LCRegisterController.m */; };
-		C910515D173E8FFE006DB5A1 /* RegisterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C910515A173E8FFE006DB5A1 /* RegisterInfo.m */; };
+		C910515D173E8FFE006DB5A1 /* LCRegisterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C910515A173E8FFE006DB5A1 /* LCRegisterInfo.m */; };
 		C9105161173E9019006DB5A1 /* WelcomeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105160173E9019006DB5A1 /* WelcomeScrollView.m */; };
 		C9150A43174FAF890077A693 /* LCSectionBillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9150A42174FAF890077A693 /* LCSectionBillCell.m */; };
 		C9150A45174FAFAF0077A693 /* LCSectionBillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9150A44174FAFAF0077A693 /* LCSectionBillCell.xib */; };
@@ -85,6 +85,7 @@
 		C9E604C51766C6240066BA48 /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604C21766C6240066BA48 /* NSObject+Properties.m */; };
 		C9E604C61766C6240066BA48 /* NSString+PropertyKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604C41766C6240066BA48 /* NSString+PropertyKVC.m */; };
 		C9E604CD1766EAD80066BA48 /* libPeleus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E604CC1766EAD00066BA48 /* libPeleus.a */; };
+		C9E604D31766FC050066BA48 /* LCServiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604D21766FC050066BA48 /* LCServiceDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,8 +141,8 @@
 		C9105154173E8FB5006DB5A1 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		C9105156173E8FE2006DB5A1 /* LCRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCRegisterController.h; path = biz/controller/LCRegisterController.h; sourceTree = "<group>"; };
 		C9105157173E8FE2006DB5A1 /* LCRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCRegisterController.m; path = biz/controller/LCRegisterController.m; sourceTree = "<group>"; };
-		C9105159173E8FFE006DB5A1 /* RegisterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterInfo.h; path = biz/model/RegisterInfo.h; sourceTree = "<group>"; };
-		C910515A173E8FFE006DB5A1 /* RegisterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterInfo.m; path = biz/model/RegisterInfo.m; sourceTree = "<group>"; };
+		C9105159173E8FFE006DB5A1 /* LCRegisterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCRegisterInfo.h; path = biz/model/LCRegisterInfo.h; sourceTree = "<group>"; };
+		C910515A173E8FFE006DB5A1 /* LCRegisterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCRegisterInfo.m; path = biz/model/LCRegisterInfo.m; sourceTree = "<group>"; };
 		C910515F173E9019006DB5A1 /* WelcomeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeScrollView.h; path = biz/view/WelcomeScrollView.h; sourceTree = "<group>"; };
 		C9105160173E9019006DB5A1 /* WelcomeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeScrollView.m; path = biz/view/WelcomeScrollView.m; sourceTree = "<group>"; };
 		C9150A41174FAF890077A693 /* LCSectionBillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCSectionBillCell.h; path = biz/view/cell/LCSectionBillCell.h; sourceTree = "<group>"; };
@@ -302,6 +303,8 @@
 		C9E604C31766C6240066BA48 /* NSString+PropertyKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PropertyKVC.h"; sourceTree = "<group>"; };
 		C9E604C41766C6240066BA48 /* NSString+PropertyKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PropertyKVC.m"; sourceTree = "<group>"; };
 		C9E604C71766EACF0066BA48 /* Peleus.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Peleus.xcodeproj; path = "../../cop-peleus/Peleus/Peleus.xcodeproj"; sourceTree = "<group>"; };
+		C9E604D11766FC050066BA48 /* LCServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCServiceDelegate.h; path = biz/delegate/LCServiceDelegate.h; sourceTree = "<group>"; };
+		C9E604D21766FC050066BA48 /* LCServiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCServiceDelegate.m; path = biz/delegate/LCServiceDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -415,6 +418,7 @@
 		C9105135173E8DC5006DB5A1 /* biz */ = {
 			isa = PBXGroup;
 			children = (
+				C9E604CF1766FBD00066BA48 /* delegate */,
 				C9AC02AC175379E200258733 /* util */,
 				C9105139173E8E39006DB5A1 /* logic */,
 				C9105138173E8E31006DB5A1 /* view */,
@@ -473,8 +477,8 @@
 		C9105137173E8E2B006DB5A1 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				C9105159173E8FFE006DB5A1 /* RegisterInfo.h */,
-				C910515A173E8FFE006DB5A1 /* RegisterInfo.m */,
+				C9105159173E8FFE006DB5A1 /* LCRegisterInfo.h */,
+				C910515A173E8FFE006DB5A1 /* LCRegisterInfo.m */,
 				C9697106173F538F00D0BEB5 /* LTGlobalConfig.h */,
 				C9697107173F538F00D0BEB5 /* LTGlobalConfig.m */,
 				C9E604BC1766C3FB0066BA48 /* LCModel.h */,
@@ -712,6 +716,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C9E604CF1766FBD00066BA48 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C9E604D11766FC050066BA48 /* LCServiceDelegate.h */,
+				C9E604D21766FC050066BA48 /* LCServiceDelegate.m */,
+			);
+			name = delegate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -827,7 +840,7 @@
 				C9105150173E8F67006DB5A1 /* LCSettingsViewController.m in Sources */,
 				C9105153173E8F75006DB5A1 /* UnderRightViewController.m in Sources */,
 				C9105158173E8FE2006DB5A1 /* LCRegisterController.m in Sources */,
-				C910515D173E8FFE006DB5A1 /* RegisterInfo.m in Sources */,
+				C910515D173E8FFE006DB5A1 /* LCRegisterInfo.m in Sources */,
 				C9105161173E9019006DB5A1 /* WelcomeScrollView.m in Sources */,
 				C9697108173F538F00D0BEB5 /* LTGlobalConfig.m in Sources */,
 				C9705DC51743DAE900E991E5 /* CPDStockPriceStore.m in Sources */,
@@ -857,6 +870,7 @@
 				C9E604BE1766C3FB0066BA48 /* LCModel.m in Sources */,
 				C9E604C51766C6240066BA48 /* NSObject+Properties.m in Sources */,
 				C9E604C61766C6240066BA48 /* NSString+PropertyKVC.m in Sources */,
+				C9E604D31766FC050066BA48 /* LCServiceDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

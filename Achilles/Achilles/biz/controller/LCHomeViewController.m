@@ -96,8 +96,8 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-	NSLog(@"deviceid:%@\nuseragent:%@\ntoken:%@\nappversion:%@\ndevicemode:%@\nplatform:%@\nappId:%@\nbundleId:%@",[[LCEnvironment sharedEnvironment] deviceId], [[LCEnvironment sharedEnvironment] userAgent], [[LCEnvironment sharedEnvironment] token], [[LCEnvironment sharedEnvironment] version], [[LCEnvironment sharedEnvironment] deviceModel], [[LCEnvironment sharedEnvironment] platform], [[LCEnvironment sharedEnvironment] appId], [[LCEnvironment sharedEnvironment] bundleId]);
-	return;
+//	NSLog(@"deviceid:%@\nuseragent:%@\ntoken:%@\nappversion:%@\ndevicemode:%@\nplatform:%@\nappId:%@\nbundleId:%@",[[LCEnvironment sharedEnvironment] deviceId], [[LCEnvironment sharedEnvironment] userAgent], [[LCEnvironment sharedEnvironment] token], [[LCEnvironment sharedEnvironment] version], [[LCEnvironment sharedEnvironment] deviceModel], [[LCEnvironment sharedEnvironment] platform], [[LCEnvironment sharedEnvironment] appId], [[LCEnvironment sharedEnvironment] bundleId]);
+//	return;
 	if (![[LCStore sharedInstance] userDefaultObjectForKey:RegisteredInfoKey]) {
 		LCRegisterController *registerController = [[LCRegisterController alloc] init];
 		[self presentModalViewController:registerController animated:NO];
