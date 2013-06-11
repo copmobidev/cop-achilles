@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LCModel.h"
 
-@interface RegisterInfo : NSObject
+@interface RegisterInfo : LCModel
 
 @property (nonatomic, strong) NSString *sid;
 @property (nonatomic, strong) NSString *cid;

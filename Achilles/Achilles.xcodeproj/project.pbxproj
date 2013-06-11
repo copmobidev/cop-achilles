@@ -32,9 +32,8 @@
 		C9105150173E8F67006DB5A1 /* LCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C910514F173E8F67006DB5A1 /* LCSettingsViewController.m */; };
 		C9105153173E8F75006DB5A1 /* UnderRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105152173E8F75006DB5A1 /* UnderRightViewController.m */; };
 		C9105155173E8FB5006DB5A1 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9105154173E8FB5006DB5A1 /* iPhone.storyboard */; };
-		C9105158173E8FE2006DB5A1 /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105157173E8FE2006DB5A1 /* RegisterController.m */; };
+		C9105158173E8FE2006DB5A1 /* LCRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105157173E8FE2006DB5A1 /* LCRegisterController.m */; };
 		C910515D173E8FFE006DB5A1 /* RegisterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C910515A173E8FFE006DB5A1 /* RegisterInfo.m */; };
-		C910515E173E8FFE006DB5A1 /* RegisterStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = C910515C173E8FFE006DB5A1 /* RegisterStatus.m */; };
 		C9105161173E9019006DB5A1 /* WelcomeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9105160173E9019006DB5A1 /* WelcomeScrollView.m */; };
 		C9150A43174FAF890077A693 /* LCSectionBillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9150A42174FAF890077A693 /* LCSectionBillCell.m */; };
 		C9150A45174FAFAF0077A693 /* LCSectionBillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9150A44174FAFAF0077A693 /* LCSectionBillCell.xib */; };
@@ -82,7 +81,21 @@
 		C9CED427175AF6BB0074A498 /* LCAddBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED426175AF6BB0074A498 /* LCAddBillViewController.m */; };
 		C9CED42A175B15AC0074A498 /* LCEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED429175B15AC0074A498 /* LCEditProfileViewController.m */; };
 		C9CED500175F85FB0074A498 /* LCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED4FF175F85FA0074A498 /* LCStore.m */; };
+		C9E604BE1766C3FB0066BA48 /* LCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604BD1766C3FB0066BA48 /* LCModel.m */; };
+		C9E604C51766C6240066BA48 /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604C21766C6240066BA48 /* NSObject+Properties.m */; };
+		C9E604C61766C6240066BA48 /* NSString+PropertyKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604C41766C6240066BA48 /* NSString+PropertyKVC.m */; };
+		C9E604CD1766EAD80066BA48 /* libPeleus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E604CC1766EAD00066BA48 /* libPeleus.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9E604CB1766EAD00066BA48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9E604C71766EACF0066BA48 /* Peleus.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9BCF450817635DBD00AB895A;
+			remoteInfo = Peleus;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9B1C4B24173E58140085CA3C /* Achilles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Achilles.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,12 +138,10 @@
 		C9105151173E8F75006DB5A1 /* UnderRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnderRightViewController.h; path = biz/controller/UnderRightViewController.h; sourceTree = "<group>"; };
 		C9105152173E8F75006DB5A1 /* UnderRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UnderRightViewController.m; path = biz/controller/UnderRightViewController.m; sourceTree = "<group>"; };
 		C9105154173E8FB5006DB5A1 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
-		C9105156173E8FE2006DB5A1 /* RegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterController.h; path = biz/controller/RegisterController.h; sourceTree = "<group>"; };
-		C9105157173E8FE2006DB5A1 /* RegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterController.m; path = biz/controller/RegisterController.m; sourceTree = "<group>"; };
+		C9105156173E8FE2006DB5A1 /* LCRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCRegisterController.h; path = biz/controller/LCRegisterController.h; sourceTree = "<group>"; };
+		C9105157173E8FE2006DB5A1 /* LCRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCRegisterController.m; path = biz/controller/LCRegisterController.m; sourceTree = "<group>"; };
 		C9105159173E8FFE006DB5A1 /* RegisterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterInfo.h; path = biz/model/RegisterInfo.h; sourceTree = "<group>"; };
 		C910515A173E8FFE006DB5A1 /* RegisterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterInfo.m; path = biz/model/RegisterInfo.m; sourceTree = "<group>"; };
-		C910515B173E8FFE006DB5A1 /* RegisterStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterStatus.h; path = biz/model/RegisterStatus.h; sourceTree = "<group>"; };
-		C910515C173E8FFE006DB5A1 /* RegisterStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterStatus.m; path = biz/model/RegisterStatus.m; sourceTree = "<group>"; };
 		C910515F173E9019006DB5A1 /* WelcomeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeScrollView.h; path = biz/view/WelcomeScrollView.h; sourceTree = "<group>"; };
 		C9105160173E9019006DB5A1 /* WelcomeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeScrollView.m; path = biz/view/WelcomeScrollView.m; sourceTree = "<group>"; };
 		C9150A41174FAF890077A693 /* LCSectionBillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCSectionBillCell.h; path = biz/view/cell/LCSectionBillCell.h; sourceTree = "<group>"; };
@@ -284,6 +295,13 @@
 		C9CED4FD175F85220074A498 /* LCDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCDefine.h; path = biz/util/LCDefine.h; sourceTree = "<group>"; };
 		C9CED4FE175F85FA0074A498 /* LCStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCStore.h; path = biz/util/LCStore.h; sourceTree = "<group>"; };
 		C9CED4FF175F85FA0074A498 /* LCStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCStore.m; path = biz/util/LCStore.m; sourceTree = "<group>"; };
+		C9E604BC1766C3FB0066BA48 /* LCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCModel.h; path = biz/model/LCModel.h; sourceTree = "<group>"; };
+		C9E604BD1766C3FB0066BA48 /* LCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCModel.m; path = biz/model/LCModel.m; sourceTree = "<group>"; };
+		C9E604C11766C6240066BA48 /* NSObject+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Properties.h"; sourceTree = "<group>"; };
+		C9E604C21766C6240066BA48 /* NSObject+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Properties.m"; sourceTree = "<group>"; };
+		C9E604C31766C6240066BA48 /* NSString+PropertyKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PropertyKVC.h"; sourceTree = "<group>"; };
+		C9E604C41766C6240066BA48 /* NSString+PropertyKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PropertyKVC.m"; sourceTree = "<group>"; };
+		C9E604C71766EACF0066BA48 /* Peleus.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Peleus.xcodeproj; path = "../../cop-peleus/Peleus/Peleus.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +309,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E604CD1766EAD80066BA48 /* libPeleus.a in Frameworks */,
 				C969717B173F851700D0BEB5 /* QuartzCore.framework in Frameworks */,
 				9B1C4BB5173E7BD10085CA3C /* libxml2.dylib in Frameworks */,
 				9B1C4BB4173E7B4A0085CA3C /* libz.dylib in Frameworks */,
@@ -327,6 +346,7 @@
 		9B1C4B26173E58140085CA3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C9E604C71766EACF0066BA48 /* Peleus.xcodeproj */,
 				9B1C4BB3173E7B4A0085CA3C /* libz.dylib */,
 				9B1C4BAA173E5B060085CA3C /* libxml2.dylib */,
 				C969717A173F851700D0BEB5 /* QuartzCore.framework */,
@@ -343,6 +363,7 @@
 		9B1C4B2D173E58140085CA3C /* Achilles */ = {
 			isa = PBXGroup;
 			children = (
+				C9E604BF1766C5EC0066BA48 /* ThirdParty */,
 				C9705DE61748A89600E991E5 /* resource */,
 				C9705DC21743DAD300E991E5 /* starter */,
 				C9105135173E8DC5006DB5A1 /* biz */,
@@ -415,8 +436,8 @@
 				C9705DD91747C15600E991E5 /* LCBizController.m */,
 				C9AC02B817537A5900258733 /* LCBizSpanViewController.h */,
 				C9AC02B917537A5900258733 /* LCBizSpanViewController.m */,
-				C9105156173E8FE2006DB5A1 /* RegisterController.h */,
-				C9105157173E8FE2006DB5A1 /* RegisterController.m */,
+				C9105156173E8FE2006DB5A1 /* LCRegisterController.h */,
+				C9105157173E8FE2006DB5A1 /* LCRegisterController.m */,
 				C910513C173E8EFC006DB5A1 /* InitialSlidingViewController.h */,
 				C910513D173E8EFC006DB5A1 /* InitialSlidingViewController.m */,
 				C910513F173E8F1A006DB5A1 /* LCHomeViewController.h */,
@@ -454,10 +475,10 @@
 			children = (
 				C9105159173E8FFE006DB5A1 /* RegisterInfo.h */,
 				C910515A173E8FFE006DB5A1 /* RegisterInfo.m */,
-				C910515B173E8FFE006DB5A1 /* RegisterStatus.h */,
-				C910515C173E8FFE006DB5A1 /* RegisterStatus.m */,
 				C9697106173F538F00D0BEB5 /* LTGlobalConfig.h */,
 				C9697107173F538F00D0BEB5 /* LTGlobalConfig.m */,
+				C9E604BC1766C3FB0066BA48 /* LCModel.h */,
+				C9E604BD1766C3FB0066BA48 /* LCModel.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -664,6 +685,33 @@
 			name = FPPopover;
 			sourceTree = "<group>";
 		};
+		C9E604BF1766C5EC0066BA48 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				C9E604C01766C60B0066BA48 /* NSObject+Properties */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		C9E604C01766C60B0066BA48 /* NSObject+Properties */ = {
+			isa = PBXGroup;
+			children = (
+				C9E604C11766C6240066BA48 /* NSObject+Properties.h */,
+				C9E604C21766C6240066BA48 /* NSObject+Properties.m */,
+				C9E604C31766C6240066BA48 /* NSString+PropertyKVC.h */,
+				C9E604C41766C6240066BA48 /* NSString+PropertyKVC.m */,
+			);
+			name = "NSObject+Properties";
+			sourceTree = "<group>";
+		};
+		C9E604C81766EACF0066BA48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9E604CC1766EAD00066BA48 /* libPeleus.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -704,12 +752,28 @@
 			mainGroup = 9B1C4B1B173E58140085CA3C;
 			productRefGroup = 9B1C4B25173E58140085CA3C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C9E604C81766EACF0066BA48 /* Products */;
+					ProjectRef = C9E604C71766EACF0066BA48 /* Peleus.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9B1C4B23173E58140085CA3C /* Achilles */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C9E604CC1766EAD00066BA48 /* libPeleus.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPeleus.a;
+			remoteRef = C9E604CB1766EAD00066BA48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9B1C4B22173E58140085CA3C /* Resources */ = {
@@ -762,9 +826,8 @@
 				C910514D173E8F58006DB5A1 /* LCNavigationViewController.m in Sources */,
 				C9105150173E8F67006DB5A1 /* LCSettingsViewController.m in Sources */,
 				C9105153173E8F75006DB5A1 /* UnderRightViewController.m in Sources */,
-				C9105158173E8FE2006DB5A1 /* RegisterController.m in Sources */,
+				C9105158173E8FE2006DB5A1 /* LCRegisterController.m in Sources */,
 				C910515D173E8FFE006DB5A1 /* RegisterInfo.m in Sources */,
-				C910515E173E8FFE006DB5A1 /* RegisterStatus.m in Sources */,
 				C9105161173E9019006DB5A1 /* WelcomeScrollView.m in Sources */,
 				C9697108173F538F00D0BEB5 /* LTGlobalConfig.m in Sources */,
 				C9705DC51743DAE900E991E5 /* CPDStockPriceStore.m in Sources */,
@@ -791,6 +854,9 @@
 				C9CED427175AF6BB0074A498 /* LCAddBillViewController.m in Sources */,
 				C9CED42A175B15AC0074A498 /* LCEditProfileViewController.m in Sources */,
 				C9CED500175F85FB0074A498 /* LCStore.m in Sources */,
+				C9E604BE1766C3FB0066BA48 /* LCModel.m in Sources */,
+				C9E604C51766C6240066BA48 /* NSObject+Properties.m in Sources */,
+				C9E604C61766C6240066BA48 /* NSString+PropertyKVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -872,7 +938,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Achilles/Achilles-Prefix.pch";
 				GCC_VERSION = "";
-				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				HEADER_SEARCH_PATHS = "../../cop-peleus/Peleus/**";
 				INFOPLIST_FILE = "Achilles/Achilles-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -895,7 +961,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Achilles/Achilles-Prefix.pch";
 				GCC_VERSION = "";
-				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				HEADER_SEARCH_PATHS = "../../cop-peleus/Peleus/**";
 				INFOPLIST_FILE = "Achilles/Achilles-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (

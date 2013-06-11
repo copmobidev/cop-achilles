@@ -7,8 +7,9 @@
 //
 
 #import "LCHomeViewController.h"
-#import "RegisterController.h"
-#import "RegisterStatus.h"
+#import "LCRegisterController.h"
+#import "LCStore.h"
+#import "LCEnvironment.h"
 
 @implementation LCHomeViewController
 
@@ -95,12 +96,12 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-	
-//	if (![RegisterStatus sharedInstance].isRegisterd) {
-//		[RegisterStatus sharedInstance].isRegisterd = YES;
-//		RegisterController *registerController = [[RegisterController alloc] init];
-//		[self presentModalViewController:registerController animated:NO];
-//	}	
+	NSLog(@"deviceid:%@\nuseragent:%@\ntoken:%@\nappversion:%@\ndevicemode:%@\nplatform:%@\nappId:%@\nbundleId:%@",[[LCEnvironment sharedEnvironment] deviceId], [[LCEnvironment sharedEnvironment] userAgent], [[LCEnvironment sharedEnvironment] token], [[LCEnvironment sharedEnvironment] version], [[LCEnvironment sharedEnvironment] deviceModel], [[LCEnvironment sharedEnvironment] platform], [[LCEnvironment sharedEnvironment] appId], [[LCEnvironment sharedEnvironment] bundleId]);
+	return;
+	if (![[LCStore sharedInstance] userDefaultObjectForKey:RegisteredInfoKey]) {
+		LCRegisterController *registerController = [[LCRegisterController alloc] init];
+		[self presentModalViewController:registerController animated:NO];
+	}
 }
 
 - (void)viewWillAppear:(BOOL)animated

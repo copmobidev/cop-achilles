@@ -31,6 +31,8 @@ typedef enum {
 
 @interface LCStore : NSObject
 
+extern NSString * const RegisteredInfoKey;
+
 LCSINGLETON_IN_H(LCStore)
 
 // plist store, 读写属性一致， 不建议 写 object 读 array.
@@ -48,7 +50,9 @@ LCSINGLETON_IN_H(LCStore)
 
 // user deafult 封装 object 存储
 - (void)setUserDefaultObject:(id<NSCoding>)obj forKey:(NSString*)key;
-- (id)userDefaultObjectForKey:(NSString*)key;
+- (id)userDefaultObjectForKey:(NSString *)key;
 
+- (void)setUserDefaultBool:(BOOL)flag forKey:(NSString *)key;
+- (BOOL)userDefaultBoolForKey:(NSString *)key;
 
 @end

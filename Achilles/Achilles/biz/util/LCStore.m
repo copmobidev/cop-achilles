@@ -10,6 +10,8 @@
 
 @implementation LCStore
 
+NSString * const RegisteredInfoKey = @"RegisteredInfo";
+
 #pragma mark - Private Methods
 
 LCSINGLETON_IN_M(LCStore)
@@ -111,6 +113,15 @@ LCSINGLETON_IN_M(LCStore)
         return [NSKeyedUnarchiver unarchiveObjectWithData:data];
     }
     return nil;
+}
+
+- (void)setUserDefaultBool:(BOOL)flag forKey:(NSString *)key {
+	[LCUserDefaults setBool:flag forKey:key];
+	[LCUserDefaults synchronize];
+}
+
+- (BOOL)userDefaultBoolForKey:(NSString *)key {
+	return [LCUserDefaults boolForKey:key];
 }
 
 @end

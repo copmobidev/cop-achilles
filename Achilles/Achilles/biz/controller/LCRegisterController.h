@@ -10,7 +10,7 @@
 
 @class WelcomeScrollView;
 
-@interface RegisterController : UIViewController
+@interface LCRegisterController : UIViewController
 
 @property (nonatomic, strong) WelcomeScrollView *scrollView;
 		

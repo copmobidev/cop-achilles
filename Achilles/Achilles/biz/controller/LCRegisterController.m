@@ -6,20 +6,22 @@
 //  Copyright (c) 2013年 weiyanen. All rights reserved.
 //
 
-#import "RegisterController.h"
+#import "LCRegisterController.h"
 #import "WelcomeScrollView.h"
 #import "LTGlobalConfig.h"
-@interface RegisterController()
+//#import "Peleus/LCDataService.h"
+#import "LCDataService.h"
+
+@interface LCRegisterController()
 
 - (UILabel *)simepleLableWithFrame: (CGRect)frame andText:(NSString *)text;
 - (UIButton *)simepleButtonWithFrame:(CGRect)frame andText:(NSString *)text;
 - (void)getConfig;
 @end
 
-@implementation RegisterController
+@implementation LCRegisterController
 
 - (void)viewDidLoad {
-	
 	[super viewDidLoad];
 	self.view.backgroundColor = [UIColor whiteColor];
 	
@@ -57,6 +59,7 @@
 }
 
 - (void)getConfig {
+	
 //	[[LCDataService sharedDataService] getConfigWithSuccessBlock:^(NSDictionary *configDictionary){
 //		[[LCGlobalConfig sharedGlobalConfig] setConfigDictionary:configDictionary];
 //		[self dismiss];
