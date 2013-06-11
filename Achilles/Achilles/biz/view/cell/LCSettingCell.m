@@ -7,7 +7,7 @@
 //
 
 #import "LCSettingCell.h"
-#import "LCBizUtil.h"
+#import "LCStore.h"
 
 @implementation LCSettingCell
 
@@ -29,6 +29,11 @@
 
 - (IBAction)switchChanged:(id)sender {
 	UISwitch *settingSwitch = (UISwitch *)sender;
-	[LCBizUtil setUserDefaultsAt:settingSwitch.tag withFlag:settingSwitch.on];
+	[LCUserDefaults setBool:settingSwitch.on forKey:[LCSettingCell getUserDefautKey:settingSwitch.tag]];
+}
+
++ (NSString *)getUserDefautKey:(NSUInteger)idx {
+	NSArray *keys = @[@"gprs", @"cache"];
+	return keys[idx];
 }
 @end

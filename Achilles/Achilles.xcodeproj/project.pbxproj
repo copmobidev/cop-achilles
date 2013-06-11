@@ -70,7 +70,6 @@
 		C9705DEB1748A89600E991E5 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = C9705DE81748A89600E991E5 /* car.png */; };
 		C9705DEC1748A89600E991E5 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = C9705DE91748A89600E991E5 /* left.png */; };
 		C9705DED1748A89600E991E5 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = C9705DEA1748A89600E991E5 /* right.png */; };
-		C9799B2217579B5A00D44F50 /* LCBizUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C9799B2117579B5A00D44F50 /* LCBizUtil.m */; };
 		C9A4BE97175250F800D5C213 /* LCAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A4BE96175250F700D5C213 /* LCAccountViewController.m */; };
 		C9A4BE9A1752544E00D5C213 /* LCSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A4BE991752544E00D5C213 /* LCSettingCell.m */; };
 		C9A4BE9C1752546800D5C213 /* LCSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A4BE9B1752546800D5C213 /* LCSettingCell.xib */; };
@@ -260,8 +259,6 @@
 		C9705DE81748A89600E991E5 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
 		C9705DE91748A89600E991E5 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
 		C9705DEA1748A89600E991E5 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
-		C9799B2017579B5A00D44F50 /* LCBizUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBizUtil.h; path = biz/util/LCBizUtil.h; sourceTree = "<group>"; };
-		C9799B2117579B5A00D44F50 /* LCBizUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBizUtil.m; path = biz/util/LCBizUtil.m; sourceTree = "<group>"; };
 		C9A4BE95175250F700D5C213 /* LCAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCAccountViewController.h; path = biz/controller/LCAccountViewController.h; sourceTree = "<group>"; };
 		C9A4BE96175250F700D5C213 /* LCAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCAccountViewController.m; path = biz/controller/LCAccountViewController.m; sourceTree = "<group>"; };
 		C9A4BE981752544E00D5C213 /* LCSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCSettingCell.h; path = biz/view/cell/LCSettingCell.h; sourceTree = "<group>"; };
@@ -646,8 +643,6 @@
 			isa = PBXGroup;
 			children = (
 				C9AC02AD175379EC00258733 /* FPPopover */,
-				C9799B2017579B5A00D44F50 /* LCBizUtil.h */,
-				C9799B2117579B5A00D44F50 /* LCBizUtil.m */,
 				C9CED4FD175F85220074A498 /* LCDefine.h */,
 				C9CED4FE175F85FA0074A498 /* LCStore.h */,
 				C9CED4FF175F85FA0074A498 /* LCStore.m */,
@@ -793,7 +788,6 @@
 				C9AC02BA17537A5900258733 /* LCBizSpanViewController.m in Sources */,
 				C9AC02C017537C0100258733 /* LCSpanTableController.m in Sources */,
 				C9A705D31754F91F000DA8B2 /* LCMenuItemCell.m in Sources */,
-				C9799B2217579B5A00D44F50 /* LCBizUtil.m in Sources */,
 				C9CED427175AF6BB0074A498 /* LCAddBillViewController.m in Sources */,
 				C9CED42A175B15AC0074A498 /* LCEditProfileViewController.m in Sources */,
 				C9CED500175F85FB0074A498 /* LCStore.m in Sources */,

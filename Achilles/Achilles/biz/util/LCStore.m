@@ -10,6 +10,8 @@
 
 @implementation LCStore
 
+#pragma mark - Private Methods
+
 LCSINGLETON_IN_M(LCStore)
 
 - (id)init {
@@ -42,7 +44,7 @@ LCSINGLETON_IN_M(LCStore)
     return resultString;
 }
 
-// public actions
+#pragma mark - Public Methods
 
 - (NSArray *)plistArrayForKey:(NSString *)key {
     return [self plistArrayForKey:key inPath:kStorePathCache];
@@ -59,6 +61,8 @@ LCSINGLETON_IN_M(LCStore)
 - (BOOL)setPlistObject:(id)obj forKey:(NSString*)key {
     return [self setPlistObject:obj forKey:key inPath:kStorePathCache];
 }
+
+#pragma mark - Plist Atomic Methods
 
 - (NSArray *)plistArrayForKey:(NSString *)key inPath:(StorePath)storePath {
     NSString *filePath = [self getFilePathWithPath:storePath fileName:key];
@@ -92,6 +96,8 @@ LCSINGLETON_IN_M(LCStore)
     }
     return suc;
 }
+
+#pragma mark - UserDefaults for Custom Data
 
 - (void)setUserDefaultObject:(id<NSCoding>)obj forKey:(NSString*)key {
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:obj];
