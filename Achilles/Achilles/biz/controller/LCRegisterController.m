@@ -7,7 +7,6 @@
 //
 
 #import "LCRegisterController.h"
-#import "WelcomeScrollView.h"
 #import "LTGlobalConfig.h"
 #import "LCDataService.h"
 #import "LCServiceDelegate.h"
@@ -16,25 +15,31 @@
 
 - (UILabel *)simepleLableWithFrame: (CGRect)frame andText:(NSString *)text;
 - (UIButton *)simepleButtonWithFrame:(CGRect)frame andText:(NSString *)text;
+- (UIImageView *)simpleImage:(NSString *)imageName WithFrame:(CGRect)frame;
 - (void)getConfig;
 @end
 
 
 @implementation LCRegisterController
 
+const int pageNumber = 5;
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	self.view.backgroundColor = [UIColor whiteColor];
 	
-	self.scrollView = [[WelcomeScrollView alloc] initWithFrame:self.view.bounds];
-	self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width * 4, self.view.frame.size.height);
+	self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+	self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width * pageNumber, self.view.frame.size.height);
 	self.scrollView.pagingEnabled = YES;
+	self.scrollView.bounces = NO;
+	self.scrollView.showsHorizontalScrollIndicator = NO;
+
 	
-	NSArray *pageArray = @[@"Page1", @"Page2", @"Page3", @"Page4"];
-	for (int i = 0; i < pageArray.count; i++) {
-		[self.scrollView addSubview:[self simepleLableWithFrame:CGRectMake(self.view.frame.size.width * i, 0, self.view.frame.size.width, 44) andText:[pageArray objectAtIndex:i]]];
-		if (i == pageArray.count - 1) {
-			[self.scrollView addSubview:[self simepleButtonWithFrame:CGRectMake(self.view.frame.size.width * i, 50, self.view.frame.size.width, 44) andText:@"开始初始化"]];
+	for (int i = 0; i < pageNumber; i++) {
+		[self.scrollView addSubview:[self simpleImage:[NSString stringWithFormat:@"%d_bg.png", i+1] WithFrame:CGRectMake(self.view.frame.size.width * i, 0, self.view.frame.size.width, self.view.frame.size.height)]];
+//		[self.scrollView addSubview:[self simepleLableWithFrame:CGRectMake(self.view.frame.size.width * i, 0, self.view.frame.size.width, 44) andText:[pageArray objectAtIndex:i]]];
+		if (i == pageNumber - 1) {
+			[self.scrollView addSubview:[self simepleButtonWithFrame:CGRectMake(self.view.frame.size.width * i, 420, self.view.frame.size.width, 44) andText:@"开始初始化"]];
 		}
 	}
 	
@@ -42,7 +47,13 @@
 }
 
 
-- (UILabel *)simepleLableWithFrame: (CGRect)frame andText:(NSString *)text {
+- (UIImageView *)simpleImage:(NSString *)imageName WithFrame:(CGRect)frame {
+	UIImageView * imageView = [[UIImageView alloc] initWithFrame:frame];
+	imageView.image = [UIImage imageNamed:imageName];
+	return imageView;
+}
+
+- (UILabel *)simepleLableWithFrame:(CGRect)frame andText:(NSString *)text {
 	UILabel *label = [[UILabel alloc] initWithFrame:frame];
     label.text = text;
     label.font = [UIFont boldSystemFontOfSize:28.];

@@ -8,11 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class WelcomeScrollView;
-
 @interface LCRegisterController : UIViewController
 
-@property (nonatomic, strong) WelcomeScrollView *scrollView;
+@property (nonatomic, strong) UIScrollView *scrollView;
 
 - (void)dismiss;
 @end
