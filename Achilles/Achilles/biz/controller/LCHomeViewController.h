@@ -22,6 +22,9 @@
 
 @property (nonatomic, strong) UIView *bowView;
 
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
 @property (weak, nonatomic) IBOutlet UIView *spanView;
 
 @property (weak, nonatomic) IBOutlet UIView *buttonView;

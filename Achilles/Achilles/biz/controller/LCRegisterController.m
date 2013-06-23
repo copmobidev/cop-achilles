@@ -14,9 +14,10 @@
 @interface LCRegisterController()
 
 - (UILabel *)simepleLableWithFrame: (CGRect)frame andText:(NSString *)text;
-- (UIButton *)simepleButtonWithFrame:(CGRect)frame andText:(NSString *)text;
-- (UIImageView *)simpleImage:(NSString *)imageName WithFrame:(CGRect)frame;
+- (UIImageView *)simpleImage:(NSString *)imageName withFrame:(CGRect)frame;
+- (UIButton *)buttonWithImage:(NSString *)imageName withTag:(NSInteger)tag withFrame:(CGRect)frame withSelector:(SEL)selector;
 - (void)getConfig;
+
 @end
 
 
@@ -35,19 +36,44 @@ const int pageNumber = 5;
 	self.scrollView.showsHorizontalScrollIndicator = NO;
 
 	
-	for (int i = 0; i < pageNumber; i++) {
-		[self.scrollView addSubview:[self simpleImage:[NSString stringWithFormat:@"%d_bg.png", i+1] WithFrame:CGRectMake(self.view.frame.size.width * i, 0, self.view.frame.size.width, self.view.frame.size.height)]];
-//		[self.scrollView addSubview:[self simepleLableWithFrame:CGRectMake(self.view.frame.size.width * i, 0, self.view.frame.size.width, 44) andText:[pageArray objectAtIndex:i]]];
-		if (i == pageNumber - 1) {
-			[self.scrollView addSubview:[self simepleButtonWithFrame:CGRectMake(self.view.frame.size.width * i, 420, self.view.frame.size.width, 44) andText:@"开始初始化"]];
+	for (int index = 0; index < pageNumber; index++) {
+		//scroll subview
+		[self.scrollView addSubview:[self simpleImage:[NSString stringWithFormat:@"%d_bg.png", index+1] withFrame:CGRectMake(self.view.frame.size.width * index, 0, self.view.frame.size.width, self.view.frame.size.height)]];
+		
+		//button & selector
+		CGRect rect = CGRectZero;
+		NSString *imageName = nil;
+		if (index == 0) {
+			imageName = @"start.png";
+			rect = CGRectMake(self.view.frame.size.width * index, 400, self.view.frame.size.width, 44);
+		} else {
+			rect = CGRectMake(self.view.frame.size.width * index + 160, 400, self.view.frame.size.width/2, 44);
+			if (index < pageNumber -1)
+				imageName = @"nextStep.png";
+			else
+				imageName = @"finish.png";
 		}
+		
+		[self.scrollView addSubview:[self buttonWithImage:imageName withTag:index + 1 withFrame:rect withSelector:@selector(nextPage:)]];
 	}
 	
 	[self.view addSubview:self.scrollView];
 }
 
-
-- (UIImageView *)simpleImage:(NSString *)imageName WithFrame:(CGRect)frame {
+- (void)nextPage:(id)sender {
+	UIButton *button = (UIButton *)sender;
+	if (button.tag < pageNumber) {
+		[self.scrollView scrollRectToVisible:CGRectMake(self.view.frame.size.width * button.tag, 0, self.view.frame.size.width, self.view.frame.size.height) animated:NO];
+//		if (button.tag == pageNumber - 2)
+//			[self getConfig];
+	} else {
+		//finish
+		[self getConfig];
+		[self finish];
+	}
+}
+											 
+- (UIImageView *)simpleImage:(NSString *)imageName withFrame:(CGRect)frame {
 	UIImageView * imageView = [[UIImageView alloc] initWithFrame:frame];
 	imageView.image = [UIImage imageNamed:imageName];
 	return imageView;
@@ -62,11 +88,13 @@ const int pageNumber = 5;
     return label;
 }
 
-- (UIButton *)simepleButtonWithFrame:(CGRect)frame andText:(NSString *)text {
-	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+- (UIButton *)buttonWithImage:(NSString *)imageName withTag:(NSInteger)tag withFrame:(CGRect)frame withSelector:(SEL)selector {
+	UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
 	button.frame = frame;
-	[button  setTitle:text forState:UIControlStateNormal];
-	[button addTarget:self action:@selector(getConfig) forControlEvents:UIControlEventTouchUpInside];
+	
+	[button setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+	button.tag = tag;
+	[button addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
 	return button;
 }
 
@@ -79,7 +107,7 @@ const int pageNumber = 5;
 }
 
 
-- (void)dismiss {
+- (void)finish {
 	[self dismissModalViewControllerAnimated:YES];
 }
 @end

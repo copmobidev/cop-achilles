@@ -12,5 +12,5 @@
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 
-- (void)dismiss;
+- (void)finish;
 @end

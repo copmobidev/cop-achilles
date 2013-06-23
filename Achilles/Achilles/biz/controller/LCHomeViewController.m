@@ -13,18 +13,24 @@
 
 @implementation LCHomeViewController
 
-- (void)viewDidLoad {	
+- (void)configScrollView {
+	self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height * 1.2f);
+}
+
+- (void)viewDidLoad {
+	[self configScrollView];
+	
 	//0. add subview of bow view
-	self.bowView = [[UIView alloc] initWithFrame:CGRectMake(120, 170, 80, 50)];
+	self.bowView = [[UIView alloc] initWithFrame:CGRectMake(120, 170 - 44, 80, 50)];
 	self.bowView.backgroundColor = [UIColor blackColor];
-	[self.view addSubview:self.bowView];
+	[self.scrollView addSubview:self.bowView];
 	
 	//1. add subview of CPTGraphHostingView
 	CGRect bounds = [[UIScreen mainScreen] bounds];
 	CGFloat availableHeight = bounds.size.height - 44;
-	self.hostingView = [[CPTGraphHostingView alloc] initWithFrame:CGRectMake(bounds.origin.x, bounds.origin.y + 44, bounds.size.width, availableHeight * 0.5)];
+	self.hostingView = [[CPTGraphHostingView alloc] initWithFrame:CGRectMake(bounds.origin.x, bounds.origin.y, bounds.size.width, availableHeight * 0.5)];
 //	self.hostingView.backgroundColor = [UIColor greenColor];
-	[self.view addSubview:self.hostingView];
+	[self.scrollView addSubview:self.hostingView];
 	
 	//span view
 	self.spanView.backgroundColor = [UIColor lightGrayColor];
@@ -139,6 +145,7 @@
 - (void)viewDidUnload {
 	[self setSpanView:nil];
 	[self setButtonView:nil];
+	[self setScrollView:nil];
 	[super viewDidUnload];
 }
 

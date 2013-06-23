@@ -27,7 +27,7 @@ LCSINGLETON_IN_M(LCServiceDelegate)
 	}
 	
 	[[LCStore sharedInstance] setUserDefaultObject:registerInfo forKey:RegisteredInfoKey];
-	[self.registerController dismiss];
+	[self.registerController finish];
 }
 
 - (void)onGetConfigFail {
