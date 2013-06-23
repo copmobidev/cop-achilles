@@ -15,6 +15,7 @@
 
 - (void)configScrollView {
 	self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height * 1.2f);
+	self.scrollView.bounces = NO;
 }
 
 - (void)viewDidLoad {
@@ -23,20 +24,15 @@
 	//0. add subview of bow view
 	self.bowView = [[UIView alloc] initWithFrame:CGRectMake(120, 170 - 44, 80, 50)];
 	self.bowView.backgroundColor = [UIColor blackColor];
-	[self.scrollView addSubview:self.bowView];
+	[self.scrollView insertSubview:self.bowView aboveSubview:self.backgroundView];
 	
 	//1. add subview of CPTGraphHostingView
 	CGRect bounds = [[UIScreen mainScreen] bounds];
 	CGFloat availableHeight = bounds.size.height - 44;
 	self.hostingView = [[CPTGraphHostingView alloc] initWithFrame:CGRectMake(bounds.origin.x, bounds.origin.y, bounds.size.width, availableHeight * 0.5)];
 //	self.hostingView.backgroundColor = [UIColor greenColor];
-	[self.scrollView addSubview:self.hostingView];
-	
-	//span view
-	self.spanView.backgroundColor = [UIColor lightGrayColor];
-	self.spanView.frame = CGRectMake(bounds.origin.x, bounds.origin.y + 44 + availableHeight * 0.5, bounds.size.width, availableHeight * 0.15);
-	//button view
-	self.buttonView.frame = CGRectMake(bounds.origin.x, bounds.origin.y + 44 + availableHeight * 0.65, bounds.size.width, availableHeight * 0.35);
+	[self.scrollView insertSubview:self.hostingView aboveSubview:self.bowView];
+//	[self.scrollView addSubview:self.hostingView];
 	
 	//2. add graph
 	//setup the graph
@@ -132,6 +128,12 @@
 	
 }
 
+- (IBAction)arrowLeft:(id)sender {
+}
+
+- (IBAction)arrowRight:(id)sender {
+}
+
 - (IBAction)revealMenu:(id)sender
 {
   [self.slidingViewController anchorTopViewTo:ECRight];
@@ -143,9 +145,8 @@
 }
 
 - (void)viewDidUnload {
-	[self setSpanView:nil];
-	[self setButtonView:nil];
 	[self setScrollView:nil];
+	[self setBackgroundView:nil];
 	[super viewDidUnload];
 }
 

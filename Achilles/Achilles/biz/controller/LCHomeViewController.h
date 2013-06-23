@@ -25,9 +25,13 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
-@property (weak, nonatomic) IBOutlet UIView *spanView;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
 
-@property (weak, nonatomic) IBOutlet UIView *buttonView;
+
+- (IBAction)arrowLeft:(id)sender;
+
+- (IBAction)arrowRight:(id)sender;
+
 
 - (IBAction)revealMenu:(id)sender;
 
