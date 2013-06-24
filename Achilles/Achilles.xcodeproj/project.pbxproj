@@ -173,6 +173,8 @@
 		C9E9A1651778325700F7D5C7 /* segment.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E9A1641778325700F7D5C7 /* segment.png */; };
 		C9E9A167177837F100F7D5C7 /* route_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E9A166177837F100F7D5C7 /* route_bg.png */; };
 		C9E9A16917783AAF00F7D5C7 /* driving_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E9A16817783AAF00F7D5C7 /* driving_bg.png */; };
+		C9E9A16B177857C500F7D5C7 /* mid_bar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E9A16A177857C400F7D5C7 /* mid_bar_bg.png */; };
+		C9E9A16D1778648100F7D5C7 /* circle_with_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E9A16C1778648000F7D5C7 /* circle_with_shadow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -497,6 +499,8 @@
 		C9E9A1641778325700F7D5C7 /* segment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = segment.png; path = routePage/segment.png; sourceTree = "<group>"; };
 		C9E9A166177837F100F7D5C7 /* route_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = route_bg.png; path = routePage/route_bg.png; sourceTree = "<group>"; };
 		C9E9A16817783AAF00F7D5C7 /* driving_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = driving_bg.png; path = drivingPage/driving_bg.png; sourceTree = "<group>"; };
+		C9E9A16A177857C400F7D5C7 /* mid_bar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mid_bar_bg.png; path = routePage/mid_bar_bg.png; sourceTree = "<group>"; };
+		C9E9A16C1778648000F7D5C7 /* circle_with_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_with_shadow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -862,6 +866,7 @@
 		C9705DE71748A89600E991E5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C9E9A16C1778648000F7D5C7 /* circle_with_shadow.png */,
 				C9E9A16217782CBE00F7D5C7 /* biz_back.png */,
 				C9E9A1381777407A00F7D5C7 /* homePage */,
 				C9E9A1251776CE1600F7D5C7 /* consumePage */,
@@ -1054,6 +1059,7 @@
 		C9E9A1181776CB8200F7D5C7 /* routePage */ = {
 			isa = PBXGroup;
 			children = (
+				C9E9A16A177857C400F7D5C7 /* mid_bar_bg.png */,
 				C9E9A166177837F100F7D5C7 /* route_bg.png */,
 				C9E9A1641778325700F7D5C7 /* segment.png */,
 				C9E9A1191776CB9A00F7D5C7 /* averageOilConsume.png */,
@@ -1264,6 +1270,8 @@
 				C9E9A1651778325700F7D5C7 /* segment.png in Resources */,
 				C9E9A167177837F100F7D5C7 /* route_bg.png in Resources */,
 				C9E9A16917783AAF00F7D5C7 /* driving_bg.png in Resources */,
+				C9E9A16B177857C500F7D5C7 /* mid_bar_bg.png in Resources */,
+				C9E9A16D1778648100F7D5C7 /* circle_with_shadow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -68,7 +68,7 @@
 #pragma mark - BizPlotDelegate
 
 - (void)configurePlots {
-	/*Main Plots*/
+/*Main Plots*/
 	
 	/*Speed Bar Plot*/
 	// 1 Set up
@@ -87,12 +87,13 @@
 	CPTGraph *mainGraph = self.MainHostingView.hostedGraph;
 	[mainGraph addPlot:speedBarPlot toPlotSpace:mainGraph.defaultPlotSpace];
 	
-	/*Time Pie Plot*/
+/*Time Pie Plot*/
 	// 1 Set up
 	CPTPieChart *piePlot = [[CPTPieChart alloc] init];
 	piePlot.identifier = CPDTickerSymbolTime;
 	piePlot.centerAnchor = CGPointMake(0.5, 0.5);
-	piePlot.pieRadius = 40.0f;
+	piePlot.pieRadius = 40.f;
+	piePlot.pieInnerRadius = 25.f;
 	piePlot.startAngle = M_PI_4;
 	piePlot.sliceDirection = CPTPieDirectionClockwise;
 	piePlot.dataSource = self.provider;
@@ -112,4 +113,5 @@
 	pieGraph.titleTextStyle = pieTextStyle;
 	pieGraph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
 }
+
 @end
