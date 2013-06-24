@@ -224,6 +224,7 @@ const int dataNum = 5;
 	} else {
 		if (indexPath.row == 0) {
 			cell.upLine.image = nil;
+			cell.notificationBackgroundView.image = [UIImage imageNamed:@"notification_new_bg.png"];
 		} else if (indexPath.row == dataNum - 1) {
 			cell.downLine.image = nil;
 		}
