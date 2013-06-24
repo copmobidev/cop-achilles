@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "LCDataServiceDelegate.h"
 #import "LCMApiServiceDelegate.h"
-#import "LCDefine.h"
 #import "LCRegisterController.h"
 
 @interface LCServiceDelegate : NSObject<LCDataServiceDelegate, LCMApiServiceDelegate>

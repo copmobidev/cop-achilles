@@ -11,6 +11,6 @@
 #import "UnderRightViewController.h"
 #import "LCBizSpanViewController.h"
 
-@interface LCDrivingViewController : LCBizSpanViewController
+@interface LCDrivingViewController : LCBizController
 
 @end

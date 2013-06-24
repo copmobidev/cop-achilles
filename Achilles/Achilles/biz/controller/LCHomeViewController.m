@@ -10,15 +10,40 @@
 #import "LCRegisterController.h"
 #import "LCStore.h"
 #import "LCEnvironment.h"
+#import "LCNotificationCell.h"
 
 @implementation LCHomeViewController
 
 - (void)configScrollView {
-	self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height * 1.2f);
+	
+	self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.backgroundView.frame.size.height + self.barView.frame.size.height + self.tableView.frame.size.height);
 	self.scrollView.bounces = NO;
+	if (IS_HEIGHT_GTE_568) {
+		CGRect frame = self.scrollView.frame;
+		frame.size.height = self.view.frame.size.height;
+		self.scrollView.frame = frame;
+	}
+	NSLog(@"%f==", self.scrollView.frame.size.height);
+}
+
+- (void)resizeTableViewFrameHeight
+{
+    // Table view does not scroll, so its frame height should be equal to its contentSize height
+    CGRect frame = self.tableView.frame;
+	frame.size.height = self.tableView.contentSize.height;
+	self.tableView.frame = frame;
+}
+
+
+- (void)configTableView {
+	self.tableView.dataSource = self;
+	self.tableView.delegate = self;
+	[self.tableView reloadData];
+	[self resizeTableViewFrameHeight];
 }
 
 - (void)viewDidLoad {
+	[self configTableView];
 	[self configScrollView];
 	
 	//0. add subview of bow view
@@ -47,9 +72,9 @@
 	self.graph.plotAreaFrame.fill = [CPTFill fillWithColor:[CPTColor clearColor]];
 	
 	CPTMutableTextStyle *textStyle = [CPTMutableTextStyle textStyle];
-	textStyle.color = [CPTColor blackColor];
+	textStyle.color = [CPTColor whiteColor];
 	textStyle.fontName = @"Helvetica-Bold";
-	textStyle.fontSize = 16.0f;
+	textStyle.fontSize = 18.0f;
 	//setup the Pie Chart
 	CPTPieChart* piePlot = [[CPTPieChart alloc] init];
 	piePlot.dataSource = self;
@@ -70,7 +95,7 @@
 	//add the Pie Chart to the graph
 	[self.graph addPlot:piePlot];
 	
-	NSString *title = @"节油等级:10级";
+	NSString *title = @"2013/04";
 	self.graph.title = title;
 	self.graph.titleTextStyle = textStyle;
 	self.graph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
@@ -147,6 +172,8 @@
 - (void)viewDidUnload {
 	[self setScrollView:nil];
 	[self setBackgroundView:nil];
+	[self setTableView:nil];
+	[self setBarView:nil];
 	[super viewDidUnload];
 }
 
@@ -175,5 +202,34 @@
 //	
 //	return label;
 //}
+
+#pragma mark - TableView
+const int dataNum = 5;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	return dataNum;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	NSString *cellIdentifier = @"LCNotificationCell";
+	LCNotificationCell *cell = (LCNotificationCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+	if (cell == nil) {
+		cell = [[[NSBundle mainBundle] loadNibNamed:cellIdentifier
+											  owner:self
+											options:nil] objectAtIndex:0];
+	}
+	
+	if (dataNum == 1) {
+		cell.upLine.image = cell.downLine.image = nil;
+	} else {
+		if (indexPath.row == 0) {
+			cell.upLine.image = nil;
+		} else if (indexPath.row == dataNum - 1) {
+			cell.downLine.image = nil;
+		}
+	}
+	
+	return cell;
+}
 
 @end

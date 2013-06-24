@@ -10,6 +10,6 @@
 #import "LCBizSpanViewController.h"
 #import "CPDConstants.h"
 
-@interface LCRouteViewController : LCBizSpanViewController
+@interface LCRouteViewController : LCBizController
 
 @end

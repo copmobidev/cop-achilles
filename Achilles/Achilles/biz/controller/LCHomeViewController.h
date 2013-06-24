@@ -12,7 +12,7 @@
 #import "LCMenuViewController.h"
 #import "UnderRightViewController.h"
 
-@interface LCHomeViewController : UIViewController<CPTPieChartDataSource>
+@interface LCHomeViewController : UIViewController<CPTPieChartDataSource, UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *pieData;
 
@@ -27,6 +27,9 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundView;
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (weak, nonatomic) IBOutlet UIView *barView;
 
 - (IBAction)arrowLeft:(id)sender;
 

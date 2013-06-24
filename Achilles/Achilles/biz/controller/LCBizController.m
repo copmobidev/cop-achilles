@@ -71,6 +71,8 @@
 	mainGraph.paddingTop = 0.0f;
 	mainGraph.paddingRight = 0.0f;
 	mainGraph.axisSet = nil;
+	mainGraph.fill = [CPTFill fillWithColor:[CPTColor clearColor]];
+	mainGraph.plotAreaFrame.fill = [CPTFill fillWithColor:[CPTColor clearColor]];
 	
 	// 3 - Set up the styles
 	CPTMutableTextStyle *titleStyle = [CPTMutableTextStyle textStyle];

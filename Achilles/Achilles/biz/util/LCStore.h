@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LCDefine.h"
 
 #define LCUserDefaults [NSUserDefaults standardUserDefaults]    //for short code
 #define LCDocumentPath     NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, \

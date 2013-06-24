@@ -9,6 +9,8 @@
 #ifndef Achilles_LCDefine_h
 #define Achilles_LCDefine_h
 
+#define IS_HEIGHT_GTE_568 [[UIScreen mainScreen ] bounds].size.height >= 568.0f
+
 #define LCSINGLETON_IN_H(classname) \
 + (id)sharedInstance;
 
