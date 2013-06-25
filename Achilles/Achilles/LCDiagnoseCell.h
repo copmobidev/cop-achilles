@@ -13,5 +13,6 @@
 
 @property (nonatomic, strong) IBOutlet UIImageView* icon;
 @property (nonatomic, strong) IBOutlet UILabel* title;
+@property (weak, nonatomic) IBOutlet UIImageView *statusView;
 
 @end

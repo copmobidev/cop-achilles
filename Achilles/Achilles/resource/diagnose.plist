@@ -3,82 +3,36 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>status</key>
+		<string>red</string>
 		<key>icon</key>
-		<string>diagnosis_ybb_img.png</string>
+		<string>under_pan.png</string>
 		<key>title</key>
-		<string>ybb</string>
+		<string>底盘系统</string>
 	</dict>
 	<dict>
+		<key>status</key>
+		<string>green</string>
 		<key>icon</key>
-		<string>diagnosis_ybb_img.png</string>
+		<string>car_body.png</string>
 		<key>title</key>
-		<string>ybb</string>
+		<string>车身系统</string>
 	</dict>
 	<dict>
+		<key>status</key>
+		<string>green</string>
 		<key>icon</key>
-		<string>diagnosis_all_img.png</string>
+		<string>engine.png</string>
 		<key>title</key>
-		<string>综合</string>
+		<string>发动机系统</string>
 	</dict>
 	<dict>
+		<key>status</key>
+		<string>yellow</string>
 		<key>icon</key>
-		<string>diagnosis_aqqn_img.png</string>
+		<string>battary.png</string>
 		<key>title</key>
-		<string>aqqn</string>
-	</dict>
-	<dict>
-		<key>icon</key>
-		<string>diagnosis_bsxdzsb_img.png</string>
-		<key>title</key>
-		<string>bsxdzsb</string>
-	</dict>
-	<dict>
-		<key>icon</key>
-		<string>diagnosis_ckccmdzsb_img.png</string>
-		<key>title</key>
-		<string>ckccmdzsb</string>
-	</dict>
-	<dict>
-		<key>icon</key>
-		<string>diagnosis_dlzx_img.png</string>
-		<key>title</key>
-		<string>dlzx</string>
-	</dict>
-	<dict>
-		<key>icon</key>
-		<string>diagnosis_fdjdzzz_img.png</string>
-		<key>title</key>
-		<string>fdjdzzz</string>
-	</dict>
-	<dict>
-		<key>icon</key>
-		<string>diagnosis_fqds_img.png</string>
-		<key>title</key>
-		<string>fqds</string>
-	</dict>
-	<dict>
-		<key>icon</key>
-		<string>diagnosis_jsyccmdzsb_img.png</string>
-		<key>title</key>
-		<string>jsyccmdzsb</string>
-	</dict>
-	<dict>
-		<key>icon</key>
-		<string>diagnosis_syj_img.png</string>
-		<key>title</key>
-		<string>syj</string>
-	</dict>
-	<dict>
-		<key>icon</key>
-		<string>diagnosis_tcfzzz_img.png</string>
-		<key>title</key>
-		<string>tcfzzz</string>
-	</dict>
-	<dict>
-		<key>icon</key>
-		<string>diagnosis_ybb_img.png</string>
-		<key>title</key>
-		<string>ybb</string>
+		<string>电瓶状态</string>
 	</dict>
 </array>
 </plist>

@@ -10,12 +10,15 @@
 #import "ECSlidingViewController.h"
 #import "LCMenuViewController.h"
 #import "LCDiagnoseCell.h"
+#import "LCBizController.h"
 
-@interface LCDiagnoseViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface LCDiagnoseViewController : LCBizController<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *diagnoseItems;
 
 @property (weak, nonatomic) IBOutlet UITableView *diagnoseTableView;
+
+@property (weak, nonatomic) IBOutlet CPTGraphHostingView *PieHostingView;
 
 - (IBAction)revealMenu:(id)sender;
 

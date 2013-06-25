@@ -7,6 +7,9 @@
 //
 
 #import "LCDiagnoseViewController.h"
+#import "LCDiagnoseDetailViewController.h"
+#import "LCHelpViewController.h"
+
 
 @interface LCDiagnoseViewController ()
 
@@ -38,8 +41,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    UIImage *image = [UIImage imageNamed:@"bg_texture.png"];
-    self.view.layer.contents = (id)image.CGImage;
+//    UIImage *image = [UIImage imageNamed:@"bg_texture.png"];
+//    self.view.layer.contents = (id)image.CGImage;
     self.diagnoseTableView.sectionFooterHeight = 0;
     self.diagnoseTableView.sectionHeaderHeight = 0;
     [self.diagnoseTableView setDataSource:self];
@@ -59,7 +62,7 @@
 
 - (float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 35;
+    return 60;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -90,16 +93,21 @@
 	//    cell.layer.contents = (id)bgImg.CGImage;
     [cell.icon setImage:[UIImage imageNamed:[dict objectForKey:@"icon"]]];
     [cell.title setText:[dict objectForKey:@"title"]];
+	cell.statusView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", [dict objectForKey:@"status"]]];
+	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	
     return cell;
 }
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    // Navigation logic may go here. Create and push another view controller.
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//	UIViewController *diagnoseDetailViewController = [[UIViewController alloc] init];
+//	[self presentModalViewController:diagnoseDetailViewController animated:YES];
+//}
 
 
 - (IBAction)diagnose:(id)sender
@@ -109,4 +117,38 @@
 
 #pragma mark - Table view delegate
 
+- (void)viewDidUnload {
+	[self setPieHostingView:nil];
+	[super viewDidUnload];
+}
+
+#pragma mark - plot
+
+- (void)configurePlots {
+/*Time Pie Plot*/
+	// 1 Set up
+	CPTPieChart *piePlot = [[CPTPieChart alloc] init];
+	piePlot.identifier = CPDTickerSymbolTime;
+	piePlot.centerAnchor = CGPointMake(0.5, 0.5);
+	piePlot.pieRadius = 40.f;
+	piePlot.pieInnerRadius = 25.f;
+	piePlot.startAngle = M_PI_4;
+	piePlot.sliceDirection = CPTPieDirectionClockwise;
+	piePlot.dataSource = self.provider;
+	//	piePlot.delegate = self.provider;
+	
+	// 2 Set up linestyle
+	CPTMutableTextStyle * pieTextStyle = [CPTMutableTextStyle textStyle];
+	pieTextStyle.color = [CPTColor blackColor];
+	pieTextStyle.fontName = @"Helvetica-Bold";
+	pieTextStyle.fontSize = 16.0f;
+	// 3 Add pie chart to graph
+	CPTGraph *pieGraph = self.PieHostingView.hostedGraph;
+	[pieGraph addPlot:piePlot];
+	// 4 Pie chart title
+	NSString *title = nil;
+	pieGraph.title = title;
+	pieGraph.titleTextStyle = pieTextStyle;
+	pieGraph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
+}
 @end

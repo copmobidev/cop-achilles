@@ -21,7 +21,7 @@
 - (void)configurePlots {
 	/*Main Plots*/
 	
-	/*Speed Bar Plot*/
+/*Speed Bar Plot*/
 	// 1 Set up
 	CPTBarPlot *speedBarPlot = [CPTBarPlot tubularBarPlotWithColor:[CPTColor greenColor] horizontalBars:NO];
 	speedBarPlot.identifier = CPDTickerSymbolSpeed;//设定该barplot的id，方便后面使用
@@ -38,7 +38,7 @@
 	CPTGraph *mainGraph = self.MainHostingView.hostedGraph;
 	[mainGraph addPlot:speedBarPlot toPlotSpace:mainGraph.defaultPlotSpace];
 	
-	/*Oil Scatter Plot*/
+/*Oil Scatter Plot*/
 	// 1 Set up
 	CPTScatterPlot *oilScatterPlot = [[CPTScatterPlot alloc] init];
 	oilScatterPlot.identifier = CPDTickerSymbolOil;
@@ -60,7 +60,7 @@
 	// 3 Add plot to graph
 	[mainGraph addPlot:oilScatterPlot toPlotSpace:mainGraph.defaultPlotSpace];
 	
-	/*Time Pie Plot*/
+/*Time Pie Plot*/
 	// 1 Set up
 	CPTPieChart *piePlot = [[CPTPieChart alloc] init];
 	piePlot.identifier = CPDTickerSymbolTime;

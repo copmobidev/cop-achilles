@@ -70,7 +70,7 @@
 - (void)configurePlots {
 /*Main Plots*/
 	
-	/*Speed Bar Plot*/
+/*Speed Bar Plot*/
 	// 1 Set up
 	CPTBarPlot *speedBarPlot = [CPTBarPlot tubularBarPlotWithColor:[CPTColor greenColor] horizontalBars:NO];
 	speedBarPlot.identifier = CPDTickerSymbolSpeed;//设定该barplot的id，方便后面使用

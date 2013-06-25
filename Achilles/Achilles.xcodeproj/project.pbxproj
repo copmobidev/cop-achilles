@@ -86,6 +86,20 @@
 		C9AC02B717537A0000258733 /* FPTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02B417537A0000258733 /* FPTouchView.m */; };
 		C9AC02BA17537A5900258733 /* LCBizSpanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02B917537A5900258733 /* LCBizSpanViewController.m */; };
 		C9AC02C017537C0100258733 /* LCSpanTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AC02BF17537C0100258733 /* LCSpanTableController.m */; };
+		C9CB1B891779D315005BD76C /* blue_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B881779D315005BD76C /* blue_bg.png */; };
+		C9CB1B931779D659005BD76C /* battary.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B8C1779D659005BD76C /* battary.png */; };
+		C9CB1B941779D659005BD76C /* car_body.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B8D1779D659005BD76C /* car_body.png */; };
+		C9CB1B951779D659005BD76C /* engine.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B8E1779D659005BD76C /* engine.png */; };
+		C9CB1B961779D659005BD76C /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B8F1779D659005BD76C /* green.png */; };
+		C9CB1B971779D659005BD76C /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B901779D659005BD76C /* red.png */; };
+		C9CB1B981779D659005BD76C /* under_pan.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B911779D659005BD76C /* under_pan.png */; };
+		C9CB1B991779D659005BD76C /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B921779D659005BD76C /* yellow.png */; };
+		C9CB1B9F1779E32A005BD76C /* diagnose2_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B9A1779E32A005BD76C /* diagnose2_bg.png */; };
+		C9CB1BA01779E32A005BD76C /* find_nearby_mechanics_zh.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B9B1779E32A005BD76C /* find_nearby_mechanics_zh.png */; };
+		C9CB1BA11779E32A005BD76C /* find_nearby_mechanics.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B9C1779E32A005BD76C /* find_nearby_mechanics.png */; };
+		C9CB1BA21779E32A005BD76C /* turn_off_engine_light_zh.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B9D1779E32A005BD76C /* turn_off_engine_light_zh.png */; };
+		C9CB1BA31779E32A005BD76C /* turn_off_engine_light.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B9E1779E32A005BD76C /* turn_off_engine_light.png */; };
+		C9CB1BA61779E564005BD76C /* LCDiagnoseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB1BA51779E564005BD76C /* LCDiagnoseDetailViewController.m */; };
 		C9CED427175AF6BB0074A498 /* LCAddBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED426175AF6BB0074A498 /* LCAddBillViewController.m */; };
 		C9CED42A175B15AC0074A498 /* LCEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED429175B15AC0074A498 /* LCEditProfileViewController.m */; };
 		C9CED500175F85FB0074A498 /* LCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED4FF175F85FA0074A498 /* LCStore.m */; };
@@ -392,6 +406,21 @@
 		C9AC02B917537A5900258733 /* LCBizSpanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBizSpanViewController.m; path = biz/controller/LCBizSpanViewController.m; sourceTree = "<group>"; };
 		C9AC02BE17537C0100258733 /* LCSpanTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCSpanTableController.h; path = biz/controller/LCSpanTableController.h; sourceTree = "<group>"; };
 		C9AC02BF17537C0100258733 /* LCSpanTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCSpanTableController.m; path = biz/controller/LCSpanTableController.m; sourceTree = "<group>"; };
+		C9CB1B881779D315005BD76C /* blue_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_bg.png; sourceTree = "<group>"; };
+		C9CB1B8C1779D659005BD76C /* battary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battary.png; path = diagnosePage/battary.png; sourceTree = "<group>"; };
+		C9CB1B8D1779D659005BD76C /* car_body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = car_body.png; path = diagnosePage/car_body.png; sourceTree = "<group>"; };
+		C9CB1B8E1779D659005BD76C /* engine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = engine.png; path = diagnosePage/engine.png; sourceTree = "<group>"; };
+		C9CB1B8F1779D659005BD76C /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green.png; path = diagnosePage/green.png; sourceTree = "<group>"; };
+		C9CB1B901779D659005BD76C /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red.png; path = diagnosePage/red.png; sourceTree = "<group>"; };
+		C9CB1B911779D659005BD76C /* under_pan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = under_pan.png; path = diagnosePage/under_pan.png; sourceTree = "<group>"; };
+		C9CB1B921779D659005BD76C /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow.png; path = diagnosePage/yellow.png; sourceTree = "<group>"; };
+		C9CB1B9A1779E32A005BD76C /* diagnose2_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = diagnose2_bg.png; path = diagnosePage/diagnose2_bg.png; sourceTree = "<group>"; };
+		C9CB1B9B1779E32A005BD76C /* find_nearby_mechanics_zh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = find_nearby_mechanics_zh.png; path = diagnosePage/find_nearby_mechanics_zh.png; sourceTree = "<group>"; };
+		C9CB1B9C1779E32A005BD76C /* find_nearby_mechanics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = find_nearby_mechanics.png; path = diagnosePage/find_nearby_mechanics.png; sourceTree = "<group>"; };
+		C9CB1B9D1779E32A005BD76C /* turn_off_engine_light_zh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = turn_off_engine_light_zh.png; path = diagnosePage/turn_off_engine_light_zh.png; sourceTree = "<group>"; };
+		C9CB1B9E1779E32A005BD76C /* turn_off_engine_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = turn_off_engine_light.png; path = diagnosePage/turn_off_engine_light.png; sourceTree = "<group>"; };
+		C9CB1BA41779E564005BD76C /* LCDiagnoseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCDiagnoseDetailViewController.h; path = biz/controller/LCDiagnoseDetailViewController.h; sourceTree = "<group>"; };
+		C9CB1BA51779E564005BD76C /* LCDiagnoseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCDiagnoseDetailViewController.m; path = biz/controller/LCDiagnoseDetailViewController.m; sourceTree = "<group>"; };
 		C9CED425175AF6BB0074A498 /* LCAddBillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCAddBillViewController.h; path = biz/controller/LCAddBillViewController.h; sourceTree = "<group>"; };
 		C9CED426175AF6BB0074A498 /* LCAddBillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCAddBillViewController.m; path = biz/controller/LCAddBillViewController.m; sourceTree = "<group>"; };
 		C9CED428175B15AC0074A498 /* LCEditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCEditProfileViewController.h; path = biz/controller/LCEditProfileViewController.h; sourceTree = "<group>"; };
@@ -683,6 +712,8 @@
 				C9CED429175B15AC0074A498 /* LCEditProfileViewController.m */,
 				C9E9A0FE17768FCB00F7D5C7 /* LCHelpViewController.h */,
 				C9E9A0FF17768FCB00F7D5C7 /* LCHelpViewController.m */,
+				C9CB1BA41779E564005BD76C /* LCDiagnoseDetailViewController.h */,
+				C9CB1BA51779E564005BD76C /* LCDiagnoseDetailViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -878,6 +909,8 @@
 		C9705DE71748A89600E991E5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C9CB1B8B1779D572005BD76C /* diagnose */,
+				C9CB1B881779D315005BD76C /* blue_bg.png */,
 				C9E9A16E17787CE400F7D5C7 /* settingPage */,
 				C9E9A16C1778648000F7D5C7 /* circle_with_shadow.png */,
 				C9E9A16217782CBE00F7D5C7 /* biz_back.png */,
@@ -927,6 +960,25 @@
 				C9AC02B417537A0000258733 /* FPTouchView.m */,
 			);
 			name = FPPopover;
+			sourceTree = "<group>";
+		};
+		C9CB1B8B1779D572005BD76C /* diagnose */ = {
+			isa = PBXGroup;
+			children = (
+				C9CB1B9A1779E32A005BD76C /* diagnose2_bg.png */,
+				C9CB1B9B1779E32A005BD76C /* find_nearby_mechanics_zh.png */,
+				C9CB1B9C1779E32A005BD76C /* find_nearby_mechanics.png */,
+				C9CB1B9D1779E32A005BD76C /* turn_off_engine_light_zh.png */,
+				C9CB1B9E1779E32A005BD76C /* turn_off_engine_light.png */,
+				C9CB1B8C1779D659005BD76C /* battary.png */,
+				C9CB1B8D1779D659005BD76C /* car_body.png */,
+				C9CB1B8E1779D659005BD76C /* engine.png */,
+				C9CB1B8F1779D659005BD76C /* green.png */,
+				C9CB1B901779D659005BD76C /* red.png */,
+				C9CB1B911779D659005BD76C /* under_pan.png */,
+				C9CB1B921779D659005BD76C /* yellow.png */,
+			);
+			name = diagnose;
 			sourceTree = "<group>";
 		};
 		C9E604C01766C60B0066BA48 /* NSObject+Properties */ = {
@@ -1304,6 +1356,19 @@
 				C9E9A17A177880FF00F7D5C7 /* setting_red_button.png in Resources */,
 				C9E9A17C17788B6200F7D5C7 /* black_button_confirm.png in Resources */,
 				C9E9A18017789BED00F7D5C7 /* mid_bar_bg.png in Resources */,
+				C9CB1B891779D315005BD76C /* blue_bg.png in Resources */,
+				C9CB1B931779D659005BD76C /* battary.png in Resources */,
+				C9CB1B941779D659005BD76C /* car_body.png in Resources */,
+				C9CB1B951779D659005BD76C /* engine.png in Resources */,
+				C9CB1B961779D659005BD76C /* green.png in Resources */,
+				C9CB1B971779D659005BD76C /* red.png in Resources */,
+				C9CB1B981779D659005BD76C /* under_pan.png in Resources */,
+				C9CB1B991779D659005BD76C /* yellow.png in Resources */,
+				C9CB1B9F1779E32A005BD76C /* diagnose2_bg.png in Resources */,
+				C9CB1BA01779E32A005BD76C /* find_nearby_mechanics_zh.png in Resources */,
+				C9CB1BA11779E32A005BD76C /* find_nearby_mechanics.png in Resources */,
+				C9CB1BA21779E32A005BD76C /* turn_off_engine_light_zh.png in Resources */,
+				C9CB1BA31779E32A005BD76C /* turn_off_engine_light.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1375,6 +1440,7 @@
 				C9E60543176724CB0066BA48 /* UITableViewCell+FlatUI.m in Sources */,
 				C9E9A10017768FCB00F7D5C7 /* LCHelpViewController.m in Sources */,
 				C9E9A1591777FE3000F7D5C7 /* LCNotificationCell.m in Sources */,
+				C9CB1BA61779E564005BD76C /* LCDiagnoseDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
