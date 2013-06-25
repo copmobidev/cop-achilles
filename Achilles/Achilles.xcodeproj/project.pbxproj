@@ -48,7 +48,6 @@
 		C9150A59175036F50077A693 /* diagnose_gyrate.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A58175036F50077A693 /* diagnose_gyrate.png */; };
 		C9150A5B175038270077A693 /* diagnose_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A5A175038270077A693 /* diagnose_background.png */; };
 		C9150A5F175039B00077A693 /* LCDiagnoseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9150A5D175039AF0077A693 /* LCDiagnoseCell.m */; };
-		C9150A60175039B00077A693 /* LCDiagnoseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9150A5E175039AF0077A693 /* LCDiagnoseCell.xib */; };
 		C9150A6317503A1B0077A693 /* diagnose_status_right.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A6117503A1B0077A693 /* diagnose_status_right.png */; };
 		C9150A6417503A1B0077A693 /* diagnose_status_wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A6217503A1B0077A693 /* diagnose_status_wrong.png */; };
 		C9150A6617503A280077A693 /* diagnosis_zdqdzxt_img.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A6517503A280077A693 /* diagnosis_zdqdzxt_img.png */; };
@@ -100,6 +99,10 @@
 		C9CB1BA21779E32A005BD76C /* turn_off_engine_light_zh.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B9D1779E32A005BD76C /* turn_off_engine_light_zh.png */; };
 		C9CB1BA31779E32A005BD76C /* turn_off_engine_light.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1B9E1779E32A005BD76C /* turn_off_engine_light.png */; };
 		C9CB1BA61779E564005BD76C /* LCDiagnoseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CB1BA51779E564005BD76C /* LCDiagnoseDetailViewController.m */; };
+		C9CB1BA81779F83B005BD76C /* add_record.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1BA71779F83B005BD76C /* add_record.png */; };
+		C9CB1BAC1779F9A4005BD76C /* modify.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1BA91779F9A4005BD76C /* modify.png */; };
+		C9CB1BAD1779F9A4005BD76C /* red_confirm.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1BAA1779F9A4005BD76C /* red_confirm.png */; };
+		C9CB1BAE1779F9A4005BD76C /* wait_modify.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1BAB1779F9A4005BD76C /* wait_modify.png */; };
 		C9CED427175AF6BB0074A498 /* LCAddBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED426175AF6BB0074A498 /* LCAddBillViewController.m */; };
 		C9CED42A175B15AC0074A498 /* LCEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED429175B15AC0074A498 /* LCEditProfileViewController.m */; };
 		C9CED500175F85FB0074A498 /* LCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED4FF175F85FA0074A498 /* LCStore.m */; };
@@ -271,7 +274,6 @@
 		C9150A5A175038270077A693 /* diagnose_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diagnose_background.png; sourceTree = "<group>"; };
 		C9150A5C175039AE0077A693 /* LCDiagnoseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDiagnoseCell.h; sourceTree = "<group>"; };
 		C9150A5D175039AF0077A693 /* LCDiagnoseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDiagnoseCell.m; sourceTree = "<group>"; };
-		C9150A5E175039AF0077A693 /* LCDiagnoseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCDiagnoseCell.xib; sourceTree = "<group>"; };
 		C9150A6117503A1B0077A693 /* diagnose_status_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diagnose_status_right.png; sourceTree = "<group>"; };
 		C9150A6217503A1B0077A693 /* diagnose_status_wrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diagnose_status_wrong.png; sourceTree = "<group>"; };
 		C9150A6517503A280077A693 /* diagnosis_zdqdzxt_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diagnosis_zdqdzxt_img.png; sourceTree = "<group>"; };
@@ -421,6 +423,10 @@
 		C9CB1B9E1779E32A005BD76C /* turn_off_engine_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = turn_off_engine_light.png; path = diagnosePage/turn_off_engine_light.png; sourceTree = "<group>"; };
 		C9CB1BA41779E564005BD76C /* LCDiagnoseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCDiagnoseDetailViewController.h; path = biz/controller/LCDiagnoseDetailViewController.h; sourceTree = "<group>"; };
 		C9CB1BA51779E564005BD76C /* LCDiagnoseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCDiagnoseDetailViewController.m; path = biz/controller/LCDiagnoseDetailViewController.m; sourceTree = "<group>"; };
+		C9CB1BA71779F83B005BD76C /* add_record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add_record.png; path = consumePage/add_record.png; sourceTree = "<group>"; };
+		C9CB1BA91779F9A4005BD76C /* modify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = modify.png; path = consumePage/modify.png; sourceTree = "<group>"; };
+		C9CB1BAA1779F9A4005BD76C /* red_confirm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red_confirm.png; path = consumePage/red_confirm.png; sourceTree = "<group>"; };
+		C9CB1BAB1779F9A4005BD76C /* wait_modify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wait_modify.png; path = consumePage/wait_modify.png; sourceTree = "<group>"; };
 		C9CED425175AF6BB0074A498 /* LCAddBillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCAddBillViewController.h; path = biz/controller/LCAddBillViewController.h; sourceTree = "<group>"; };
 		C9CED426175AF6BB0074A498 /* LCAddBillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCAddBillViewController.m; path = biz/controller/LCAddBillViewController.m; sourceTree = "<group>"; };
 		C9CED428175B15AC0074A498 /* LCEditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCEditProfileViewController.h; path = biz/controller/LCEditProfileViewController.h; sourceTree = "<group>"; };
@@ -753,7 +759,6 @@
 			children = (
 				C9150A5C175039AE0077A693 /* LCDiagnoseCell.h */,
 				C9150A5D175039AF0077A693 /* LCDiagnoseCell.m */,
-				C9150A5E175039AF0077A693 /* LCDiagnoseCell.xib */,
 				C9150A41174FAF890077A693 /* LCSectionBillCell.h */,
 				C9150A42174FAF890077A693 /* LCSectionBillCell.m */,
 				C9150A44174FAFAF0077A693 /* LCSectionBillCell.xib */,
@@ -1140,6 +1145,10 @@
 		C9E9A1251776CE1600F7D5C7 /* consumePage */ = {
 			isa = PBXGroup;
 			children = (
+				C9CB1BA91779F9A4005BD76C /* modify.png */,
+				C9CB1BAA1779F9A4005BD76C /* red_confirm.png */,
+				C9CB1BAB1779F9A4005BD76C /* wait_modify.png */,
+				C9CB1BA71779F83B005BD76C /* add_record.png */,
 				C9E9A1261776CE2300F7D5C7 /* averageConsume.png */,
 				C9E9A1271776CE2300F7D5C7 /* averageSpeed.png */,
 				C9E9A1281776CE2300F7D5C7 /* averageTemperature.png */,
@@ -1272,7 +1281,6 @@
 				C9150A57175036E00077A693 /* numberboxout.png in Resources */,
 				C9150A59175036F50077A693 /* diagnose_gyrate.png in Resources */,
 				C9150A5B175038270077A693 /* diagnose_background.png in Resources */,
-				C9150A60175039B00077A693 /* LCDiagnoseCell.xib in Resources */,
 				C9150A6317503A1B0077A693 /* diagnose_status_right.png in Resources */,
 				C9150A6417503A1B0077A693 /* diagnose_status_wrong.png in Resources */,
 				C9150A6617503A280077A693 /* diagnosis_zdqdzxt_img.png in Resources */,
@@ -1369,6 +1377,10 @@
 				C9CB1BA11779E32A005BD76C /* find_nearby_mechanics.png in Resources */,
 				C9CB1BA21779E32A005BD76C /* turn_off_engine_light_zh.png in Resources */,
 				C9CB1BA31779E32A005BD76C /* turn_off_engine_light.png in Resources */,
+				C9CB1BA81779F83B005BD76C /* add_record.png in Resources */,
+				C9CB1BAC1779F9A4005BD76C /* modify.png in Resources */,
+				C9CB1BAD1779F9A4005BD76C /* red_confirm.png in Resources */,
+				C9CB1BAE1779F9A4005BD76C /* wait_modify.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

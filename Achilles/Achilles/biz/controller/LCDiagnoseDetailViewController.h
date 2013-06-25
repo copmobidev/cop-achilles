@@ -10,4 +10,6 @@
 
 @interface LCDiagnoseDetailViewController : UIViewController
 
+- (IBAction)back:(id)sender;
+
 @end
