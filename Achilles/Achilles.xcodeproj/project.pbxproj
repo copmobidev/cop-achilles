@@ -106,6 +106,13 @@
 		C9CED427175AF6BB0074A498 /* LCAddBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED426175AF6BB0074A498 /* LCAddBillViewController.m */; };
 		C9CED42A175B15AC0074A498 /* LCEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED429175B15AC0074A498 /* LCEditProfileViewController.m */; };
 		C9CED500175F85FB0074A498 /* LCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED4FF175F85FA0074A498 /* LCStore.m */; };
+		C9D69084177F2B2800B84B77 /* sync_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D69083177F2B2800B84B77 /* sync_button.png */; };
+		C9D69086177F2D9300B84B77 /* driving_bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D69085177F2D9300B84B77 /* driving_bg2.png */; };
+		C9D69088177F2E9600B84B77 /* route_bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D69087177F2E9600B84B77 /* route_bg2.png */; };
+		C9D69165177FB8F900B84B77 /* consume_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D69164177FB8F900B84B77 /* consume_bg.png */; };
+		C9D69168177FD6F900B84B77 /* AttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D69167177FD6F900B84B77 /* AttributedLabel.m */; };
+		C9D6916F177FDBB400B84B77 /* THLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D6916E177FDBB400B84B77 /* THLabel.m */; };
+		C9D69172178012D500B84B77 /* LCArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D69171178012D500B84B77 /* LCArcView.m */; };
 		C9E604BE1766C3FB0066BA48 /* LCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604BD1766C3FB0066BA48 /* LCModel.m */; };
 		C9E604C51766C6240066BA48 /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604C21766C6240066BA48 /* NSObject+Properties.m */; };
 		C9E604C61766C6240066BA48 /* NSString+PropertyKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604C41766C6240066BA48 /* NSString+PropertyKVC.m */; };
@@ -434,6 +441,16 @@
 		C9CED4FD175F85220074A498 /* LCDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCDefine.h; path = biz/util/LCDefine.h; sourceTree = "<group>"; };
 		C9CED4FE175F85FA0074A498 /* LCStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCStore.h; path = biz/util/LCStore.h; sourceTree = "<group>"; };
 		C9CED4FF175F85FA0074A498 /* LCStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCStore.m; path = biz/util/LCStore.m; sourceTree = "<group>"; };
+		C9D69083177F2B2800B84B77 /* sync_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sync_button.png; path = homePage/sync_button.png; sourceTree = "<group>"; };
+		C9D69085177F2D9300B84B77 /* driving_bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = driving_bg2.png; path = drivingPage/driving_bg2.png; sourceTree = "<group>"; };
+		C9D69087177F2E9600B84B77 /* route_bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = route_bg2.png; path = routePage/route_bg2.png; sourceTree = "<group>"; };
+		C9D69164177FB8F900B84B77 /* consume_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = consume_bg.png; path = consumePage/consume_bg.png; sourceTree = "<group>"; };
+		C9D69166177FD6F900B84B77 /* AttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedLabel.h; sourceTree = "<group>"; };
+		C9D69167177FD6F900B84B77 /* AttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedLabel.m; sourceTree = "<group>"; };
+		C9D6916D177FDBB400B84B77 /* THLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLabel.h; sourceTree = "<group>"; };
+		C9D6916E177FDBB400B84B77 /* THLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLabel.m; sourceTree = "<group>"; };
+		C9D69170178012D500B84B77 /* LCArcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCArcView.h; path = biz/view/LCArcView.h; sourceTree = "<group>"; };
+		C9D69171178012D500B84B77 /* LCArcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCArcView.m; path = biz/view/LCArcView.m; sourceTree = "<group>"; };
 		C9E604BC1766C3FB0066BA48 /* LCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCModel.h; path = biz/model/LCModel.h; sourceTree = "<group>"; };
 		C9E604BD1766C3FB0066BA48 /* LCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCModel.m; path = biz/model/LCModel.m; sourceTree = "<group>"; };
 		C9E604C11766C6240066BA48 /* NSObject+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Properties.h"; path = "biz/category/NSObject+Properties.h"; sourceTree = "<group>"; };
@@ -642,6 +659,10 @@
 		9B1C4B53173E58EB0085CA3C /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				C9D69166177FD6F900B84B77 /* AttributedLabel.h */,
+				C9D69167177FD6F900B84B77 /* AttributedLabel.m */,
+				C9D6916D177FDBB400B84B77 /* THLabel.h */,
+				C9D6916E177FDBB400B84B77 /* THLabel.m */,
 				C9E604E2176724CA0066BA48 /* FlatUIKit */,
 				C96971DD173FD6BD00D0BEB5 /* libCorePlot-CocoaTouch.a */,
 				C96971DF173FD71000D0BEB5 /* CorePlotHeaders */,
@@ -743,6 +764,8 @@
 				C9150A40174FAF450077A693 /* cell */,
 				C910515F173E9019006DB5A1 /* WelcomeScrollView.h */,
 				C9105160173E9019006DB5A1 /* WelcomeScrollView.m */,
+				C9D69170178012D500B84B77 /* LCArcView.h */,
+				C9D69171178012D500B84B77 /* LCArcView.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -1115,6 +1138,7 @@
 		C9E9A10B1776C3F000F7D5C7 /* dringPage */ = {
 			isa = PBXGroup;
 			children = (
+				C9D69085177F2D9300B84B77 /* driving_bg2.png */,
 				C9E9A16817783AAF00F7D5C7 /* driving_bg.png */,
 				C9E9A10C1776C3FB00F7D5C7 /* accelerate.png */,
 				C9E9A10D1776C3FB00F7D5C7 /* brake.png */,
@@ -1129,6 +1153,7 @@
 		C9E9A1181776CB8200F7D5C7 /* routePage */ = {
 			isa = PBXGroup;
 			children = (
+				C9D69087177F2E9600B84B77 /* route_bg2.png */,
 				C9E9A17F17789BED00F7D5C7 /* mid_bar_bg.png */,
 				C9E9A166177837F100F7D5C7 /* route_bg.png */,
 				C9E9A1641778325700F7D5C7 /* segment.png */,
@@ -1145,6 +1170,7 @@
 		C9E9A1251776CE1600F7D5C7 /* consumePage */ = {
 			isa = PBXGroup;
 			children = (
+				C9D69164177FB8F900B84B77 /* consume_bg.png */,
 				C9CB1BA91779F9A4005BD76C /* modify.png */,
 				C9CB1BAA1779F9A4005BD76C /* red_confirm.png */,
 				C9CB1BAB1779F9A4005BD76C /* wait_modify.png */,
@@ -1162,6 +1188,7 @@
 		C9E9A1381777407A00F7D5C7 /* homePage */ = {
 			isa = PBXGroup;
 			children = (
+				C9D69083177F2B2800B84B77 /* sync_button.png */,
 				C9E9A15C177800E900F7D5C7 /* notification_dot.png */,
 				C9E9A15D177800E900F7D5C7 /* notification_new_bg.png */,
 				C9E9A15E177800E900F7D5C7 /* notification_vertical_line.png */,
@@ -1381,6 +1408,10 @@
 				C9CB1BAC1779F9A4005BD76C /* modify.png in Resources */,
 				C9CB1BAD1779F9A4005BD76C /* red_confirm.png in Resources */,
 				C9CB1BAE1779F9A4005BD76C /* wait_modify.png in Resources */,
+				C9D69084177F2B2800B84B77 /* sync_button.png in Resources */,
+				C9D69086177F2D9300B84B77 /* driving_bg2.png in Resources */,
+				C9D69088177F2E9600B84B77 /* route_bg2.png in Resources */,
+				C9D69165177FB8F900B84B77 /* consume_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1453,6 +1484,9 @@
 				C9E9A10017768FCB00F7D5C7 /* LCHelpViewController.m in Sources */,
 				C9E9A1591777FE3000F7D5C7 /* LCNotificationCell.m in Sources */,
 				C9CB1BA61779E564005BD76C /* LCDiagnoseDetailViewController.m in Sources */,
+				C9D69168177FD6F900B84B77 /* AttributedLabel.m in Sources */,
+				C9D6916F177FDBB400B84B77 /* THLabel.m in Sources */,
+				C9D69172178012D500B84B77 /* LCArcView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,8 +11,29 @@
 #import "LCStore.h"
 #import "LCEnvironment.h"
 #import "LCNotificationCell.h"
+#import "THLabel.h"
+#import <math.h>
+
+@interface LCHomeViewController()
+
+@property (weak, nonatomic) IBOutlet THLabel *pieTimeLable;
+
+@property (nonatomic, strong) NSArray *pieColors;
+
+@property (nonatomic, assign) CGFloat arcRadius;
+
+@end
 
 @implementation LCHomeViewController
+// pi is approximately equal to 3.14159265359.
+#define   DEGREES_TO_RADIANS(degrees)  ((M_PI * degrees)/ 180)
+
+- (NSArray *)pieColors {
+	if (!_pieColors) {
+		_pieColors = @[@[@182.f, @233.f, @88.f], @[@173.f, @29.f, @238.f], @[@242.f, @91.f, @54.f]];
+	}
+	return _pieColors;
+}
 
 - (void)configScrollView {
 	
@@ -42,21 +63,29 @@
 	[self resizeTableViewFrameHeight];
 }
 
+- (void)configPieTimeLabel {
+	[self.pieTimeLable setGradientStartColor:[UIColor colorWithRed:255.0f / 255.0f green:193.0f / 255.0f blue:127.0f / 255.0f alpha:1.0f]];
+	[self.pieTimeLable setGradientEndColor:[UIColor colorWithRed:241.0f / 255.0f green:234.0f / 255.0f blue:239.0f / 255.0f alpha:1.0f]];
+}
+
 - (void)viewDidLoad {
+	self.arcRadius = 60.f;
+	
+	[self configPieTimeLabel];
 	[self configTableView];
 	[self configScrollView];
 	
 	//0. add subview of bow view
-	self.bowView = [[UIView alloc] initWithFrame:CGRectMake(120, 170 - 44, 80, 50)];
-	self.bowView.backgroundColor = [UIColor blackColor];
-	[self.scrollView insertSubview:self.bowView aboveSubview:self.backgroundView];
+//	self.bowView = [[UIView alloc] initWithFrame:CGRectMake(120, 170 - 44, 80, 50)];
+//	self.bowView.backgroundColor = [UIColor blackColor];
+//	[self.scrollView insertSubview:self.bowView aboveSubview:self.backgroundView];
 	
 	//1. add subview of CPTGraphHostingView
 	CGRect bounds = [[UIScreen mainScreen] bounds];
 	CGFloat availableHeight = bounds.size.height - 44;
 	self.hostingView = [[CPTGraphHostingView alloc] initWithFrame:CGRectMake(bounds.origin.x, bounds.origin.y, bounds.size.width, availableHeight * 0.5)];
 //	self.hostingView.backgroundColor = [UIColor greenColor];
-	[self.scrollView insertSubview:self.hostingView aboveSubview:self.bowView];
+	[self.scrollView insertSubview:self.hostingView aboveSubview:self.backgroundView];
 //	[self.scrollView addSubview:self.hostingView];
 	
 	//2. add graph
@@ -71,21 +100,22 @@
 	self.graph.fill = [CPTFill fillWithColor:[CPTColor clearColor]];
 	self.graph.plotAreaFrame.fill = [CPTFill fillWithColor:[CPTColor clearColor]];
 	
-	CPTMutableTextStyle *textStyle = [CPTMutableTextStyle textStyle];
-	textStyle.color = [CPTColor whiteColor];
-	textStyle.fontName = @"Helvetica-Bold";
-	textStyle.fontSize = 18.0f;
+//	CPTMutableTextStyle *textStyle = [CPTMutableTextStyle textStyle];
+//	textStyle.color = [CPTColor whiteColor];
+//	textStyle.fontName = @"Helvetica-Bold";
+//	textStyle.fontSize = 18.0f;
+	
 	//setup the Pie Chart
 	CPTPieChart* piePlot = [[CPTPieChart alloc] init];
 	piePlot.dataSource = self;
 	piePlot.centerAnchor = CGPointMake(0.5, 0.5);
-	piePlot.pieRadius = 80.0;
-	piePlot.pieInnerRadius = 40.0;
-
+	piePlot.pieRadius = 87.0;
+	piePlot.pieInnerRadius = 63.0;
+	
 	piePlot.identifier =@"PieChart1";
 	
-	piePlot.startAngle = M_PI_4;
-	NSLog(@"%f/%f", piePlot.centerAnchor.x, piePlot.centerAnchor.y);
+	piePlot.startAngle = 0;M_PI_4;
+//	NSLog(@"^^^%f,%f", self.hostingView.center.x, self.hostingView.center.y);
 	piePlot.sliceDirection = CPTPieDirectionCounterClockwise;
 	
 	//load the data for the Pie Chart,change it to lazy load
@@ -95,9 +125,9 @@
 	//add the Pie Chart to the graph
 	[self.graph addPlot:piePlot];
 	
-	NSString *title = @"2013/04";
-	self.graph.title = title;
-	self.graph.titleTextStyle = textStyle;
+//	NSString *title = @"2013/04";
+//	self.graph.title = title;
+//	self.graph.titleTextStyle = textStyle;
 	self.graph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
 //	self.graph.titleDisplacement = CGPointMake(0.0f, -60.0f);
 	
@@ -110,14 +140,57 @@
 //	theLegend.fill = [CPTFill fillWithColor:[CPTColor whiteColor]];
 //	theLegend.borderLineStyle = [CPTLineStyle lineStyle];
 //	theLegend.cornerRadius = 5.0;
+	
+	[self configArcView:-1.f];
+}
+
+- (void)configArcView:(CGFloat)visiblePercent {
+	if (visiblePercent < 0.f) {
+		visiblePercent = 0.f;
+	} else if (visiblePercent > 1.f) {
+		visiblePercent = 1.f;
+	}
+	
+	if (visiblePercent >= .5f) {
+		visiblePercent = 1.5f - visiblePercent;
+	}
+	
+	CGFloat boxSideLength = 2 * self.arcRadius; //60.0f
+	CGFloat visibleHeight = boxSideLength * visiblePercent;
+	CGFloat triangleHeight = (self.arcRadius > visibleHeight) ? (self.arcRadius - visibleHeight) : (boxSideLength - visibleHeight);
+	CGFloat startAngle = asin(triangleHeight * 1.f / self.arcRadius);
+	CGFloat endAngle = M_PI - startAngle;
+	
+	if (self.arcRadius < visibleHeight) {
+		endAngle += 2 * startAngle;
+		startAngle = M_PI * 2 - startAngle;
+	}
+	
+	if (!self.arcView) {
+		self.arcView = [[LCArcView alloc] initWithFrame:CGRectMake(100.f, 49.f, boxSideLength, boxSideLength)];
+		[self.scrollView addSubview:self.arcView];
+		self.arcView.center = CGPointMake(boxSideLength / 2, boxSideLength / 2);
+		self.arcView.radius = self.arcRadius;
+		self.arcView.backgroundColor = [UIColor whiteColor];
+		self.arcView.alpha = .5f;
+	}
+	
+	self.arcView.isClockWise = (visiblePercent != 0);
+	self.arcView.startAngle = startAngle;
+	self.arcView.endAngle = endAngle;
+	[self.arcView setShape];
 }
 
 - (NSMutableArray *)pieData {
 	if (!_pieData) {
 		_pieData = [NSMutableArray arrayWithObjects:
 					[NSNumber numberWithDouble:90.0],
+					[NSNumber numberWithDouble:1.0],
 					[NSNumber numberWithDouble:40.0],
-					[NSNumber numberWithDouble:60.0], nil];
+					[NSNumber numberWithDouble:1.0],
+					[NSNumber numberWithDouble:60.0],
+					[NSNumber numberWithDouble:1.0],
+					nil];
 	}
 	return _pieData;
 }
@@ -169,15 +242,32 @@
   [self.slidingViewController anchorTopViewTo:ECLeft];
 }
 
+- (IBAction)driving:(id)sender {
+	NSLog(@"to driving page");
+}
+
+- (IBAction)oilConsume:(id)sender {
+	NSLog(@"to oil consume page");
+}
+
+- (IBAction)Bill:(id)sender {
+	NSLog(@"to bill page");
+}
+
+- (IBAction)diagnose:(id)sender {
+	NSLog(@"to diagnose page");
+}
+
 - (void)viewDidUnload {
 	[self setScrollView:nil];
 	[self setBackgroundView:nil];
 	[self setTableView:nil];
 	[self setBarView:nil];
+	[self setPieTimeLable:nil];
 	[super viewDidUnload];
 }
 
-#pragma CPTPieChartDataSource
+#pragma mark - CPTPieChartDataSource
 
 - (NSUInteger)numberOfRecordsForPlot:(CPTPlot *)plot {
 	return [self.pieData count];
@@ -186,6 +276,15 @@
 - (NSNumber *)numberForPlot:(CPTPlot *)plot field:(NSUInteger)fieldEnum recordIndex:(NSUInteger)idx {
 	
 	return [self.pieData objectAtIndex:idx];
+}
+
+- (CPTFill *)sliceFillForPieChart:(CPTPieChart *)pieChart recordIndex:(NSUInteger)idx {
+	if (idx % 2 == 1) {//奇数为透明的
+		return [CPTFill fillWithColor:[CPTColor clearColor]];
+	} else {
+		NSArray *color = [self.pieColors objectAtIndex:idx / 2];
+		return [CPTFill fillWithColor:[CPTColor colorWithComponentRed:[(NSNumber *)color[0] floatValue]/255 green:[(NSNumber *)color[1] floatValue]/255 blue:[(NSNumber *)color[2] floatValue]/255 alpha:1.f]];
+	}
 }
 
 //- (CPTLayer *)dataLabelForPlot:(CPTPlot *)plot recordIndex:(NSUInteger)idx {

@@ -11,6 +11,7 @@
 #import "ECSlidingViewController.h"
 #import "LCMenuViewController.h"
 #import "UnderRightViewController.h"
+#import "LCArcView.h"
 
 @interface LCHomeViewController : UIViewController<CPTPieChartDataSource, UITableViewDataSource, UITableViewDelegate>
 
@@ -22,6 +23,7 @@
 
 @property (nonatomic, strong) UIView *bowView;
 
+@property (nonatomic, strong) LCArcView *arcView;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
@@ -39,5 +41,13 @@
 - (IBAction)revealMenu:(id)sender;
 
 - (IBAction)revealUnderRight:(id)sender;
+
+- (IBAction)driving:(id)sender;
+
+- (IBAction)oilConsume:(id)sender;
+
+- (IBAction)Bill:(id)sender;
+
+- (IBAction)diagnose:(id)sender;
 
 @end
