@@ -33,6 +33,8 @@
 
 @property (weak, nonatomic) IBOutlet UIView *barView;
 
+@property (nonatomic, strong) LCMenuViewController *menuViewController;
+
 - (IBAction)arrowLeft:(id)sender;
 
 - (IBAction)arrowRight:(id)sender;
@@ -42,12 +44,8 @@
 
 - (IBAction)revealUnderRight:(id)sender;
 
-- (IBAction)driving:(id)sender;
+- (IBAction)functionButtonClicked:(id)sender;
 
-- (IBAction)oilConsume:(id)sender;
 
-- (IBAction)Bill:(id)sender;
-
-- (IBAction)diagnose:(id)sender;
 
 @end

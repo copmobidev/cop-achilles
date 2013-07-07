@@ -21,8 +21,8 @@ NSString *  const CPDTickerSymbolOil       = @"OIL";
 NSString *  const CPDTickerSymbolTime       = @"TIME";
 
 
-CGFloat const CPDBarWidth = 0.25f;
-CGFloat const CPDBarInitialX = 0.25f;
+CGFloat const CPDBarWidth = 0.5f;
+CGFloat const CPDBarInitialX = 0.5f;
 
 /*LCConsumeViewController*/
 NSString * const LCConsumeAverageConsume = @"LCConsume:AverageConsume";

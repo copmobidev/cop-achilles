@@ -15,6 +15,7 @@
 
 @property (nonatomic, strong) LCTableProvider *tableProvider;
 
+@property (weak, nonatomic) IBOutlet UILabel *yearLabel;
 
 
 @end

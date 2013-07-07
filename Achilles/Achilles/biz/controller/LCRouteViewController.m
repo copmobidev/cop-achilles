@@ -32,12 +32,15 @@
 	speedBarLineStyle.lineColor = [CPTColor lightGrayColor];
 	speedBarLineStyle.lineWidth = 0.5;
 	speedBarPlot.lineStyle = speedBarLineStyle;
+	speedBarPlot.fill = [CPTFill fillWithColor:[CPTColor colorWithComponentRed:1 green:.63 blue:.4 alpha:1]];
+
 	speedBarPlot.barWidth = CPTDecimalFromDouble(CPDBarWidth);
 	speedBarPlot.barOffset = CPTDecimalFromDouble(CPDBarInitialX);
 	// 3 Add to graph
 	CPTGraph *mainGraph = self.MainHostingView.hostedGraph;
 	[mainGraph addPlot:speedBarPlot toPlotSpace:mainGraph.defaultPlotSpace];
-	
+	mainGraph.title = nil;
+
 /*Oil Scatter Plot*/
 	// 1 Set up
 	CPTScatterPlot *oilScatterPlot = [[CPTScatterPlot alloc] init];
@@ -59,14 +62,17 @@
 	oilScatterPlot.plotSymbol = oilSymbol;
 	// 3 Add plot to graph
 	[mainGraph addPlot:oilScatterPlot toPlotSpace:mainGraph.defaultPlotSpace];
+	mainGraph.plotAreaFrame.borderLineStyle = nil;
+//	mainGraph.titleDisplacement = CGPointMake(0.0f, 10.0f);
+//	mainGraph.title = @"节油积分:14503分";
 	
 /*Time Pie Plot*/
 	// 1 Set up
 	CPTPieChart *piePlot = [[CPTPieChart alloc] init];
 	piePlot.identifier = CPDTickerSymbolTime;
 	piePlot.centerAnchor = CGPointMake(0.5, 0.5);
-	piePlot.pieRadius = 40.f;
-	piePlot.pieInnerRadius = 25.f;
+	piePlot.pieRadius = 35.f;
+	piePlot.pieInnerRadius = 27.f;
 	piePlot.startAngle = M_PI_4;
 	piePlot.sliceDirection = CPTPieDirectionClockwise;
 	piePlot.dataSource = self.provider;
@@ -84,7 +90,7 @@
 	[pieGraph addPlot:piePlot];
 	// 4 Pie chart title
 	NSString *title = @"堵车指数";
-	pieGraph.title = title;
+	pieGraph.title = nil; // title;
 	pieGraph.titleTextStyle = pieTextStyle;
 	pieGraph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
 }

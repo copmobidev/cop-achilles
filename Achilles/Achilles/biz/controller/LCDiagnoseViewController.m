@@ -62,7 +62,7 @@
 
 - (float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60;
+    return 85;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -85,15 +85,21 @@
         cell = [[[NSBundle mainBundle] loadNibNamed:CellIdentifier
                                               owner:self
                                             options:nil] objectAtIndex:0];
+		
     }
-    
-    NSDictionary* dict = [_diagnoseItems objectAtIndex:indexPath.row];
-	//    UIImage* greenBody = [UIImage imageNamed:@"green_body.png"];
-	//    UIImage* bgImg =[greenBody stretchableImageWithLeftCapWidth:0 topCapHeight:0];
-	//    cell.layer.contents = (id)bgImg.CGImage;
-    [cell.icon setImage:[UIImage imageNamed:[dict objectForKey:@"icon"]]];
-    [cell.title setText:[dict objectForKey:@"title"]];
+	NSDictionary* dict = [_diagnoseItems objectAtIndex:indexPath.row];
+	UIImage *iconImage = [UIImage imageNamed:[dict objectForKey:@"icon"]];
+	
+	[cell.icon setImage:iconImage];
+	CGRect oldIconFrame = cell.icon.frame;
+	cell.icon.frame = CGRectMake(oldIconFrame.origin.x, oldIconFrame.origin.y, iconImage.size.width / 1.5, iconImage.size.height / 1.5);
+	
+	[cell.title setText:[dict objectForKey:@"title"]];
+	
 	cell.statusView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", [dict objectForKey:@"status"]]];
+	CGRect oldStatusFrame = cell.statusView.frame;
+	cell.statusView.frame = CGRectMake(oldStatusFrame.origin.x, oldStatusFrame.origin.y, oldStatusFrame.size.width / 1.5, oldStatusFrame.size.height / 1.5);
+	
 	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	
     return cell;
@@ -122,7 +128,7 @@
 	piePlot.identifier = CPDTickerSymbolTime;
 	piePlot.centerAnchor = CGPointMake(0.5, 0.5);
 	piePlot.pieRadius = 40.f;
-	piePlot.pieInnerRadius = 25.f;
+	piePlot.pieInnerRadius = 20.f;
 	piePlot.startAngle = M_PI_4;
 	piePlot.sliceDirection = CPTPieDirectionClockwise;
 	piePlot.dataSource = self.provider;

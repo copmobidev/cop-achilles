@@ -141,7 +141,7 @@
 //	theLegend.borderLineStyle = [CPTLineStyle lineStyle];
 //	theLegend.cornerRadius = 5.0;
 	
-	[self configArcView:-1.f];
+	[self configArcView:.35f];
 }
 
 - (void)configArcView:(CGFloat)visiblePercent {
@@ -179,6 +179,11 @@
 	self.arcView.startAngle = startAngle;
 	self.arcView.endAngle = endAngle;
 	[self.arcView setShape];
+
+	if (IS_HEIGHT_GTE_568) {
+		CGRect frame = self.arcView.frame;
+		self.arcView.frame = CGRectMake(frame.origin.x, frame.origin.y + 20, frame.size.width, frame.size.height);
+	}
 }
 
 - (NSMutableArray *)pieData {
@@ -240,22 +245,6 @@
 - (IBAction)revealUnderRight:(id)sender
 {
   [self.slidingViewController anchorTopViewTo:ECLeft];
-}
-
-- (IBAction)driving:(id)sender {
-	NSLog(@"to driving page");
-}
-
-- (IBAction)oilConsume:(id)sender {
-	NSLog(@"to oil consume page");
-}
-
-- (IBAction)Bill:(id)sender {
-	NSLog(@"to bill page");
-}
-
-- (IBAction)diagnose:(id)sender {
-	NSLog(@"to diagnose page");
 }
 
 - (void)viewDidUnload {
@@ -331,5 +320,57 @@ const int dataNum = 5;
 	
 	return cell;
 }
+
+- (IBAction)functionButtonClicked:(id)sender {
+	[self revealMenu:nil];
+	
+	UIButton *btn = (UIButton *)sender;
+	NSInteger row = -1;
+	
+	switch (btn.tag) {
+		case 0:
+			row = 2;
+			break;
+		case 1:
+			row = 3;
+			break;
+		case 2:
+			row = 4;
+			break;
+		case 3:
+			row = 6;
+			break;
+		default:
+			break;
+	}
+	if (row == -1) return;
+	
+	[self.menuViewController tableView:self.menuViewController.tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:row inSection:0]];
+}
+
+
+//to do
+- (LCMenuViewController *)menuViewController
+{
+//	return (LCMenuViewController *)self.navigationController.viewControllers[0];
+	if (!_menuViewController) {
+		NSArray *viewControllers = self.navigationController.viewControllers;
+		
+		UIViewController *viewController = nil;
+		for (int i = 0; i < viewControllers.count; i++) {
+			viewController = [viewControllers objectAtIndex:i];
+			if ([viewController isKindOfClass:[LCMenuViewController class]]) {
+				return (LCMenuViewController *)viewController;
+			}
+		}
+//		while (viewController = !(viewController == nil || [viewController isKindOfClass:[LCMenuViewController class]])) {
+//			viewController = viewController.parentViewController;
+//		}
+//		_menuViewController = (LCMenuViewController *)viewController;
+	}
+	
+	return _menuViewController;
+}
+
 
 @end

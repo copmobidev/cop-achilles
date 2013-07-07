@@ -24,9 +24,13 @@
 #pragma mark - BizPlotDelegate
 
 - (void)configurePlots {
-	/*Main Plots*/
+/*Main Plots*/
+
+	CPTGraph *mainGraph = self.MainHostingView.hostedGraph;
+	mainGraph.plotAreaFrame.borderLineStyle = nil;
+	mainGraph.title = nil;
 	
-	/*Average Consume Bar Plot*/
+/*Average Consume Bar Plot*/
 	// 1 Set up
 	CPTBarPlot *averageBarPlot = [CPTBarPlot tubularBarPlotWithColor:[CPTColor greenColor] horizontalBars:NO];
 	averageBarPlot.identifier = LCConsumeAverageConsume;//
@@ -41,12 +45,12 @@
 	averageBarPlot.barWidth = CPTDecimalFromDouble(CPDBarWidth);
 	averageBarPlot.barOffset = CPTDecimalFromDouble(CPDBarInitialX);
 	averageBarPlot.barBasesVary = YES;
+	averageBarPlot.fill = [CPTFill fillWithColor:[CPTColor colorWithComponentRed:.2 green:.584 blue:.83 alpha:1]];
 
 	// 3 Add to graph
-	CPTGraph *mainGraph = self.MainHostingView.hostedGraph;
 	[mainGraph addPlot:averageBarPlot toPlotSpace:mainGraph.defaultPlotSpace];
 	
-	/*Least Consume Bar Plot*/
+/*Least Consume Bar Plot*/
 	// 1 Set up
 	CPTBarPlot *leastBarPlot = [CPTBarPlot tubularBarPlotWithColor:[CPTColor redColor] horizontalBars:NO];
 	leastBarPlot.identifier = LCConsumeLeastConsume;
@@ -60,8 +64,9 @@
 	leastBarPlot.lineStyle = leastLineStyle;
 	
 	leastBarPlot.barWidth = CPTDecimalFromDouble(CPDBarWidth);
-	leastBarPlot.barOffset = CPTDecimalFromDouble(CPDBarInitialX * 2);
-	
+	leastBarPlot.barOffset = CPTDecimalFromDouble(CPDBarInitialX);
+	leastBarPlot.fill = [CPTFill fillWithColor:[CPTColor colorWithComponentRed:1 green:.3 blue:.153 alpha:1]];
+
 	// 3 Add plot to graph
 	[mainGraph addPlot:leastBarPlot toPlotSpace:mainGraph.defaultPlotSpace];
 }

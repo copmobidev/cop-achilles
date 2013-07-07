@@ -20,6 +20,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	self.yearLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"middle_button.png"]];
+	
 	[self configureTableView];
 	[self.billTableView reloadData];
 }
@@ -46,6 +48,9 @@
 
 - (void)configurePlots {
 	/*Main Plots*/
+	CPTGraph *mainGraph = self.MainHostingView.hostedGraph;
+	mainGraph.plotAreaFrame.borderLineStyle = nil;
+	mainGraph.title = nil;
 	
 	/*Speed Bar Plot*/
 	// 1 Set up
@@ -60,8 +65,9 @@
 	speedBarPlot.lineStyle = speedBarLineStyle;
 	speedBarPlot.barWidth = CPTDecimalFromDouble(CPDBarWidth);
 	speedBarPlot.barOffset = CPTDecimalFromDouble(CPDBarInitialX);
+	speedBarPlot.fill = [CPTFill fillWithColor:[CPTColor colorWithComponentRed:.63 green:.77 blue:.87 alpha:1]];
+
 	// 3 Add to graph
-	CPTGraph *mainGraph = self.MainHostingView.hostedGraph;
 	[mainGraph addPlot:speedBarPlot toPlotSpace:mainGraph.defaultPlotSpace];
 	
 	/*Oil Scatter Plot*/
@@ -91,4 +97,8 @@
 
 
 
+- (void)viewDidUnload {
+	[self setYearLabel:nil];
+	[super viewDidUnload];
+}
 @end

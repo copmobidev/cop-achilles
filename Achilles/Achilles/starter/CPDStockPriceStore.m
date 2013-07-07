@@ -265,18 +265,20 @@
     return prices;
 }
 
+//行程的scatter
+//加油统计的scatter
 - (NSArray *)monthlyGoogPrices
 {
     static NSArray *prices = nil;
     if (!prices)
     {
         prices = [NSArray arrayWithObjects:
-                  [NSDecimalNumber numberWithFloat:146.92],
-                  [NSDecimalNumber numberWithFloat:142.62],
-                  [NSDecimalNumber numberWithFloat:135.15],
-                  [NSDecimalNumber numberWithFloat:132.32],
-                  [NSDecimalNumber numberWithFloat:130.84],
-                  [NSDecimalNumber numberWithFloat:126.86],
+                  [NSDecimalNumber numberWithFloat:546.92],
+                  [NSDecimalNumber numberWithFloat:642.62],
+                  [NSDecimalNumber numberWithFloat:435.15],
+                  [NSDecimalNumber numberWithFloat:632.32],
+                  [NSDecimalNumber numberWithFloat:530.84],
+                  [NSDecimalNumber numberWithFloat:426.86],
                   [NSDecimalNumber numberWithFloat:135.96],
                   [NSDecimalNumber numberWithFloat:151.01],
                   [NSDecimalNumber numberWithFloat:124.60],
@@ -302,7 +304,7 @@
     if (!prices)
     {
         prices = [NSArray arrayWithObjects:
-                  [NSDecimalNumber numberWithFloat:132.29],
+                  [NSDecimalNumber numberWithFloat:532.29],
                   [NSDecimalNumber numberWithFloat:131.94],
                   [NSDecimalNumber numberWithFloat:131.21],
                   [NSDecimalNumber numberWithFloat:131.52],

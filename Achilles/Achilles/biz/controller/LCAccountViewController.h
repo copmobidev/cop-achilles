@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ECSlidingViewController.h"
+#import "LCBizController.h"
 
-@interface LCAccountViewController : UIViewController
+@interface LCAccountViewController : LCBizController
+
+@property (weak, nonatomic) IBOutlet UIView *inputView;
 
 - (IBAction)editProfile:(id)sender;
+
+- (IBAction)revealMenu:(id)sender;
+
+- (IBAction)resignKeyBoardInView:(UIView *)view;
 @end

@@ -13,7 +13,6 @@
 @property (nonatomic, strong) NSArray *menuItems;
 @property (nonatomic, assign) CGFloat revealRightAmount;
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
 @property (nonatomic, strong) NSIndexPath *lastIndexPath;
 @end
@@ -93,15 +92,14 @@
 		LCMenuItemCell * cell = (LCMenuItemCell *)[tableView cellForRowAtIndexPath:indexPath];
 		cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_selected.png"]];
 		self.lastIndexPath = indexPath;
-	}
-	
-	
+	}	
 }
 
 - (void)viewDidUnload {
 	[self setTableView:nil];
 	[self setNavigationBar:nil];
 	[self setNavigationBar:nil];
+	[self setTableView:nil];
 	[super viewDidUnload];
 }
 @end
