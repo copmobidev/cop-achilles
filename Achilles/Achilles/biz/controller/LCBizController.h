@@ -24,6 +24,8 @@
 //Pie Hosting View
 @property (weak, nonatomic) IBOutlet CPTGraphHostingView *PieHostingView;
 
+@property (weak, nonatomic) IBOutlet CPTGraphHostingView *SecondHostingView;
+
 /*Action in Controller*/
 - (IBAction)revealMenu:(id)sender;
 

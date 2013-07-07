@@ -56,10 +56,11 @@
 		switch (fieldEnum) {
 			//tip
 			case CPTBarPlotFieldBarTip:
-				// speed plot
+			// speed plot
 				if ([plot.identifier isEqual:CPDTickerSymbolSpeed] && idx < [[[CPDStockPriceStore sharedInstance] datesInWeek] count]) {
 					return [[[CPDStockPriceStore sharedInstance] weeklyPrices:CPDTickerSymbolSpeed] objectAtIndex:idx];
 				}
+			// consume
 				else if ([plot.identifier isEqual:LCConsumeAverageConsume] && idx < [[[CPDStockPriceStore sharedInstance] datesInWeek] count]) {
 					return [[[CPDStockPriceStore sharedInstance] weeklyPrices:LCConsumeAverageConsume] objectAtIndex:idx];
 				}
@@ -71,12 +72,14 @@
 			case CPTBarPlotFieldBarLocation:
 				return [NSDecimalNumber numberWithUnsignedInteger:idx];
 				break;
-			//bar base
-			case CPTBarPlotFieldBarBase:
-				if ([plot.identifier isEqual:LCConsumeAverageConsume] && idx < [[[CPDStockPriceStore sharedInstance] datesInWeek] count]) {
-					return [NSDecimalNumber numberWithUnsignedInteger:1000];
-				}
-				break;
+//			//bar base
+//			case CPTBarPlotFieldBarBase:
+//				if ([plot.identifier isEqual:LCConsumeAverageConsume] && idx < [[[CPDStockPriceStore sharedInstance] datesInWeek] count]) {
+//					return [NSDecimalNumber numberWithUnsignedInteger:0];
+//				} else if ([plot.identifier isEqual:LCConsumeLeastConsume] && idx < [[[CPDStockPriceStore sharedInstance] datesInWeek] count]) {
+//					return [NSDecimalNumber numberWithUnsignedInteger:0];
+//				}
+//				break;
 		}
 	}
 	/*For Scatter*/

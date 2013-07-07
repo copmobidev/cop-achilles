@@ -224,11 +224,11 @@
     if (!prices)
     {
         prices = [NSArray arrayWithObjects:
-                  [NSDecimalNumber numberWithFloat:197.60],
-                  [NSDecimalNumber numberWithFloat:101.27],
-                  [NSDecimalNumber numberWithFloat:109.72],
-                  [NSDecimalNumber numberWithFloat:115.47],
-                  [NSDecimalNumber numberWithFloat:114.98],
+                  [NSDecimalNumber numberWithFloat:232.12],
+                  [NSDecimalNumber numberWithFloat:331.92],
+                  [NSDecimalNumber numberWithFloat:332.20],
+                  [NSDecimalNumber numberWithFloat:132.11],
+                  [NSDecimalNumber numberWithFloat:431.98],
                   nil];
     }
     return prices;

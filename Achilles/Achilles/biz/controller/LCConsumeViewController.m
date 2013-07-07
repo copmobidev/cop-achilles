@@ -28,8 +28,8 @@
 
 	CPTGraph *mainGraph = self.MainHostingView.hostedGraph;
 	mainGraph.plotAreaFrame.borderLineStyle = nil;
-	mainGraph.title = nil;
-	
+	mainGraph.title = @"平均油耗";
+	mainGraph.titleDisplacement = CGPointMake(-120.f, -10.f);
 /*Average Consume Bar Plot*/
 	// 1 Set up
 	CPTBarPlot *averageBarPlot = [CPTBarPlot tubularBarPlotWithColor:[CPTColor greenColor] horizontalBars:NO];
@@ -50,12 +50,20 @@
 	// 3 Add to graph
 	[mainGraph addPlot:averageBarPlot toPlotSpace:mainGraph.defaultPlotSpace];
 	
+	
+/*Main Plots*/
+	
+	CPTGraph *secondGraph = self.SecondHostingView.hostedGraph;
+	secondGraph.plotAreaFrame.borderLineStyle = nil;
+	secondGraph.title = @"最佳油耗";
+	secondGraph.titleDisplacement = CGPointMake(-120.f, -20.f);
+
+//	self.secondHostingView.backgroundColor = [UIColor greenColor];
 /*Least Consume Bar Plot*/
 	// 1 Set up
 	CPTBarPlot *leastBarPlot = [CPTBarPlot tubularBarPlotWithColor:[CPTColor redColor] horizontalBars:NO];
 	leastBarPlot.identifier = LCConsumeLeastConsume;
 	leastBarPlot.dataSource = self.provider;
-//	leastBarPlot.opacity = 0.3;
 	
 	// 2 Set up line style
 	CPTMutableLineStyle *leastLineStyle = [CPTMutableLineStyle lineStyle];
@@ -68,7 +76,7 @@
 	leastBarPlot.fill = [CPTFill fillWithColor:[CPTColor colorWithComponentRed:1 green:.3 blue:.153 alpha:1]];
 
 	// 3 Add plot to graph
-	[mainGraph addPlot:leastBarPlot toPlotSpace:mainGraph.defaultPlotSpace];
+	[secondGraph addPlot:leastBarPlot toPlotSpace:secondGraph.defaultPlotSpace];
 }
 
 @end

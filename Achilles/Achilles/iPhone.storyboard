@@ -327,6 +327,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81960791349411011" green="0.92156869173049927" blue="0.95294123888015747" alpha="1" colorSpace="deviceRGB"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="horizontal_line.png" id="uqh-Ak-81A">
+                                <rect key="frame" x="0.0" y="219" width="320" height="2"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" image="horizontal_line.png" id="Mcj-tD-0lG" userLabel="line">
                                 <rect key="frame" x="0.0" y="224" width="320" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -378,7 +382,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <view contentMode="scaleToFill" id="IkA-t6-ReF" customClass="CPTGraphHostingView">
-                                <rect key="frame" x="0.0" y="37" width="320" height="182"/>
+                                <rect key="frame" x="0.0" y="37" width="320" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -609,8 +613,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="add_record.png" id="WLZ-ZT-xj8">
-                                <rect key="frame" x="10" y="10" width="60" height="60"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="add_bill.png" id="WLZ-ZT-xj8">
+                                <rect key="frame" x="20" y="20" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="horizontal_line_with_shadow.png" id="w7x-dA-AEt">
@@ -1740,6 +1744,57 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="blue_bg.png" id="eFS-VM-Lk8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" image="horizontal_line.png" id="fpK-x7-FG9" userLabel="line">
+                                <rect key="frame" x="0.0" y="54" width="320" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" image="horizontal_line.png" id="nsW-AU-3jw" userLabel="line">
+                                <rect key="frame" x="0.0" y="74" width="320" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" image="horizontal_line.png" id="hQc-dM-Z2E" userLabel="line">
+                                <rect key="frame" x="0.0" y="94" width="320" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" image="horizontal_line.png" id="2zZ-ed-bDm" userLabel="line">
+                                <rect key="frame" x="0.0" y="114" width="320" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" image="horizontal_line.png" id="hCD-Ag-fc9" userLabel="line">
+                                <rect key="frame" x="0.0" y="134" width="320" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" image="horizontal_line.png" id="KbL-LA-AEd" userLabel="line">
+                                <rect key="frame" x="0.0" y="170" width="320" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" image="horizontal_line.png" id="CeQ-O3-nVY" userLabel="line">
+                                <rect key="frame" x="0.0" y="190" width="320" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" image="horizontal_line.png" id="XDO-ff-At3" userLabel="line">
+                                <rect key="frame" x="0.0" y="210" width="320" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" image="horizontal_line.png" id="1Av-Pk-5ZY" userLabel="line">
+                                <rect key="frame" x="0.0" y="230" width="320" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" image="horizontal_line.png" id="rVK-9C-ofR" userLabel="line">
+                                <rect key="frame" x="0.0" y="250" width="320" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LdQ-Jd-0Tk" userLabel="left_button">
                                 <rect key="frame" x="229" y="5" width="51" height="25"/>
@@ -1765,8 +1820,17 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="horizontal_line.png" id="V3s-eg-zJe">
+                                <rect key="frame" x="0.0" y="154" width="320" height="2"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" id="Wvu-ZL-Iev" customClass="CPTGraphHostingView">
-                                <rect key="frame" x="0.0" y="35" width="320" height="236"/>
+                                <rect key="frame" x="0.0" y="35" width="320" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="L8X-2l-IWK" customClass="CPTGraphHostingView">
+                                <rect key="frame" x="0.0" y="150" width="320" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -1912,6 +1976,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </view>
                     <connections>
                         <outlet property="MainHostingView" destination="Wvu-ZL-Iev" id="8oj-nb-n59"/>
+                        <outlet property="SecondHostingView" destination="L8X-2l-IWK" id="8wF-Gm-m9L"/>
+                        <outlet property="secondHostingView" destination="L8X-2l-IWK" id="7Qf-nP-tJJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tEs-p1-EPC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1962,6 +2028,20 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="车库里" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TJ9-p8-kqf">
+                                <rect key="frame" x="139" y="219" width="51" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="iDrive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jAh-8x-fAU">
+                                <rect key="frame" x="143" y="183" width="44" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1986,7 +2066,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         </scene>
     </scenes>
     <resources>
-        <image name="add_record.png" width="50" height="50"/>
+        <image name="add_bill.png" width="67" height="70"/>
         <image name="arrow_left.png" width="32" height="52"/>
         <image name="arrow_right.png" width="32" height="52"/>
         <image name="biz_back.png" width="60" height="44"/>
@@ -2063,6 +2143,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="action" name="revealMenu:"/>
                 <relationship kind="outlet" name="MainHostingView" candidateClass="CPTGraphHostingView"/>
                 <relationship kind="outlet" name="PieHostingView" candidateClass="CPTGraphHostingView"/>
+                <relationship kind="outlet" name="SecondHostingView" candidateClass="CPTGraphHostingView"/>
             </relationships>
         </class>
         <class className="LCConsumeViewController" superclassName="LCBizController">

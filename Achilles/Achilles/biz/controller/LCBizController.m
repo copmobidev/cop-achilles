@@ -55,10 +55,11 @@
 - (void)configureHostingView {
 	self.MainHostingView.allowPinchScaling = NO;
 	self.PieHostingView.allowPinchScaling = NO;
+	self.SecondHostingView.allowPinchScaling = NO;
 }
 
 - (void)configureGraph {
-	/*Main graph*/
+/*Main graph*/
 	// 1 - Create the graph & add it to hosting view
 	CPTGraph *mainGraph = [[CPTXYGraph alloc] initWithFrame:self.MainHostingView.bounds];
 	mainGraph.plotAreaFrame.masksToBorder = NO;//**
@@ -94,8 +95,39 @@
 	plotSpace.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(xMin) length:CPTDecimalFromFloat(xMax)];
 	plotSpace.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(yMin) length:CPTDecimalFromFloat(yMax)];
 	plotSpace.allowsUserInteraction = NO;
+
+/*Second graph*/
+	// 1 - Create the graph & add it to hosting view
+	CPTGraph *secondGraph = [[CPTXYGraph alloc] initWithFrame:self.SecondHostingView.bounds];
+	secondGraph.plotAreaFrame.masksToBorder = NO;//**
+	self.SecondHostingView.hostedGraph = secondGraph;
 	
-	/*Pie graph*/
+	// 2 - Configure the graph (theme & padding)
+	[secondGraph applyTheme:[CPTTheme themeNamed:kCPTPlainWhiteTheme]];
+	secondGraph.paddingBottom = 0.0f;
+	secondGraph.paddingLeft = 0.0f;
+	secondGraph.paddingTop = 0.0f;
+	secondGraph.paddingRight = 0.0f;
+	secondGraph.axisSet = nil;
+	secondGraph.fill = [CPTFill fillWithColor:[CPTColor clearColor]];
+	secondGraph.plotAreaFrame.fill = [CPTFill fillWithColor:[CPTColor clearColor]];
+	
+	// 3 - Set up the styles
+	
+	// 4 - Set up title
+	NSString *title2 = @"标题信息";
+	secondGraph.title = title2;
+	secondGraph.titleTextStyle = titleStyle;
+	secondGraph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
+	secondGraph.titleDisplacement = CGPointMake(0.0f, -16.0f);
+	
+	// 5 - Set up plot space (with xmin xmax ymin ymax)
+		CPTXYPlotSpace *plotSpace2 = (CPTXYPlotSpace *) secondGraph.defaultPlotSpace;
+	plotSpace2.xRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(xMin) length:CPTDecimalFromFloat(xMax)];
+	plotSpace2.yRange = [CPTPlotRange plotRangeWithLocation:CPTDecimalFromFloat(yMin) length:CPTDecimalFromFloat(yMax)];
+	plotSpace2.allowsUserInteraction = NO;
+
+/*Pie graph*/
 	// 1 - add graph
 	CPTXYGraph *pieGraph  = [[CPTXYGraph alloc] initWithFrame:self.PieHostingView.bounds];
 	self.PieHostingView.hostedGraph = pieGraph;
@@ -113,7 +145,7 @@
 }
 
 - (void)configureAxes {
-	/*Main axes*/
+/*Main axes*/
 	// 1 - Configure styles
 	CPTMutableTextStyle *axisTitleStyle = [CPTMutableTextStyle textStyle];
 	axisTitleStyle.color = [CPTColor blackColor];
@@ -140,8 +172,28 @@
 	axisSet.yAxis.titleTextStyle = axisTitleStyle;
 	axisSet.yAxis.titleOffset = 1.0f;
 	axisSet.yAxis.axisLineStyle = axisLineStyle;
+
+/*Second axes*/
+	// 1 - Configure styles
 	
-	/*Pie axes*/
+	// 2 - Get the graph's axis set
+	CPTXYAxisSet *axisSet2 = (CPTXYAxisSet *) self.SecondHostingView.hostedGraph.axisSet;
+
+	// 3 - Configure the x-axis
+	axisSet2.xAxis.labelingPolicy = CPTAxisLabelingPolicyEqualDivisions;
+	axisSet2.xAxis.title = @"Days of Week (Mon - Fri)";
+	axisSet2.xAxis.titleTextStyle = axisTitleStyle;
+	axisSet2.xAxis.titleOffset = 1.0f;
+	axisSet2.xAxis.axisLineStyle = axisLineStyle;
+	
+	// 4 - Configure the y-axis
+	axisSet2.yAxis.labelingPolicy = CPTAxisLabelingPolicyEqualDivisions;
+	axisSet2.yAxis.title = @"Price";
+	axisSet2.yAxis.titleTextStyle = axisTitleStyle;
+	axisSet2.yAxis.titleOffset = 1.0f;
+	axisSet2.yAxis.axisLineStyle = axisLineStyle;
+
+/*Pie axes*/
 }
 
 #pragma mark - Provider for Plot DataSource
