@@ -9,7 +9,7 @@
 #import "LCDiagnoseViewController.h"
 #import "LCDiagnoseDetailViewController.h"
 #import "LCHelpViewController.h"
-
+#import "LCBatteryViewController.h"
 
 @interface LCDiagnoseViewController ()
 
@@ -18,17 +18,17 @@
 @implementation LCDiagnoseViewController
 
 #pragma mark - UIViewController
+- (BOOL)shouldAutorotate {
+	return NO;
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
 	
-	if (![self.slidingViewController.underLeftViewController isKindOfClass:[LCMenuViewController class]]) {
-		self.slidingViewController.underLeftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
-	}
-	self.slidingViewController.underRightViewController = nil;
-	
-	[self.view addGestureRecognizer:self.slidingViewController.panGesture];
+	UIViewController *c = [[UIViewController alloc]init];
+	[self presentModalViewController:c animated:NO];
+	[self dismissModalViewControllerAnimated:NO];
 }
 
 - (IBAction)revealMenu:(id)sender
@@ -36,13 +36,17 @@
 	[self.slidingViewController anchorTopViewTo:ECRight];
 }
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
+	if (![self.slidingViewController.underLeftViewController isKindOfClass:[LCMenuViewController class]]) {
+		self.slidingViewController.underLeftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
+	}
+	self.slidingViewController.underRightViewController = nil;
+	
+	[self.view addGestureRecognizer:self.slidingViewController.panGesture];
 	// Do any additional setup after loading the view.
-//    UIImage *image = [UIImage imageNamed:@"bg_texture.png"];
-//    self.view.layer.contents = (id)image.CGImage;
     self.diagnoseTableView.sectionFooterHeight = 0;
     self.diagnoseTableView.sectionHeaderHeight = 0;
     [self.diagnoseTableView setDataSource:self];
@@ -106,6 +110,21 @@
 }
 
 #pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"iPhone"
+															 bundle: nil];
+	
+	UIViewController *controller = nil; 
+	if (indexPath.row != (self.diagnoseItems.count - 1)) {
+		controller = (LCDiagnoseDetailViewController *)[mainStoryboard instantiateViewControllerWithIdentifier: @"LCDiagnoseDetail"];
+	} else {		
+		controller = (LCBatteryViewController *)[mainStoryboard instantiateViewControllerWithIdentifier: @"LCBattery"];
+	}
+	
+	[self presentModalViewController:controller animated:YES];
+}
 
 - (IBAction)diagnose:(id)sender
 {

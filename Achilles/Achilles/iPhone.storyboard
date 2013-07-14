@@ -728,7 +728,6 @@
                                             <outlet property="icon" destination="Rie-DR-ShO" id="RHe-xQ-kuX"/>
                                             <outlet property="statusView" destination="DTb-RF-WQX" id="K8B-08-Mk2"/>
                                             <outlet property="title" destination="3Yr-TX-Emy" id="qP7-gB-FAV"/>
-                                            <segue destination="U7M-Vj-nNr" kind="modal" id="8Au-kY-iAn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -736,6 +735,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="PieHostingView" destination="D73-uV-0ss" id="8Qn-7u-Gjl"/>
                         <outlet property="diagnoseTableView" destination="ita-s3-Rpv" id="mix-O0-Jz4"/>
@@ -743,12 +743,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eS6-Nw-kBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1441" y="-1588"/>
+            <point key="canvasLocation" x="1453" y="-1171"/>
+        </scene>
+        <!--Battery View Controller-->
+        <scene sceneID="P2d-yo-XX6">
+            <objects>
+                <viewController storyboardIdentifier="LCBattery" id="47T-uV-Lw2" customClass="LCBatteryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bjV-JL-Klm">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="UxQ-sB-sQb">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="电瓶状态" id="CSd-5o-HBK">
+                                        <barButtonItem key="leftBarButtonItem" title="返回" id="S1r-n5-KnG">
+                                            <connections>
+                                                <action selector="back:" destination="47T-uV-Lw2" id="nA7-Kb-Xip"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GXq-TK-3VS">
+                                <rect key="frame" x="219" y="139" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpC-4E-FaL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="-1128"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z4N-FL-VQe">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="aS4-1A-xS4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yUC-vn-Bqb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kj3-hd-Fua" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="-1705"/>
         </scene>
         <!--Diagnose Detail View Controller-->
         <scene sceneID="eHP-a4-H5P">
             <objects>
-                <viewController id="U7M-Vj-nNr" customClass="LCDiagnoseDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LCDiagnoseDetail" id="U7M-Vj-nNr" customClass="LCDiagnoseDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KkC-GQ-uBT">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -850,7 +900,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7z-KZ-11g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1886" y="-1582"/>
+            <point key="canvasLocation" x="1800" y="-1686"/>
         </scene>
         <!--Navigation View Controller-->
         <scene sceneID="SXt-FO-RZE">
@@ -2130,6 +2180,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="LCBaseViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LCBaseViewController.h"/>
         </class>
+        <class className="LCBatteryViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LCBatteryViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
         <class className="LCBillViewController" superclassName="LCBizController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LCBillViewController.h"/>
             <relationships>
@@ -2166,6 +2222,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="LCDiagnoseViewController" superclassName="LCBizController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LCDiagnoseViewController.h"/>
             <relationships>
+                <relationship kind="action" name="diagnose:"/>
                 <relationship kind="action" name="revealMenu:"/>
                 <relationship kind="outlet" name="PieHostingView" candidateClass="CPTGraphHostingView"/>
                 <relationship kind="outlet" name="diagnoseTableView" candidateClass="UITableView"/>

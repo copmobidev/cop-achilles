@@ -58,6 +58,8 @@ typedef enum {
   BOOL topViewHasFocus;
 }
 
+@property (nonatomic, assign) BOOL isGestureHandicapped;
+
 /** Returns the view controller that will be visible when the top view is slide to the right.
  
  This view controller is typically a menu or top-level view that switches out the top view controller.

@@ -28,6 +28,10 @@
 // pi is approximately equal to 3.14159265359.
 #define   DEGREES_TO_RADIANS(degrees)  ((M_PI * degrees)/ 180)
 
+- (BOOL)shouldAutorotate {
+	return NO;
+}
+
 - (NSArray *)pieColors {
 	if (!_pieColors) {
 		_pieColors = @[@[@182.f, @233.f, @88.f], @[@173.f, @29.f, @238.f], @[@242.f, @91.f, @54.f]];

@@ -86,6 +86,8 @@
 		C9705DEB1748A89600E991E5 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = C9705DE81748A89600E991E5 /* car.png */; };
 		C9705DEC1748A89600E991E5 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = C9705DE91748A89600E991E5 /* left.png */; };
 		C9705DED1748A89600E991E5 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = C9705DEA1748A89600E991E5 /* right.png */; };
+		C98AC9B3179297C900EC6772 /* LCBatteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98AC9B2179297C800EC6772 /* LCBatteryViewController.m */; };
+		C98AC9E91793015300EC6772 /* UINavigationController+Rotation_IOS6.m in Sources */ = {isa = PBXBuildFile; fileRef = C98AC9E81793015300EC6772 /* UINavigationController+Rotation_IOS6.m */; };
 		C9A14B9A1786FFE60070E203 /* section_cell_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A14B991786FFE60070E203 /* section_cell_bg.png */; };
 		C9A14B9E1787057C0070E203 /* left_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A14B9B1787057C0070E203 /* left_button.png */; };
 		C9A14B9F1787057C0070E203 /* middle_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C9A14B9C1787057C0070E203 /* middle_button.png */; };
@@ -448,6 +450,10 @@
 		C9705DE81748A89600E991E5 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
 		C9705DE91748A89600E991E5 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
 		C9705DEA1748A89600E991E5 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		C98AC9B1179297C800EC6772 /* LCBatteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBatteryViewController.h; path = biz/controller/LCBatteryViewController.h; sourceTree = "<group>"; };
+		C98AC9B2179297C800EC6772 /* LCBatteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBatteryViewController.m; path = biz/controller/LCBatteryViewController.m; sourceTree = "<group>"; };
+		C98AC9E71793015300EC6772 /* UINavigationController+Rotation_IOS6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Rotation_IOS6.h"; path = "biz/category/UINavigationController+Rotation_IOS6.h"; sourceTree = "<group>"; };
+		C98AC9E81793015300EC6772 /* UINavigationController+Rotation_IOS6.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Rotation_IOS6.m"; path = "biz/category/UINavigationController+Rotation_IOS6.m"; sourceTree = "<group>"; };
 		C9A14B991786FFE60070E203 /* section_cell_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = section_cell_bg.png; path = billPage/section_cell_bg.png; sourceTree = "<group>"; };
 		C9A14B9B1787057C0070E203 /* left_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left_button.png; path = billPage/left_button.png; sourceTree = "<group>"; };
 		C9A14B9C1787057C0070E203 /* middle_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = middle_button.png; path = billPage/middle_button.png; sourceTree = "<group>"; };
@@ -816,6 +822,8 @@
 				C9E9A0FF17768FCB00F7D5C7 /* LCHelpViewController.m */,
 				C9CB1BA41779E564005BD76C /* LCDiagnoseDetailViewController.h */,
 				C9CB1BA51779E564005BD76C /* LCDiagnoseDetailViewController.m */,
+				C98AC9B1179297C800EC6772 /* LCBatteryViewController.h */,
+				C98AC9B2179297C800EC6772 /* LCBatteryViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -1206,6 +1214,8 @@
 			isa = PBXGroup;
 			children = (
 				C9E604C01766C60B0066BA48 /* NSObject+Properties */,
+				C98AC9E71793015300EC6772 /* UINavigationController+Rotation_IOS6.h */,
+				C98AC9E81793015300EC6772 /* UINavigationController+Rotation_IOS6.m */,
 			);
 			name = category;
 			sourceTree = "<group>";
@@ -1671,6 +1681,8 @@
 				C9D69172178012D500B84B77 /* LCArcView.m in Sources */,
 				C9A14BAC178976A80070E203 /* SVSegmentedControl.m in Sources */,
 				C9A14BAD178976A80070E203 /* SVSegmentedThumb.m in Sources */,
+				C98AC9B3179297C900EC6772 /* LCBatteryViewController.m in Sources */,
+				C98AC9E91793015300EC6772 /* UINavigationController+Rotation_IOS6.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

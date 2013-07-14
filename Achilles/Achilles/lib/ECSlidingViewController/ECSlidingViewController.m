@@ -172,7 +172,7 @@ NSString *const ECSlidingViewTopDidReset          = @"ECSlidingViewTopDidReset";
 {
   [super viewDidLoad];
   self.shouldAllowUserInteractionsWhenAnchored = NO;
-  self.resetTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resetTopView)];
+  self.resetTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(resetTopView2)];
   _panGesture          = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(updateTopViewHorizontalCenterWithRecognizer:)];
   self.resetTapGesture.enabled = NO;
   self.resetStrategy = ECTapping | ECPanning;
@@ -224,7 +224,6 @@ NSString *const ECSlidingViewTopDidReset          = @"ECSlidingViewTopDidReset";
 - (void)adjustLayout
 {
   self.topViewSnapshot.frame = self.topView.bounds;
-  
   if ([self underRightShowing] && ![self topViewIsOffScreen]) {
     [self updateUnderRightLayout];
     [self updateTopViewHorizontalCenter:self.anchorLeftTopViewCenter];
@@ -242,13 +241,18 @@ NSString *const ECSlidingViewTopDidReset          = @"ECSlidingViewTopDidReset";
 
 - (void)updateTopViewHorizontalCenterWithRecognizer:(UIPanGestureRecognizer *)recognizer
 {
+	NSLog(@"updateTopViewHor");
   CGPoint currentTouchPoint     = [recognizer locationInView:self.view];
   CGFloat currentTouchPositionX = currentTouchPoint.x;
+
   
   if (recognizer.state == UIGestureRecognizerStateBegan) {
     self.initialTouchPositionX = currentTouchPositionX;
     self.initialHoizontalCenter = self.topView.center.x;
   } else if (recognizer.state == UIGestureRecognizerStateChanged) {
+	  if (self.isGestureHandicapped && currentTouchPoint.y < 200)
+		  return;
+	
     CGFloat panAmount = self.initialTouchPositionX - currentTouchPositionX;
     CGFloat newCenterPosition = self.initialHoizontalCenter - panAmount;
     
@@ -351,6 +355,10 @@ NSString *const ECSlidingViewTopDidReset          = @"ECSlidingViewTopDidReset";
       [[NSNotificationCenter defaultCenter] postNotificationName:key object:self userInfo:nil];
     });
   }];
+}
+
+- (void)resetTopView2 {
+	
 }
 
 - (void)resetTopView

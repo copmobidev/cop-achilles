@@ -38,6 +38,11 @@
                                              object:self.slidingViewController];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	self.slidingViewController.isGestureHandicapped = YES;
+}
+
 #pragma mark - SlidingViewController Notification
 // slidingViewController notification
 - (void)underLeftWillAppear:(NSNotification *)notification

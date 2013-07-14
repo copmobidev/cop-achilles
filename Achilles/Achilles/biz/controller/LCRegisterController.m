@@ -86,7 +86,7 @@ const int pageNumber = 5;
 		
         [alert show];
 		
-        [self.reader dismissModalViewControllerAnimated: YES];
+		[self.reader dismissViewControllerAnimated:YES completion:nil];
 		
     }
 }
@@ -148,6 +148,6 @@ const int pageNumber = 5;
 
 
 - (void)finish {
-	[self dismissModalViewControllerAnimated:YES];
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

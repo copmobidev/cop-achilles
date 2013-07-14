@@ -28,17 +28,26 @@
 {
 	[super viewWillAppear:animated];
 	
+	self.slidingViewController.isGestureHandicapped = NO;
+//	if (![self.slidingViewController.underLeftViewController isKindOfClass:[LCMenuViewController class]]) {
+//		self.slidingViewController.underLeftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
+//	}
+//	self.slidingViewController.underRightViewController = nil;
+//	
+//	[self.view addGestureRecognizer:self.slidingViewController.panGesture];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	
 	if (![self.slidingViewController.underLeftViewController isKindOfClass:[LCMenuViewController class]]) {
 		self.slidingViewController.underLeftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
 	}
 	self.slidingViewController.underRightViewController = nil;
 	
 	[self.view addGestureRecognizer:self.slidingViewController.panGesture];
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
+	
 	// Do any additional setup after loading the view.
 	[self initPlot];
 }

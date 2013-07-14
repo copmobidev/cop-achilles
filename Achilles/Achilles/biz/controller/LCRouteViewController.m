@@ -16,6 +16,11 @@
 	[super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	self.slidingViewController.isGestureHandicapped = YES;
+}
+
 #pragma mark - BizPlotDelegate
 
 - (void)configurePlots {
@@ -95,4 +100,7 @@
 	pieGraph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
 }
 
+- (void)viewDidUnload {
+	[super viewDidUnload];
+}
 @end

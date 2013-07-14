@@ -10,6 +10,16 @@
 
 @implementation LCAppDelegate
 
+//#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_6_0
+//
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+	return  UIInterfaceOrientationMaskAll;
+}
+//
+//#endif
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     return YES;
