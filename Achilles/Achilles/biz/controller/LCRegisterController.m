@@ -57,7 +57,38 @@ const int pageNumber = 5;
 		[self.scrollView addSubview:[self buttonWithImage:imageName withTag:index + 1 withFrame:rect withSelector:@selector(nextPage:)]];
 	}
 	
+	CGRect rect = CGRectMake(0, 350, 320, 44);
+	[self.scrollView addSubview:[self buttonWithTitle:@"Scan" withTag:0 withFrame:rect withSelector:@selector(scan:)]];
 	[self.view addSubview:self.scrollView];
+}
+
+- (void)scan:(id)sender {
+	self.reader = [ZBarReaderViewController new];
+	self.reader.readerDelegate = self;
+	
+    [self.reader.scanner setSymbology: ZBAR_UPCA config: ZBAR_CFG_ENABLE to: 0];
+    self.reader.readerView.zoom = 1.0;
+	
+    [self presentModalViewController: self.reader
+                            animated: YES];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+	id<NSFastEnumeration> results = [info objectForKey: ZBarReaderControllerResults];
+	
+    ZBarSymbol *symbol = nil;
+	
+    for(symbol in results){
+		
+        self.upcString = symbol.data;
+		
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Scanned UPC" message:[NSString stringWithFormat:@"The UPC read was: %@", self.upcString] delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+		
+        [alert show];
+		
+        [self.reader dismissModalViewControllerAnimated: YES];
+		
+    }
 }
 
 - (void)nextPage:(id)sender {
@@ -93,6 +124,15 @@ const int pageNumber = 5;
 	button.frame = frame;
 	
 	[button setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+	button.tag = tag;
+	[button addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
+	return button;
+}
+
+- (UIButton *)buttonWithTitle:(NSString *)title withTag:(NSInteger)tag withFrame:(CGRect)frame withSelector:(SEL)selector {
+	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	button.frame = frame;
+	[button setTitle:title forState:UIControlStateNormal];
 	button.tag = tag;
 	[button addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
 	return button;
