@@ -9,9 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "ECSlidingViewController.h"
 #import "LCMenuViewController.h"
+#import "LCBizController.h"
 
-@interface LCHelpViewController : UIViewController
-
-- (IBAction)revealMenu:(id)sender;
+@interface LCHelpViewController : LCBizController
 
 @end

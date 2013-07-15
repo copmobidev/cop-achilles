@@ -54,6 +54,11 @@
 		C9150A6617503A280077A693 /* diagnosis_zdqdzxt_img.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A6517503A280077A693 /* diagnosis_zdqdzxt_img.png */; };
 		C9150A6817503B450077A693 /* diagnose.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9150A6717503B450077A693 /* diagnose.plist */; };
 		C9150A6A17503B6E0077A693 /* bg_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = C9150A6917503B6E0077A693 /* bg_texture.png */; };
+		C91A6644179436080088CC47 /* add_a_bill.png in Resources */ = {isa = PBXBuildFile; fileRef = C91A6643179436080088CC47 /* add_a_bill.png */; };
+		C91A6648179437430088CC47 /* battery-iphone5-bg_03.png in Resources */ = {isa = PBXBuildFile; fileRef = C91A6646179437430088CC47 /* battery-iphone5-bg_03.png */; };
+		C91A6649179437430088CC47 /* battery-iphone5-bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = C91A6647179437430088CC47 /* battery-iphone5-bg2.png */; };
+		C91A664B17943F020088CC47 /* menu_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C91A664A17943F020088CC47 /* menu_bg.png */; };
+		C91A664D17944C6F0088CC47 /* red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C91A664C17944C6F0088CC47 /* red_button.png */; };
 		C94B3AB217923B2C000DA437 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B3AB117923B2C000DA437 /* AVFoundation.framework */; };
 		C94B3AB517923B39000DA437 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B3AB417923B38000DA437 /* CoreMedia.framework */; };
 		C94B3AB717923B44000DA437 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B3AB617923B44000DA437 /* CoreVideo.framework */; };
@@ -310,6 +315,11 @@
 		C9150A6517503A280077A693 /* diagnosis_zdqdzxt_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diagnosis_zdqdzxt_img.png; sourceTree = "<group>"; };
 		C9150A6717503B450077A693 /* diagnose.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = diagnose.plist; sourceTree = "<group>"; };
 		C9150A6917503B6E0077A693 /* bg_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_texture.png; sourceTree = "<group>"; };
+		C91A6643179436080088CC47 /* add_a_bill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add_a_bill.png; path = billPage/add_a_bill.png; sourceTree = "<group>"; };
+		C91A6646179437430088CC47 /* battery-iphone5-bg_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "battery-iphone5-bg_03.png"; path = "diagnosePage/battery-iphone5-bg_03.png"; sourceTree = "<group>"; };
+		C91A6647179437430088CC47 /* battery-iphone5-bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "battery-iphone5-bg2.png"; path = "diagnosePage/battery-iphone5-bg2.png"; sourceTree = "<group>"; };
+		C91A664A17943F020088CC47 /* menu_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_bg.png; path = menuPage/menu_bg.png; sourceTree = "<group>"; };
+		C91A664C17944C6F0088CC47 /* red_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_button.png; sourceTree = "<group>"; };
 		C94B3AB117923B2C000DA437 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C94B3AB417923B38000DA437 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		C94B3AB617923B44000DA437 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -1084,6 +1094,7 @@
 		C9705DE71748A89600E991E5 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C91A664C17944C6F0088CC47 /* red_button.png */,
 				C9A14BA117878B6D0070E203 /* left_button_without_arrow.png */,
 				C9A14BA217878B6D0070E203 /* right_button_without_arrow.png */,
 				C9A14B951786FF5F0070E203 /* billPage */,
@@ -1118,6 +1129,7 @@
 		C9A14B951786FF5F0070E203 /* billPage */ = {
 			isa = PBXGroup;
 			children = (
+				C91A6643179436080088CC47 /* add_a_bill.png */,
 				C904FBD41789BD53002D5A61 /* add_bill.png */,
 				C9A14B9B1787057C0070E203 /* left_button.png */,
 				C9A14B9C1787057C0070E203 /* middle_button.png */,
@@ -1166,6 +1178,8 @@
 		C9CB1B8B1779D572005BD76C /* diagnose */ = {
 			isa = PBXGroup;
 			children = (
+				C91A6646179437430088CC47 /* battery-iphone5-bg_03.png */,
+				C91A6647179437430088CC47 /* battery-iphone5-bg2.png */,
 				C9CB1B9A1779E32A005BD76C /* diagnose2_bg.png */,
 				C9CB1B9B1779E32A005BD76C /* find_nearby_mechanics_zh.png */,
 				C9CB1B9C1779E32A005BD76C /* find_nearby_mechanics.png */,
@@ -1295,6 +1309,7 @@
 		C9E9A0EC17768DC200F7D5C7 /* menuPage */ = {
 			isa = PBXGroup;
 			children = (
+				C91A664A17943F020088CC47 /* menu_bg.png */,
 				C9E9A1071776A84800F7D5C7 /* cell_selected.png */,
 				C9E9A1051776A6C800F7D5C7 /* table_bg.png */,
 				C9E9A1031776A45100F7D5C7 /* logo.png */,
@@ -1604,6 +1619,11 @@
 				C94B3ADA17923BC6000DA437 /* zbar-help.html in Resources */,
 				C94B3ADB17923BC6000DA437 /* zbar-helpicons.png in Resources */,
 				C94B3ADC17923BC6000DA437 /* zbar-samples.png in Resources */,
+				C91A6644179436080088CC47 /* add_a_bill.png in Resources */,
+				C91A6648179437430088CC47 /* battery-iphone5-bg_03.png in Resources */,
+				C91A6649179437430088CC47 /* battery-iphone5-bg2.png in Resources */,
+				C91A664B17943F020088CC47 /* menu_bg.png in Resources */,
+				C91A664D17944C6F0088CC47 /* red_button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1782,6 +1802,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1810,6 +1831,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

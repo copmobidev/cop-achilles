@@ -16,7 +16,5 @@
 
 - (IBAction)editProfile:(id)sender;
 
-- (IBAction)revealMenu:(id)sender;
-
 - (IBAction)resignKeyBoardInView:(UIView *)view;
 @end

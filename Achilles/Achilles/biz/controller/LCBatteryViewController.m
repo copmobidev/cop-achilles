@@ -25,7 +25,8 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+//    [super viewDidLoad];
+	[self initPlot];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,4 +54,35 @@
 - (IBAction)back:(id)sender {
 	[self dismissViewControllerAnimated:YES completion:Nil];
 }
+
+#pragma mark - BizPlotDelegate
+
+- (void)configurePlots {
+/*Main Plots*/
+	CPTGraph *mainGraph = self.MainHostingView.hostedGraph;
+	
+/*Battery Scatter Plot*/
+	// 1 Set up
+	CPTScatterPlot *batteryScatterPlot = [[CPTScatterPlot alloc] init];
+	batteryScatterPlot.identifier = CPDTickerSymbolOil;
+	batteryScatterPlot.dataSource = self.provider;
+	// 2 Set up line style
+	CPTMutableLineStyle *scatterLineStyle = [CPTMutableLineStyle lineStyle];
+	scatterLineStyle.lineWidth = 2.5f;
+	scatterLineStyle.lineColor = [CPTColor greenColor];
+	batteryScatterPlot.dataLineStyle = scatterLineStyle;
+	
+	CPTMutableLineStyle *scatterSymbolLineStyle = [CPTMutableLineStyle lineStyle];
+	scatterSymbolLineStyle.lineColor = [CPTColor greenColor];
+	CPTPlotSymbol *batterySymbol = [CPTPlotSymbol ellipsePlotSymbol];
+	batterySymbol.fill = [CPTFill fillWithColor:[CPTColor greenColor]];
+	batterySymbol.lineStyle = scatterSymbolLineStyle;
+	batterySymbol.size = CGSizeMake(1.0f, 1.0f);
+	batteryScatterPlot.plotSymbol = batterySymbol;
+	// 3 Add plot to graph
+	[mainGraph addPlot:batteryScatterPlot toPlotSpace:mainGraph.defaultPlotSpace];
+	mainGraph.plotAreaFrame.borderLineStyle = nil;
+	mainGraph.title = nil;
+}
+
 @end

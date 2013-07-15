@@ -14,7 +14,10 @@
 //
 - (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
 {
-	return  UIInterfaceOrientationMaskAll;
+	UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+	[navigationController shouldAutorotate];
+	
+	return UIInterfaceOrientationMaskAll;
 }
 //
 //#endif

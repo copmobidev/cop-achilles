@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LCBizController.h"
 
-@interface LCBatteryViewController : UIViewController
+@interface LCBatteryViewController : LCBizController
 
 - (IBAction)back:(id)sender;
 @end
