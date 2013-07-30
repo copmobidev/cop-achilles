@@ -18,6 +18,7 @@ LCSINGLETON_IN_M(LCStore)
 
 - (id)init {
     if (self = [super init]) {
+		
     }
     return self;
 }
@@ -60,12 +61,13 @@ LCSINGLETON_IN_M(LCStore)
     return [self plistObjectForKey:key inPath:kStorePathCache];
 }
 
-- (BOOL)setPlistObject:(id)obj forKey:(NSString*)key {
+- (BOOL)setPlistObject:(id<NSCoding>)obj forKey:(NSString*)key {
     return [self setPlistObject:obj forKey:key inPath:kStorePathCache];
 }
 
 #pragma mark - Plist Atomic Methods
 
+// plist array
 - (NSArray *)plistArrayForKey:(NSString *)key inPath:(StorePath)storePath {
     NSString *filePath = [self getFilePathWithPath:storePath fileName:key];
     return [NSArray arrayWithContentsOfFile:filePath];
@@ -80,6 +82,7 @@ LCSINGLETON_IN_M(LCStore)
     return suc;
 }
 
+// plist object
 - (id)plistObjectForKey:(NSString *)key inPath:(StorePath)storePath {
     NSString *filePath = [self getFilePathWithPath:storePath fileName:key];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
@@ -89,14 +92,14 @@ LCSINGLETON_IN_M(LCStore)
     return nil;
 }
 
-- (BOOL)setPlistObject:(id)obj forKey:(NSString*)key inPath:(StorePath)storePath {
+- (BOOL)setPlistObject:(id<NSCoding>)obj forKey:(NSString*)key inPath:(StorePath)storePath {
     NSString *filePath = [self getFilePathWithPath:storePath fileName:key];
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:obj];
     BOOL suc = [data writeToFile:filePath atomically:YES];
     if (!suc) {
         NSLog(@"plist save error:%@,%u,%@", key, storePath, obj);
     }
-    return suc;
+    return suc; // bool for success or fail
 }
 
 #pragma mark - UserDefaults for Custom Data

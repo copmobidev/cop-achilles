@@ -12,13 +12,13 @@
 
 //#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_6_0
 //
-- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
-{
-	UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-	[navigationController shouldAutorotate];
-	
-	return UIInterfaceOrientationMaskAll;
-}
+//- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+//{
+//	UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+//	[navigationController shouldAutorotate];
+//	
+//	return UIInterfaceOrientationMaskAll;
+//}
 //
 //#endif
 

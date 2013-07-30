@@ -8,14 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "ZBarSDK.h"
-
-@interface LCRegisterController : UIViewController<ZBarReaderDelegate>
+#import "ASIHTTPRequest.h"
+@interface LCBoundViewController : UIViewController<ZBarReaderDelegate, UITextFieldDelegate, ASIHTTPRequestDelegate>
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 
 @property (nonatomic, strong) ZBarReaderViewController *reader;
 
 @property (nonatomic, strong) NSString *upcString;
+
+@property (nonatomic, strong) UITextField *qrTextField;
 
 - (void)finish;
 @end

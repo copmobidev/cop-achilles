@@ -18,9 +18,6 @@
 @implementation LCDiagnoseViewController
 
 #pragma mark - UIViewController
-- (BOOL)shouldAutorotate {
-	return NO;
-}
 
 - (void)viewWillAppear:(BOOL)animated
 {

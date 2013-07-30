@@ -7,12 +7,13 @@
 //
 
 #import "LCHomeViewController.h"
-#import "LCRegisterController.h"
+#import "LCBoundViewController.h"
 #import "LCStore.h"
 #import "LCEnvironment.h"
 #import "LCNotificationCell.h"
 #import "THLabel.h"
 #import <math.h>
+#import "LCDataService.h"
 
 @interface LCHomeViewController()
 
@@ -27,10 +28,6 @@
 @implementation LCHomeViewController
 // pi is approximately equal to 3.14159265359.
 #define   DEGREES_TO_RADIANS(degrees)  ((M_PI * degrees)/ 180)
-
-- (BOOL)shouldAutorotate {
-	return NO;
-}
 
 - (NSArray *)pieColors {
 	if (!_pieColors) {
@@ -208,7 +205,7 @@
 //	NSLog(@"deviceid:%@\nuseragent:%@\ntoken:%@\nappversion:%@\ndevicemode:%@\nplatform:%@\nappId:%@\nbundleId:%@",[[LCEnvironment sharedEnvironment] deviceId], [[LCEnvironment sharedEnvironment] userAgent], [[LCEnvironment sharedEnvironment] token], [[LCEnvironment sharedEnvironment] version], [[LCEnvironment sharedEnvironment] deviceModel], [[LCEnvironment sharedEnvironment] platform], [[LCEnvironment sharedEnvironment] appId], [[LCEnvironment sharedEnvironment] bundleId]);
 //	return;
 	if (![[LCStore sharedInstance] userDefaultObjectForKey:RegisteredInfoKey]) {
-		LCRegisterController *registerController = [[LCRegisterController alloc] init];
+		LCBoundViewController *registerController = [[LCBoundViewController alloc] init];
 		[self presentModalViewController:registerController animated:NO];
 	}
 }

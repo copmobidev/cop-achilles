@@ -10,6 +10,7 @@
 #import "LCBizController.h"
 
 @interface LCBatteryViewController : LCBizController
+@property (weak, nonatomic) IBOutlet UIView *canvasView;
 
 - (IBAction)back:(id)sender;
 @end

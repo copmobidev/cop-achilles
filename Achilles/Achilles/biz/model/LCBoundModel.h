@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LCModel.h"
+#import "LCBaseModel.h"
 
-@interface LCRegisterInfo : LCModel
+@interface LCBoundModel : LCBaseModel
 
 @property (nonatomic, strong) NSString *obd;
-@property (nonatomic, strong) NSString *sid;
 
 @end

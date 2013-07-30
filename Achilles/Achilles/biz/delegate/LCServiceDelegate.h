@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "LCDataServiceDelegate.h"
 #import "LCMApiServiceDelegate.h"
-#import "LCRegisterController.h"
+#import "LCBoundViewController.h"
 
 @interface LCServiceDelegate : NSObject<LCDataServiceDelegate, LCMApiServiceDelegate>
 
 LCSINGLETON_IN_H(LCServiceDelegate)
 
-@property (nonatomic, strong) LCRegisterController *registerController;
+@property (nonatomic, strong) LCBoundViewController *registerController;
 @end

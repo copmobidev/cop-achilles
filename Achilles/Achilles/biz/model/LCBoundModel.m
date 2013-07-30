@@ -6,8 +6,8 @@
 //  Copyright (c) 2013年 weiyanen. All rights reserved.
 //
 
-#import "LCRegisterInfo.h"
+#import "LCBoundModel.h"
 
-@implementation LCRegisterInfo
+@implementation LCBoundModel
 
 @end

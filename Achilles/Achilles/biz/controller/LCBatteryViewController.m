@@ -25,8 +25,17 @@
 
 - (void)viewDidLoad
 {
-//    [super viewDidLoad];
+//    [super viewDidLoad];// avoid gesture
 	[self initPlot];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+	if (!IS_HEIGHT_GTE_568) {
+		CGRect frame = self.canvasView.frame;
+		frame.origin = CGPointMake(0, -100);
+		self.canvasView.frame = frame;
+	}
+	self.view.transform = CGAffineTransformMakeRotation(M_PI_2);
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,22 +43,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-//pre ios6
--(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-	return toInterfaceOrientation == UIInterfaceOrientationLandscapeRight;
-}
-
-//ios6
-- (BOOL)shouldAutorotate {
-	return YES;
-}
-
-- (NSUInteger)supportedInterfaceOrientations
-{
-    return UIInterfaceOrientationMaskLandscapeRight;
-}
-
 
 - (IBAction)back:(id)sender {
 	[self dismissViewControllerAnimated:YES completion:Nil];
@@ -85,4 +78,8 @@
 	mainGraph.title = nil;
 }
 
+- (void)viewDidUnload {
+	[self setCanvasView:nil];
+	[super viewDidUnload];
+}
 @end

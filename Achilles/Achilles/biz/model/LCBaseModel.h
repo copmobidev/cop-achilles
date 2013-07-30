@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LCModel : NSObject<NSCoding>
+//任何继承LCModel的对象都实现了NSCoding协议，可以直接序列化
+@interface LCBaseModel : NSObject<NSCoding>
 
 @end

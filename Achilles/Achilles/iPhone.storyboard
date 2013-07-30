@@ -750,12 +750,53 @@
             <objects>
                 <viewController storyboardIdentifier="LCBattery" id="47T-uV-Lw2" customClass="LCBatteryViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bjV-JL-Klm">
-                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="battery-iphone5-bg_03.png" id="3YL-ub-qdZ">
+                                <rect key="frame" x="0.0" y="44" width="568" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="vertical_line.png" id="fbt-1k-qPC">
+                                <rect key="frame" x="20" y="270" width="1" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="vertical_line.png" id="rEv-Oi-XVu">
+                                <rect key="frame" x="160" y="270" width="1" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="vertical_line.png" id="Mzm-Pu-ary">
+                                <rect key="frame" x="300" y="270" width="1" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="vertical_line.png" id="xoU-mX-XXM">
+                                <rect key="frame" x="440" y="270" width="1" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="battery-iphone5-bg2.png" id="vhU-Tg-MIM">
+                                <rect key="frame" x="0.0" y="523" width="548" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="kqX-Eh-xBH" customClass="CPTGraphHostingView">
+                                <rect key="frame" x="0.0" y="271" width="568" height="236"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="低压警戒线" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bL2-1Z-6Eo">
+                                <rect key="frame" x="350" y="460" width="85" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="4b3-VU-Wzg" userLabel="red_line">
+                                <rect key="frame" x="0.0" y="450" width="548" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="UxQ-sB-sQb">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="227" width="548" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="电瓶状态" id="CSd-5o-HBK">
                                         <barButtonItem key="leftBarButtonItem" title="返回" id="S1r-n5-KnG">
@@ -766,59 +807,16 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="battery-iphone5-bg_03.png" id="3YL-ub-qdZ">
-                                <rect key="frame" x="0.0" y="44" width="480" height="236"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="vertical_line.png" id="fbt-1k-qPC">
-                                <rect key="frame" x="20" y="44" width="1" height="237"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="vertical_line.png" id="rEv-Oi-XVu">
-                                <rect key="frame" x="160" y="44" width="1" height="237"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="vertical_line.png" id="Mzm-Pu-ary">
-                                <rect key="frame" x="300" y="44" width="1" height="237"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="vertical_line.png" id="xoU-mX-XXM">
-                                <rect key="frame" x="440" y="44" width="1" height="237"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="battery-iphone5-bg2.png" id="vhU-Tg-MIM">
-                                <rect key="frame" x="0.0" y="275" width="480" height="25"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" id="kqX-Eh-xBH" customClass="CPTGraphHostingView">
-                                <rect key="frame" x="0.0" y="44" width="480" height="236"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="低压警戒线" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bL2-1Z-6Eo">
-                                <rect key="frame" x="350" y="230" width="85" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" id="4b3-VU-Wzg" userLabel="red_line">
-                                <rect key="frame" x="0.0" y="230" width="480" height="1"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="MainHostingView" destination="kqX-Eh-xBH" id="bhX-Pt-rzB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpC-4E-FaL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1800" y="-1128"/>
+            <point key="canvasLocation" x="1806" y="-1122"/>
         </scene>
         <!--Diagnose Detail View Controller-->
         <scene sceneID="eHP-a4-H5P">
@@ -1168,8 +1166,12 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="white_frame.png" id="Odt-mw-gAj">
+                                        <rect key="frame" x="8" y="112" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="car.png" id="FMO-8v-nkX">
-                                        <rect key="frame" x="0.0" y="110" width="70" height="70"/>
+                                        <rect key="frame" x="2" y="110" width="70" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="05/05 1983" textAlignment="center" id="b7i-91-6J2">
@@ -2165,7 +2167,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="mid_bar_bg.png" width="640" height="168"/>
         <image name="middle_button.png" width="73" height="42"/>
         <image name="modify.png" width="105" height="44"/>
-        <image name="red_button.png" width="546" height="74"/>
+        <image name="red_button.png" width="584" height="76"/>
         <image name="red_confirm.png" width="236" height="76"/>
         <image name="right_button.png" width="60" height="42"/>
         <image name="right_button_without_arrow.png" width="59" height="42"/>
@@ -2178,6 +2180,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="turn_off_engine_light_zh.png" width="379" height="62"/>
         <image name="vertical_line.png" width="1" height="179"/>
         <image name="wait_modify.png" width="236" height="76"/>
+        <image name="white_frame.png" width="142" height="118"/>
     </resources>
     <classes>
         <class className="CPTGraphHostingView" superclassName="UIView">
@@ -2210,6 +2213,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LCBatteryViewController.h"/>
             <relationships>
                 <relationship kind="action" name="back:"/>
+                <relationship kind="outlet" name="canvasView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="fff" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="LCBillViewController" superclassName="LCBizController">
