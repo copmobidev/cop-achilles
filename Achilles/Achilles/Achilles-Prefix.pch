@@ -5,7 +5,6 @@
 #import <Availability.h>
 
 #import	"CorePlot-CocoaTouch.h"
-#import "FlatUIKit.h"
 #import "LCDefine.h"
 
 #ifndef __IPHONE_3_0

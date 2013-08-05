@@ -15,7 +15,7 @@
 
 @property (nonatomic, strong) ZBarReaderViewController *reader;
 
-@property (nonatomic, strong) NSString *upcString;
+@property (nonatomic, strong) NSString *qrString;
 
 @property (nonatomic, strong) UITextField *qrTextField;
 

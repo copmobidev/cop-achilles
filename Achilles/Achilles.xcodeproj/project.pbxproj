@@ -59,6 +59,7 @@
 		C91A6649179437430088CC47 /* battery-iphone5-bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = C91A6647179437430088CC47 /* battery-iphone5-bg2.png */; };
 		C91A664B17943F020088CC47 /* menu_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C91A664A17943F020088CC47 /* menu_bg.png */; };
 		C91A664D17944C6F0088CC47 /* red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C91A664C17944C6F0088CC47 /* red_button.png */; };
+		C936179A17AA9B61003469E1 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C936179917AA9B61003469E1 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C940F312179A88A00045DFC4 /* 2_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C940F311179A88A00045DFC4 /* 2_bg.png */; };
 		C94B3AB217923B2C000DA437 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B3AB117923B2C000DA437 /* AVFoundation.framework */; };
 		C94B3AB517923B39000DA437 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B3AB417923B38000DA437 /* CoreMedia.framework */; };
@@ -150,31 +151,6 @@
 		C9E604D31766FC050066BA48 /* LCServiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604D21766FC050066BA48 /* LCServiceDelegate.m */; };
 		C9E604DA1767167A0066BA48 /* libPeleus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E604D91767166D0066BA48 /* libPeleus.a */; };
 		C9E604E01767238F0066BA48 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9E604DE176721FA0066BA48 /* CoreText.framework */; };
-		C9E60535176724CB0066BA48 /* FUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604E8176724CA0066BA48 /* FUIAlertView.m */; };
-		C9E60536176724CB0066BA48 /* FUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604EA176724CA0066BA48 /* FUIButton.m */; };
-		C9E60537176724CB0066BA48 /* FUICellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604EC176724CA0066BA48 /* FUICellBackgroundView.m */; };
-		C9E60538176724CB0066BA48 /* FUISegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604EE176724CA0066BA48 /* FUISegmentedControl.m */; };
-		C9E60539176724CB0066BA48 /* FUISwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604F0176724CA0066BA48 /* FUISwitch.m */; };
-		C9E6053A176724CB0066BA48 /* UIBarButtonItem+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604F2176724CA0066BA48 /* UIBarButtonItem+FlatUI.m */; };
-		C9E6053B176724CB0066BA48 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604F4176724CA0066BA48 /* UIColor+FlatUI.m */; };
-		C9E6053C176724CB0066BA48 /* UIFont+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604F6176724CA0066BA48 /* UIFont+FlatUI.m */; };
-		C9E6053D176724CB0066BA48 /* UIImage+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604F8176724CA0066BA48 /* UIImage+FlatUI.m */; };
-		C9E6053E176724CB0066BA48 /* UINavigationBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604FA176724CA0066BA48 /* UINavigationBar+FlatUI.m */; };
-		C9E6053F176724CB0066BA48 /* UIProgressView+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604FC176724CA0066BA48 /* UIProgressView+FlatUI.m */; };
-		C9E60540176724CB0066BA48 /* UISlider+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E604FE176724CA0066BA48 /* UISlider+FlatUI.m */; };
-		C9E60541176724CB0066BA48 /* UIStepper+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E60500176724CA0066BA48 /* UIStepper+FlatUI.m */; };
-		C9E60542176724CB0066BA48 /* UITabBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E60502176724CA0066BA48 /* UITabBar+FlatUI.m */; };
-		C9E60543176724CB0066BA48 /* UITableViewCell+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E60504176724CA0066BA48 /* UITableViewCell+FlatUI.m */; };
-		C9E6055D176724CB0066BA48 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9E6052A176724CB0066BA48 /* Lato-Black.ttf */; };
-		C9E6055E176724CB0066BA48 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9E6052B176724CB0066BA48 /* Lato-BlackItalic.ttf */; };
-		C9E6055F176724CB0066BA48 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9E6052C176724CB0066BA48 /* Lato-Bold.ttf */; };
-		C9E60560176724CB0066BA48 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9E6052D176724CB0066BA48 /* Lato-BoldItalic.ttf */; };
-		C9E60561176724CB0066BA48 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9E6052E176724CB0066BA48 /* Lato-Hairline.ttf */; };
-		C9E60562176724CB0066BA48 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9E6052F176724CB0066BA48 /* Lato-HairlineItalic.ttf */; };
-		C9E60563176724CB0066BA48 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9E60530176724CB0066BA48 /* Lato-Italic.ttf */; };
-		C9E60564176724CB0066BA48 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9E60531176724CB0066BA48 /* Lato-Light.ttf */; };
-		C9E60565176724CB0066BA48 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9E60532176724CB0066BA48 /* Lato-LightItalic.ttf */; };
-		C9E60566176724CB0066BA48 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9E60533176724CB0066BA48 /* Lato-Regular.ttf */; };
 		C9E9A0F717768DD200F7D5C7 /* menu_icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E9A0EF17768DD200F7D5C7 /* menu_icon1.png */; };
 		C9E9A0F817768DD200F7D5C7 /* menu_icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E9A0F017768DD200F7D5C7 /* menu_icon2.png */; };
 		C9E9A0F917768DD200F7D5C7 /* menu_icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E9A0F117768DD200F7D5C7 /* menu_icon3.png */; };
@@ -323,6 +299,8 @@
 		C91A6647179437430088CC47 /* battery-iphone5-bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "battery-iphone5-bg2.png"; path = "diagnosePage/battery-iphone5-bg2.png"; sourceTree = "<group>"; };
 		C91A664A17943F020088CC47 /* menu_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_bg.png; path = menuPage/menu_bg.png; sourceTree = "<group>"; };
 		C91A664C17944C6F0088CC47 /* red_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_button.png; sourceTree = "<group>"; };
+		C936179817AA9B61003469E1 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		C936179917AA9B61003469E1 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		C940F311179A88A00045DFC4 /* 2_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_bg.png; sourceTree = "<group>"; };
 		C94B3AB117923B2C000DA437 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C94B3AB417923B38000DA437 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -547,47 +525,6 @@
 		C9E604D21766FC050066BA48 /* LCServiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCServiceDelegate.m; path = biz/delegate/LCServiceDelegate.m; sourceTree = "<group>"; };
 		C9E604D41767166C0066BA48 /* Peleus.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Peleus.xcodeproj; path = "../../cop-peleus/Peleus/Peleus.xcodeproj"; sourceTree = "<group>"; };
 		C9E604DE176721FA0066BA48 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		C9E604E6176724CA0066BA48 /* FlatUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatUIKit.h; sourceTree = "<group>"; };
-		C9E604E7176724CA0066BA48 /* FUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIAlertView.h; sourceTree = "<group>"; };
-		C9E604E8176724CA0066BA48 /* FUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIAlertView.m; sourceTree = "<group>"; };
-		C9E604E9176724CA0066BA48 /* FUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIButton.h; sourceTree = "<group>"; };
-		C9E604EA176724CA0066BA48 /* FUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIButton.m; sourceTree = "<group>"; };
-		C9E604EB176724CA0066BA48 /* FUICellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUICellBackgroundView.h; sourceTree = "<group>"; };
-		C9E604EC176724CA0066BA48 /* FUICellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUICellBackgroundView.m; sourceTree = "<group>"; };
-		C9E604ED176724CA0066BA48 /* FUISegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUISegmentedControl.h; sourceTree = "<group>"; };
-		C9E604EE176724CA0066BA48 /* FUISegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUISegmentedControl.m; sourceTree = "<group>"; };
-		C9E604EF176724CA0066BA48 /* FUISwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUISwitch.h; sourceTree = "<group>"; };
-		C9E604F0176724CA0066BA48 /* FUISwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUISwitch.m; sourceTree = "<group>"; };
-		C9E604F1176724CA0066BA48 /* UIBarButtonItem+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FlatUI.h"; sourceTree = "<group>"; };
-		C9E604F2176724CA0066BA48 /* UIBarButtonItem+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FlatUI.m"; sourceTree = "<group>"; };
-		C9E604F3176724CA0066BA48 /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
-		C9E604F4176724CA0066BA48 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
-		C9E604F5176724CA0066BA48 /* UIFont+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FlatUI.h"; sourceTree = "<group>"; };
-		C9E604F6176724CA0066BA48 /* UIFont+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FlatUI.m"; sourceTree = "<group>"; };
-		C9E604F7176724CA0066BA48 /* UIImage+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FlatUI.h"; sourceTree = "<group>"; };
-		C9E604F8176724CA0066BA48 /* UIImage+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FlatUI.m"; sourceTree = "<group>"; };
-		C9E604F9176724CA0066BA48 /* UINavigationBar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+FlatUI.h"; sourceTree = "<group>"; };
-		C9E604FA176724CA0066BA48 /* UINavigationBar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+FlatUI.m"; sourceTree = "<group>"; };
-		C9E604FB176724CA0066BA48 /* UIProgressView+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+FlatUI.h"; sourceTree = "<group>"; };
-		C9E604FC176724CA0066BA48 /* UIProgressView+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+FlatUI.m"; sourceTree = "<group>"; };
-		C9E604FD176724CA0066BA48 /* UISlider+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+FlatUI.h"; sourceTree = "<group>"; };
-		C9E604FE176724CA0066BA48 /* UISlider+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+FlatUI.m"; sourceTree = "<group>"; };
-		C9E604FF176724CA0066BA48 /* UIStepper+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStepper+FlatUI.h"; sourceTree = "<group>"; };
-		C9E60500176724CA0066BA48 /* UIStepper+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStepper+FlatUI.m"; sourceTree = "<group>"; };
-		C9E60501176724CA0066BA48 /* UITabBar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+FlatUI.h"; sourceTree = "<group>"; };
-		C9E60502176724CA0066BA48 /* UITabBar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+FlatUI.m"; sourceTree = "<group>"; };
-		C9E60503176724CA0066BA48 /* UITableViewCell+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+FlatUI.h"; sourceTree = "<group>"; };
-		C9E60504176724CA0066BA48 /* UITableViewCell+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+FlatUI.m"; sourceTree = "<group>"; };
-		C9E6052A176724CB0066BA48 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
-		C9E6052B176724CB0066BA48 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
-		C9E6052C176724CB0066BA48 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
-		C9E6052D176724CB0066BA48 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
-		C9E6052E176724CB0066BA48 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
-		C9E6052F176724CB0066BA48 /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
-		C9E60530176724CB0066BA48 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
-		C9E60531176724CB0066BA48 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
-		C9E60532176724CB0066BA48 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
-		C9E60533176724CB0066BA48 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		C9E9A0EF17768DD200F7D5C7 /* menu_icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_icon1.png; path = menuPage/menu_icon1.png; sourceTree = "<group>"; };
 		C9E9A0F017768DD200F7D5C7 /* menu_icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_icon2.png; path = menuPage/menu_icon2.png; sourceTree = "<group>"; };
 		C9E9A0F117768DD200F7D5C7 /* menu_icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_icon3.png; path = menuPage/menu_icon3.png; sourceTree = "<group>"; };
@@ -754,13 +691,13 @@
 		9B1C4B53173E58EB0085CA3C /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				C936179717AA9B32003469E1 /* JSONKit */,
 				C94B3ABA17923BC6000DA437 /* ZBarSDK */,
 				C9A14BA7178976980070E203 /* SVSegmentControl */,
 				C9D69166177FD6F900B84B77 /* AttributedLabel.h */,
 				C9D69167177FD6F900B84B77 /* AttributedLabel.m */,
 				C9D6916D177FDBB400B84B77 /* THLabel.h */,
 				C9D6916E177FDBB400B84B77 /* THLabel.m */,
-				C9E604E2176724CA0066BA48 /* FlatUIKit */,
 				C96971DD173FD6BD00D0BEB5 /* libCorePlot-CocoaTouch.a */,
 				C96971DF173FD71000D0BEB5 /* CorePlotHeaders */,
 				9B1C4BBF173E80AC0085CA3C /* ECSlidingViewController */,
@@ -897,6 +834,15 @@
 				C9E9A15A1777FE5400F7D5C7 /* LCNotificationCell.xib */,
 			);
 			name = cell;
+			sourceTree = "<group>";
+		};
+		C936179717AA9B32003469E1 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				C936179817AA9B61003469E1 /* JSONKit.h */,
+				C936179917AA9B61003469E1 /* JSONKit.m */,
+			);
+			name = JSONKit;
 			sourceTree = "<group>";
 		};
 		C94B3ABA17923BC6000DA437 /* ZBarSDK */ = {
@@ -1243,78 +1189,6 @@
 			name = category;
 			sourceTree = "<group>";
 		};
-		C9E604E2176724CA0066BA48 /* FlatUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				C9E604E4176724CA0066BA48 /* Classes */,
-				C9E60529176724CB0066BA48 /* Resources */,
-			);
-			path = FlatUIKit;
-			sourceTree = "<group>";
-		};
-		C9E604E4176724CA0066BA48 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C9E604E5176724CA0066BA48 /* ios */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		C9E604E5176724CA0066BA48 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				C9E604E6176724CA0066BA48 /* FlatUIKit.h */,
-				C9E604E7176724CA0066BA48 /* FUIAlertView.h */,
-				C9E604E8176724CA0066BA48 /* FUIAlertView.m */,
-				C9E604E9176724CA0066BA48 /* FUIButton.h */,
-				C9E604EA176724CA0066BA48 /* FUIButton.m */,
-				C9E604EB176724CA0066BA48 /* FUICellBackgroundView.h */,
-				C9E604EC176724CA0066BA48 /* FUICellBackgroundView.m */,
-				C9E604ED176724CA0066BA48 /* FUISegmentedControl.h */,
-				C9E604EE176724CA0066BA48 /* FUISegmentedControl.m */,
-				C9E604EF176724CA0066BA48 /* FUISwitch.h */,
-				C9E604F0176724CA0066BA48 /* FUISwitch.m */,
-				C9E604F1176724CA0066BA48 /* UIBarButtonItem+FlatUI.h */,
-				C9E604F2176724CA0066BA48 /* UIBarButtonItem+FlatUI.m */,
-				C9E604F3176724CA0066BA48 /* UIColor+FlatUI.h */,
-				C9E604F4176724CA0066BA48 /* UIColor+FlatUI.m */,
-				C9E604F5176724CA0066BA48 /* UIFont+FlatUI.h */,
-				C9E604F6176724CA0066BA48 /* UIFont+FlatUI.m */,
-				C9E604F7176724CA0066BA48 /* UIImage+FlatUI.h */,
-				C9E604F8176724CA0066BA48 /* UIImage+FlatUI.m */,
-				C9E604F9176724CA0066BA48 /* UINavigationBar+FlatUI.h */,
-				C9E604FA176724CA0066BA48 /* UINavigationBar+FlatUI.m */,
-				C9E604FB176724CA0066BA48 /* UIProgressView+FlatUI.h */,
-				C9E604FC176724CA0066BA48 /* UIProgressView+FlatUI.m */,
-				C9E604FD176724CA0066BA48 /* UISlider+FlatUI.h */,
-				C9E604FE176724CA0066BA48 /* UISlider+FlatUI.m */,
-				C9E604FF176724CA0066BA48 /* UIStepper+FlatUI.h */,
-				C9E60500176724CA0066BA48 /* UIStepper+FlatUI.m */,
-				C9E60501176724CA0066BA48 /* UITabBar+FlatUI.h */,
-				C9E60502176724CA0066BA48 /* UITabBar+FlatUI.m */,
-				C9E60503176724CA0066BA48 /* UITableViewCell+FlatUI.h */,
-				C9E60504176724CA0066BA48 /* UITableViewCell+FlatUI.m */,
-			);
-			path = ios;
-			sourceTree = "<group>";
-		};
-		C9E60529176724CB0066BA48 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C9E6052A176724CB0066BA48 /* Lato-Black.ttf */,
-				C9E6052B176724CB0066BA48 /* Lato-BlackItalic.ttf */,
-				C9E6052C176724CB0066BA48 /* Lato-Bold.ttf */,
-				C9E6052D176724CB0066BA48 /* Lato-BoldItalic.ttf */,
-				C9E6052E176724CB0066BA48 /* Lato-Hairline.ttf */,
-				C9E6052F176724CB0066BA48 /* Lato-HairlineItalic.ttf */,
-				C9E60530176724CB0066BA48 /* Lato-Italic.ttf */,
-				C9E60531176724CB0066BA48 /* Lato-Light.ttf */,
-				C9E60532176724CB0066BA48 /* Lato-LightItalic.ttf */,
-				C9E60533176724CB0066BA48 /* Lato-Regular.ttf */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		C9E9A0EC17768DC200F7D5C7 /* menuPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1516,16 +1390,6 @@
 				C9150A6817503B450077A693 /* diagnose.plist in Resources */,
 				C9150A6A17503B6E0077A693 /* bg_texture.png in Resources */,
 				C9A4BE9C1752546800D5C213 /* LCSettingCell.xib in Resources */,
-				C9E6055D176724CB0066BA48 /* Lato-Black.ttf in Resources */,
-				C9E6055E176724CB0066BA48 /* Lato-BlackItalic.ttf in Resources */,
-				C9E6055F176724CB0066BA48 /* Lato-Bold.ttf in Resources */,
-				C9E60560176724CB0066BA48 /* Lato-BoldItalic.ttf in Resources */,
-				C9E60561176724CB0066BA48 /* Lato-Hairline.ttf in Resources */,
-				C9E60562176724CB0066BA48 /* Lato-HairlineItalic.ttf in Resources */,
-				C9E60563176724CB0066BA48 /* Lato-Italic.ttf in Resources */,
-				C9E60564176724CB0066BA48 /* Lato-Light.ttf in Resources */,
-				C9E60565176724CB0066BA48 /* Lato-LightItalic.ttf in Resources */,
-				C9E60566176724CB0066BA48 /* Lato-Regular.ttf in Resources */,
 				C95C2A621771F71A00C571CB /* 1_bg.png in Resources */,
 				C95C2A631771F71A00C571CB /* 2_bg_previous.png in Resources */,
 				C95C2A641771F71A00C571CB /* 3_bg.png in Resources */,
@@ -1690,21 +1554,6 @@
 				C9E604C51766C6240066BA48 /* NSObject+Properties.m in Sources */,
 				C9E604C61766C6240066BA48 /* NSString+PropertyKVC.m in Sources */,
 				C9E604D31766FC050066BA48 /* LCServiceDelegate.m in Sources */,
-				C9E60535176724CB0066BA48 /* FUIAlertView.m in Sources */,
-				C9E60536176724CB0066BA48 /* FUIButton.m in Sources */,
-				C9E60537176724CB0066BA48 /* FUICellBackgroundView.m in Sources */,
-				C9E60538176724CB0066BA48 /* FUISegmentedControl.m in Sources */,
-				C9E60539176724CB0066BA48 /* FUISwitch.m in Sources */,
-				C9E6053A176724CB0066BA48 /* UIBarButtonItem+FlatUI.m in Sources */,
-				C9E6053B176724CB0066BA48 /* UIColor+FlatUI.m in Sources */,
-				C9E6053C176724CB0066BA48 /* UIFont+FlatUI.m in Sources */,
-				C9E6053D176724CB0066BA48 /* UIImage+FlatUI.m in Sources */,
-				C9E6053E176724CB0066BA48 /* UINavigationBar+FlatUI.m in Sources */,
-				C9E6053F176724CB0066BA48 /* UIProgressView+FlatUI.m in Sources */,
-				C9E60540176724CB0066BA48 /* UISlider+FlatUI.m in Sources */,
-				C9E60541176724CB0066BA48 /* UIStepper+FlatUI.m in Sources */,
-				C9E60542176724CB0066BA48 /* UITabBar+FlatUI.m in Sources */,
-				C9E60543176724CB0066BA48 /* UITableViewCell+FlatUI.m in Sources */,
 				C9E9A10017768FCB00F7D5C7 /* LCHelpViewController.m in Sources */,
 				C9E9A1591777FE3000F7D5C7 /* LCNotificationCell.m in Sources */,
 				C9CB1BA61779E564005BD76C /* LCDiagnoseDetailViewController.m in Sources */,
@@ -1715,6 +1564,7 @@
 				C9A14BAD178976A80070E203 /* SVSegmentedThumb.m in Sources */,
 				C98AC9B3179297C900EC6772 /* LCBatteryViewController.m in Sources */,
 				C959D7A417A5F0CE003B6743 /* LCUtil.m in Sources */,
+				C936179A17AA9B61003469E1 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

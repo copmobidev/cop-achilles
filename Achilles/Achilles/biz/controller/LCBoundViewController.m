@@ -14,6 +14,10 @@
 #import "ASIHTTPRequest.h"
 #import "ASIFormDataRequest.h"
 #import "LCUtil.h"
+#import "LCConfig.h"
+#import "JSONKit.h"
+#import "LCStore.h"
+#import "LCBoundModel.h"
 
 @interface LCBoundViewController()
 - (UILabel *)simepleLableWithFrame: (CGRect)frame andText:(NSString *)text;
@@ -98,15 +102,17 @@ const int pageNumber = 5;
 	
     for(symbol in results){
 		
-        self.upcString = symbol.data;
+        self.qrString = symbol.data;
+		//test qr string
+		self.qrString = @"10192261";
 		
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Scanned UPC" message:[NSString stringWithFormat:@"The UPC read was: %@", self.upcString] delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Scanned QR Code" message:[NSString stringWithFormat:@"The QR Code is: %@", self.qrString] delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
 		
         [alert show];
 		
 		[self.reader dismissViewControllerAnimated:YES completion:nil];
 		
-		self.qrTextField.text = self.upcString;
+		self.qrTextField.text = self.qrString;
     }
 }
 
@@ -121,24 +127,18 @@ const int pageNumber = 5;
 				return;
 			}
 		}
+		//第二页拿到了qr code，下一步时要发送请求到后台拿到汽车信息
 		if (button.tag == 2) {
 			if (self.qrTextField.text.length == 0) {
 				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"OBD序列号为空" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
 				[alert show];
 				return;
 			}
-			NSURL *url = [NSURL URLWithString:@"http://58.210.101.202:59102/test/account/register"];
-//			ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+			NSURL *url = [NSURL URLWithString:[COP_BIZ_SERVER stringByAppendingString:COP_BIZ_API_BOUND]];
 			ASIFormDataRequest *request=[ASIFormDataRequest requestWithURL:url];
-			//ua必填，千万不能少，否则没有responseString为nil
-			[request addRequestHeader:@"ua" value:@"mapi 1.0 peseus 1.0.0 motorola MB525 Android 2.3.5"];
-			
-			[request setPostValue:self.qrTextField.text    forKey:@"obd"];
-			[request setPostValue:self.qrTextField.text forKey:@"sid"];
-			[request setPostValue:@"大众"    forKey:@"manufacturer"];
-			[request setPostValue:@"奥迪"    forKey:@"brand"];
-			[request setPostValue:@"A4"    forKey:@"model"];
-			[request setPostValue:@"2.0T"    forKey:@"engine"];
+			//ua必填，否则没有responseString，为nil
+			[request addRequestHeader:@"ua" value:UA];			
+			[request setPostValue:self.qrString    forKey:@"obd"];
 			
 			[request setDelegate:self];
 			[request startAsynchronous];
@@ -155,21 +155,49 @@ const int pageNumber = 5;
 	}
 }
 
+- (LCBoundModel *)getBoundModel:(NSDictionary *)dict {
+	LCBoundModel *boundModel = [[LCBoundModel alloc] init];
+	boundModel.obd = [dict valueForKey:@"obd"];
+	boundModel.manufacturer = [[dict valueForKey:@"brand"] valueForKey:@"manufacturer"];
+	boundModel.brand = [[dict valueForKey:@"brand"] valueForKey:@"brand"];
+	boundModel.model = [[dict valueForKey:@"brand"] valueForKey:@"model"];
+	boundModel.engine = (int)[[dict valueForKey:@"brand"] valueForKey:@"engine"];
+	boundModel.color = [[dict valueForKey:@"brand"] valueForKey:@"color"];
+	boundModel.configParam = (int)[[dict valueForKey:@"brand"] valueForKey:@"configParam"];
+	boundModel.sex = (int)[dict valueForKey:@"sex"];
+	boundModel.birth = (int)[dict valueForKey:@"birth"];
+	boundModel.score = (int)[dict valueForKey:@"score"];
+	boundModel.level = (int)[dict valueForKey:@"level"];
+	boundModel.registerTime = (int)[dict valueForKey:@"registerTime"];
+	return boundModel;
+}
+
 #pragma mark - ASIHTTP Delegate
 
 - (void)requestFinished:(ASIHTTPRequest *)request {
-	//移动scrollview
-	[self.scrollView scrollRectToVisible:CGRectMake(self.view.frame.size.width * 2, 0, self.view.frame.size.width, self.view.frame.size.height) animated:NO];
+	
+	
 	[request setResponseEncoding:NSUTF8StringEncoding];
-		
+	
 	// 当以文本形式读取返回内容时用这个方法
-	
-	NSString *responseString = [request responseString];
-	NSLog(@"%@", responseString);
+	NSString *json = [request responseString];
+	json = @"{\"status\":\"RS_OK\",\"token\":\"6855757a0e99e77bf4577258153941c22e2ea3dcd9ab3a7d79e3d090b1c16298\",\"data\":{\"obd\":\"10192261\",\"brand\":{\"manufacturer\":\"大众\",\"brand\":\"奥迪\",\"model\":\"A6\",\"engine\":2.4,\"color\":\"银色\",\"configParam\":3.2},\"sex\":0,\"birth\":0,\"score\":0,\"level\":0,\"registerTime\":10192261}}";
+	NSDictionary *jsonDict = (NSDictionary *)[json objectFromJSONString];
+	if ([[jsonDict valueForKey:@"status"] isEqualToString:ResponseOK]) {
+		//移动scrollview
+		[self.scrollView scrollRectToVisible:CGRectMake(self.view.frame.size.width * 2, 0, self.view.frame.size.width, self.view.frame.size.height) animated:NO];
+		// lcstore
+		[[LCStore sharedInstance] setUserDefaultObject:[self getBoundModel:[jsonDict valueForKey:@"data"]] forKey:@"BoundModel"];
+	} else {
+		// bound fail
+		[LCUtil simpleAlertViewWithTitle:@"系统信息" withMessage:@"初始化失败" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定"];
+		
+	}	
+	/*
 	// 当以二进制形式读取返回内容时用这个方法
-	
 	NSData *responseData = [request responseData];
 	NSString *info = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+	 */
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request {

@@ -31,18 +31,7 @@ LCSINGLETON_IN_M(LCServiceDelegate)
 }
 
 - (void)onGetConfigFail {
-	FUIAlertView *alertView =   [[FUIAlertView alloc] initWithTitle: @"初始化失败" message: @"请检查Wifi连接或联系工作人员." delegate: nil cancelButtonTitle: @"取消" otherButtonTitles: nil];
-	alertView.titleLabel.textColor = [UIColor cloudsColor];
-    alertView.titleLabel.font = [UIFont boldFlatFontOfSize:16];
-    alertView.messageLabel.textColor = [UIColor cloudsColor];
-    alertView.messageLabel.font = [UIFont flatFontOfSize:14];
-    alertView.backgroundOverlay.backgroundColor = [[UIColor cloudsColor] colorWithAlphaComponent:0.8];
-    alertView.alertContainer.backgroundColor = [UIColor midnightBlueColor];
-    alertView.defaultButtonColor = [UIColor cloudsColor];
-    alertView.defaultButtonShadowColor = [UIColor asbestosColor];
-    alertView.defaultButtonFont = [UIFont boldFlatFontOfSize:16];
-    alertView.defaultButtonTitleColor = [UIColor asbestosColor];
-	[alertView show];
+	
 }
 
 /*
