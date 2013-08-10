@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "LCDataServiceDelegate.h"
-#import "LCMApiServiceDelegate.h"
 #import "LCBoundViewController.h"
+#import "LCDataConfig.h"
 
-@interface LCServiceDelegate : NSObject<LCDataServiceDelegate, LCMApiServiceDelegate>
+@interface LCServiceDelegate : NSObject<LCDataServiceDelegate>
 
 LCSINGLETON_IN_H(LCServiceDelegate)
 

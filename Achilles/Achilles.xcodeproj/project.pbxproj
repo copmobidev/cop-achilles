@@ -59,7 +59,6 @@
 		C91A6649179437430088CC47 /* battery-iphone5-bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = C91A6647179437430088CC47 /* battery-iphone5-bg2.png */; };
 		C91A664B17943F020088CC47 /* menu_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C91A664A17943F020088CC47 /* menu_bg.png */; };
 		C91A664D17944C6F0088CC47 /* red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C91A664C17944C6F0088CC47 /* red_button.png */; };
-		C936179A17AA9B61003469E1 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C936179917AA9B61003469E1 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C940F312179A88A00045DFC4 /* 2_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C940F311179A88A00045DFC4 /* 2_bg.png */; };
 		C94B3AB217923B2C000DA437 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B3AB117923B2C000DA437 /* AVFoundation.framework */; };
 		C94B3AB517923B39000DA437 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B3AB417923B38000DA437 /* CoreMedia.framework */; };
@@ -137,7 +136,6 @@
 		C9CB1BAE1779F9A4005BD76C /* wait_modify.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1BAB1779F9A4005BD76C /* wait_modify.png */; };
 		C9CED427175AF6BB0074A498 /* LCAddBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED426175AF6BB0074A498 /* LCAddBillViewController.m */; };
 		C9CED42A175B15AC0074A498 /* LCEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED429175B15AC0074A498 /* LCEditProfileViewController.m */; };
-		C9CED500175F85FB0074A498 /* LCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CED4FF175F85FA0074A498 /* LCStore.m */; };
 		C9D69084177F2B2800B84B77 /* sync_button.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D69083177F2B2800B84B77 /* sync_button.png */; };
 		C9D69086177F2D9300B84B77 /* driving_bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D69085177F2D9300B84B77 /* driving_bg2.png */; };
 		C9D69088177F2E9600B84B77 /* route_bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D69087177F2E9600B84B77 /* route_bg2.png */; };
@@ -299,8 +297,6 @@
 		C91A6647179437430088CC47 /* battery-iphone5-bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "battery-iphone5-bg2.png"; path = "diagnosePage/battery-iphone5-bg2.png"; sourceTree = "<group>"; };
 		C91A664A17943F020088CC47 /* menu_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_bg.png; path = menuPage/menu_bg.png; sourceTree = "<group>"; };
 		C91A664C17944C6F0088CC47 /* red_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_button.png; sourceTree = "<group>"; };
-		C936179817AA9B61003469E1 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = JSONKit/JSONKit.h; sourceTree = "<group>"; };
-		C936179917AA9B61003469E1 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		C940F311179A88A00045DFC4 /* 2_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_bg.png; sourceTree = "<group>"; };
 		C94B3AB117923B2C000DA437 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C94B3AB417923B38000DA437 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -503,8 +499,6 @@
 		C9CED428175B15AC0074A498 /* LCEditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCEditProfileViewController.h; path = biz/controller/LCEditProfileViewController.h; sourceTree = "<group>"; };
 		C9CED429175B15AC0074A498 /* LCEditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCEditProfileViewController.m; path = biz/controller/LCEditProfileViewController.m; sourceTree = "<group>"; };
 		C9CED4FD175F85220074A498 /* LCDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCDefine.h; path = biz/util/LCDefine.h; sourceTree = "<group>"; };
-		C9CED4FE175F85FA0074A498 /* LCStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCStore.h; path = biz/util/LCStore.h; sourceTree = "<group>"; };
-		C9CED4FF175F85FA0074A498 /* LCStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCStore.m; path = biz/util/LCStore.m; sourceTree = "<group>"; };
 		C9D69083177F2B2800B84B77 /* sync_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sync_button.png; path = homePage/sync_button.png; sourceTree = "<group>"; };
 		C9D69085177F2D9300B84B77 /* driving_bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = driving_bg2.png; path = drivingPage/driving_bg2.png; sourceTree = "<group>"; };
 		C9D69087177F2E9600B84B77 /* route_bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = route_bg2.png; path = routePage/route_bg2.png; sourceTree = "<group>"; };
@@ -691,7 +685,6 @@
 		9B1C4B53173E58EB0085CA3C /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				C936179717AA9B32003469E1 /* JSONKit */,
 				C94B3ABA17923BC6000DA437 /* ZBarSDK */,
 				C9A14BA7178976980070E203 /* SVSegmentControl */,
 				C9D69166177FD6F900B84B77 /* AttributedLabel.h */,
@@ -834,15 +827,6 @@
 				C9E9A15A1777FE5400F7D5C7 /* LCNotificationCell.xib */,
 			);
 			name = cell;
-			sourceTree = "<group>";
-		};
-		C936179717AA9B32003469E1 /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				C936179817AA9B61003469E1 /* JSONKit.h */,
-				C936179917AA9B61003469E1 /* JSONKit.m */,
-			);
-			name = JSONKit;
 			sourceTree = "<group>";
 		};
 		C94B3ABA17923BC6000DA437 /* ZBarSDK */ = {
@@ -1110,8 +1094,6 @@
 			children = (
 				C9AC02AD175379EC00258733 /* FPPopover */,
 				C9CED4FD175F85220074A498 /* LCDefine.h */,
-				C9CED4FE175F85FA0074A498 /* LCStore.h */,
-				C9CED4FF175F85FA0074A498 /* LCStore.m */,
 				C959D7A217A5F0CE003B6743 /* LCUtil.h */,
 				C959D7A317A5F0CE003B6743 /* LCUtil.m */,
 			);
@@ -1549,7 +1531,6 @@
 				C9A705D31754F91F000DA8B2 /* LCMenuItemCell.m in Sources */,
 				C9CED427175AF6BB0074A498 /* LCAddBillViewController.m in Sources */,
 				C9CED42A175B15AC0074A498 /* LCEditProfileViewController.m in Sources */,
-				C9CED500175F85FB0074A498 /* LCStore.m in Sources */,
 				C9E604BE1766C3FB0066BA48 /* LCBaseModel.m in Sources */,
 				C9E604C51766C6240066BA48 /* NSObject+Properties.m in Sources */,
 				C9E604C61766C6240066BA48 /* NSString+PropertyKVC.m in Sources */,
@@ -1564,7 +1545,6 @@
 				C9A14BAD178976A80070E203 /* SVSegmentedThumb.m in Sources */,
 				C98AC9B3179297C900EC6772 /* LCBatteryViewController.m in Sources */,
 				C959D7A417A5F0CE003B6743 /* LCUtil.m in Sources */,
-				C936179A17AA9B61003469E1 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

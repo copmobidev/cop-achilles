@@ -134,14 +134,14 @@ const int pageNumber = 5;
 				[alert show];
 				return;
 			}
-			NSURL *url = [NSURL URLWithString:[COP_BIZ_SERVER stringByAppendingString:COP_BIZ_API_BOUND]];
-			ASIFormDataRequest *request=[ASIFormDataRequest requestWithURL:url];
-			//ua必填，否则没有responseString，为nil
-			[request addRequestHeader:@"ua" value:UA];			
-			[request setPostValue:self.qrString    forKey:@"obd"];
-			
-			[request setDelegate:self];
-			[request startAsynchronous];
+//			NSURL *url = [NSURL URLWithString:[COP_BIZ_SERVER stringByAppendingString:COP_BIZ_API_BOUND]];
+//			ASIFormDataRequest *request=[ASIFormDataRequest requestWithURL:url];
+//			//ua必填，否则没有responseString，为nil
+//			[request addRequestHeader:@"ua" value:UA];			
+//			[request setPostValue:self.qrString    forKey:@"obd"];
+//			
+//			[request setDelegate:self];
+//			[request startAsynchronous];
 		}
 		
 		if (button.tag != 2)
@@ -256,7 +256,7 @@ const int pageNumber = 5;
 		[[LCDataService sharedDataService] setDelegate:[LCServiceDelegate sharedInstance]];
 		[[LCServiceDelegate sharedInstance] setRegisterController:self];
 	}
-	[[LCDataService sharedDataService] obdConfig];
+//	[[LCDataService sharedDataService] obdConfig];
 }
 
 
