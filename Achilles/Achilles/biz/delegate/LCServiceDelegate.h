@@ -15,5 +15,5 @@
 
 LCSINGLETON_IN_H(LCServiceDelegate)
 
-@property (nonatomic, strong) LCBoundViewController *registerController;
+@property (nonatomic, strong) LCBoundViewController *boundController;
 @end

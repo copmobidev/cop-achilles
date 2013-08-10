@@ -1,5 +1,5 @@
 //
-//  RegisterController.m
+//  LCBoundViewController.m
 //  Achilles
 //
 //  Created by weiyanen on 13-5-10.
@@ -254,7 +254,7 @@ const int pageNumber = 5;
 - (void)getConfig {
 	if (![LCDataService sharedDataService].delegate) {
 		[[LCDataService sharedDataService] setDelegate:[LCServiceDelegate sharedInstance]];
-		[[LCServiceDelegate sharedInstance] setRegisterController:self];
+		[[LCServiceDelegate sharedInstance] setBoundController:self];
 	}
 //	[[LCDataService sharedDataService] obdConfig];
 }

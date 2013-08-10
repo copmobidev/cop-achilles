@@ -205,8 +205,8 @@
 //	NSLog(@"deviceid:%@\nuseragent:%@\ntoken:%@\nappversion:%@\ndevicemode:%@\nplatform:%@\nappId:%@\nbundleId:%@",[[LCEnvironment sharedEnvironment] deviceId], [[LCEnvironment sharedEnvironment] userAgent], [[LCEnvironment sharedEnvironment] token], [[LCEnvironment sharedEnvironment] version], [[LCEnvironment sharedEnvironment] deviceModel], [[LCEnvironment sharedEnvironment] platform], [[LCEnvironment sharedEnvironment] appId], [[LCEnvironment sharedEnvironment] bundleId]);
 //	return;
 	if (![[LCStore sharedInstance] userDefaultObjectForKey:RegisteredInfoKey]) {
-		LCBoundViewController *registerController = [[LCBoundViewController alloc] init];
-		[self presentModalViewController:registerController animated:NO];
+		LCBoundViewController *boundController = [[LCBoundViewController alloc] init];
+		[self presentModalViewController:boundController animated:NO];
 	}
 }
 

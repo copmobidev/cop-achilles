@@ -1,5 +1,5 @@
 //
-//  RegisterController.h
+//  LCBoundViewController.h
 //  Achilles
 //
 //  Created by weiyanen on 13-5-10.
