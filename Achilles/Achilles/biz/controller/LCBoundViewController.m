@@ -252,8 +252,8 @@ const int pageNumber = 5;
 }
 
 - (void)getConfig {
-	if (![LCDataService sharedDataService].delegate) {
-		[[LCDataService sharedDataService] setDelegate:[LCServiceDelegate sharedInstance]];
+	if (![[LCDataService sharedInstance] delegate]) {
+		[[LCDataService sharedInstance] setDelegate:[LCServiceDelegate sharedInstance]];
 		[[LCServiceDelegate sharedInstance] setBoundController:self];
 	}
 //	[[LCDataService sharedDataService] obdConfig];

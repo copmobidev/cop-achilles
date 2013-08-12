@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LCDataServiceDelegate.h"
 #import "LCBoundViewController.h"
 #import "LCDataConfig.h"
+#import "LCDataService.h"
 
 @interface LCServiceDelegate : NSObject<LCDataServiceDelegate>
 
